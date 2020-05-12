@@ -1,0 +1,260 @@
+
+
+
+    <title>Installing Percona Distribution for MongoDB &mdash; Percona Distribution for MongoDB 4.2 Documentation</title>
+    
+  <head>
+    
+    
+    
+    <link rel="stylesheet" href="_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '4.2.6',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="top" title="Percona Distribution for MongoDB 4.2 Documentation" href="index.html" />
+    <link rel="next" title="Release Notes" href="release-notes.html" />
+    <link rel="prev" title="Percona Distribution for MongoDB documentation" href="index.html" /> 
+  </head>
+  <body>
+    <div class="container">  
+
+    <div class="document row">
+      <div class="documentwrapper col-md-9 col-md-push-3">
+    <div class="related row">
+      
+      <ul class="nav nav-pills">
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="release-notes.html" title="Release Notes"
+             accesskey="N">next</a></li>
+        <li class="right" >
+          <a href="index.html" title="Percona Distribution for MongoDB documentation"
+             accesskey="P">previous</a></li>
+        <li><a href="index.html">Percona Distribution for MongoDB 4.2</a></li> 
+      </ul>
+    </div>
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="installing-pdmdb">
+<span id="pdmongo-install"></span><h1>Installing Percona Distribution for MongoDB<a class="headerlink" href="#installing-pdmdb" title="Permalink to this headline">¶</a></h1>
+<div class="contents local topic" id="contents">
+<ul class="simple">
+<li><a class="reference internal" href="#install-percona-release" id="id2">Install <strong class="program">percona-release</strong></a></li>
+<li><a class="reference internal" href="#set-up-percona-repository" id="id3">Set up <em>Percona</em> repository</a></li>
+<li><a class="reference internal" href="#install-packages" id="id4">Install packages</a><ul>
+<li><a class="reference internal" href="#install-on-debian-ubuntu" id="id5">Install on <em>Debian / Ubuntu</em></a></li>
+<li><a class="reference internal" href="#install-on-red-hat-enterprise-linux-centos" id="id6">Install on  <em>Red Hat Enterprise Linux / CentOS</em></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#uninstalling-pdmdb" id="id7">Uninstalling Percona Distribution for MongoDB</a></li>
+</ul>
+</div>
+<p>Percona provides installation packages for the Percona Distribution for MongoDB
+in <strong class="program">DEB</strong> and <strong class="program">RPM</strong> formats for the most 64-bit Linux distributions.</p>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="100%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Supported Distributions</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><ul class="first last simple">
+<li>Debian 9 (stretch)</li>
+<li>Debian 10 (buster)</li>
+<li>Ubuntu 16.04 (Xenial Xerus)</li>
+<li>Ubuntu 18.04 LTS (Bionic Beaver)</li>
+<li>Ubuntu 20.04 (Focal Fossa)</li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><ul class="first last simple">
+<li>Red Hat Enterprise Linux / CentOS 6</li>
+<li>Red Hat Enterprise Linux / CentOS 7</li>
+<li>Red Hat Enterprise Linux / CentOS 8</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Percona Distribution for MongoDB is installed using the <strong class="program">percona-release</strong> utility.
+This is the most straightforward way since <strong class="program">percona-release</strong>
+enables the required repositories for you.</p>
+<p>The installation of Percona Distribution for MongoDB includes the following steps:</p>
+<ol class="arabic simple">
+<li>Install the <strong class="program">percona-release</strong> utility.</li>
+<li>Set up the <em>Percona</em> repository for the required version of
+Percona Distribution for MongoDB.</li>
+<li>Install the packages.</li>
+</ol>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Make sure to run all commands as root or via <strong class="program">sudo</strong> during the installation.</p>
+</div>
+<div class="section" id="install-percona-release">
+<h2><a class="toc-backref" href="#id2">Install <strong class="program">percona-release</strong></a><a class="headerlink" href="#install-percona-release" title="Permalink to this headline">¶</a></h2>
+<p>See the <a class="reference external" href="https://www.percona.com/doc/percona-repo-config/percona-release.html#installation">percona-release documentation</a>
+for installation instructions relevant to your operating system.</p>
+<p>If you have previously installed <strong class="program">percona-release</strong>, make sure to update it to the
+latest version. Refer to the <a class="reference external" href="https://www.percona.com/doc/percona-repo-config/percona-release.html#updating-percona-release-to-the-latest-version">percona-release documentation</a>
+for details.</p>
+</div>
+<div class="section" id="set-up-percona-repository">
+<h2><a class="toc-backref" href="#id3">Set up <em>Percona</em> repository</a><a class="headerlink" href="#set-up-percona-repository" title="Permalink to this headline">¶</a></h2>
+<p>As soon as <strong class="program">percona-release</strong> is up-to-date, set up <em>Percona</em> repository for the
+required version of Percona Distribution for MongoDB (<code class="docutils literal"><span class="pre">pdmdb&lt;version&gt;</span></code>). For example, to set up Percona Distribution for MongoDB
+4.2.6, use the following command:</p>
+<div class="highlight-bash"><div class="highlight"><pre><span></span>$ percona-release setup pdmdb4.2.6
+</pre></div>
+</div>
+</div>
+<div class="section" id="install-packages">
+<h2><a class="toc-backref" href="#id4">Install packages</a><a class="headerlink" href="#install-packages" title="Permalink to this headline">¶</a></h2>
+<p>Install Percona Distribution for MongoDB components using the package manager of your operating system.</p>
+<div class="section" id="install-on-debian-ubuntu">
+<h3><a class="toc-backref" href="#id5">Install on <em>Debian / Ubuntu</em></a><a class="headerlink" href="#install-on-debian-ubuntu" title="Permalink to this headline">¶</a></h3>
+<p>Use the following commands to install <em>Percona Server for MongoDB</em> and /or
+<em>Percona Backup for MongoDB</em>:</p>
+<div class="highlight-bash"><div class="highlight"><pre><span></span><span class="c1"># Update the local cache</span>
+$ apt-get update
+<span class="c1"># Install the Percona Server for MongoDB package</span>
+$ apt install percona-server-mongodb
+<span class="c1"># Install the Percona Backup for MongoDB package</span>
+$ apt install percona-backup-mongodb
+</pre></div>
+</div>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<ul class="last simple">
+<li><dl class="first docutils">
+<dt>Installing <em>Percona Server for MongoDB</em></dt>
+<dd><a class="reference external" href="https://www.percona.com/doc/percona-server-for-mongodb/4.2/install/apt.html">https://www.percona.com/doc/percona-server-for-mongodb/4.2/install/apt.html</a></dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Installing <em>Percona Backup for MongoDB</em></dt>
+<dd><a class="reference external" href="https://www.percona.com/doc/percona-backup-mongodb/installation.html#installing-pbm-using-apt">https://www.percona.com/doc/percona-backup-mongodb/installation.html#installing-pbm-using-apt</a></dd>
+</dl>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="install-on-red-hat-enterprise-linux-centos">
+<h3><a class="toc-backref" href="#id6">Install on  <em>Red Hat Enterprise Linux / CentOS</em></a><a class="headerlink" href="#install-on-red-hat-enterprise-linux-centos" title="Permalink to this headline">¶</a></h3>
+<p>Use the following commands to install <em>Percona Server for MongoDB</em> and /or
+<em>Percona Backup for MongoDB</em>:</p>
+<div class="highlight-bash"><div class="highlight"><pre><span></span><span class="c1"># Install the Percona Server for MongoDB package</span>
+$ yum install percona-server-mongodb
+<span class="c1"># Install the Percona Backup for MongoDB package</span>
+$ yum install percona-backup-mongodb
+</pre></div>
+</div>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<ul class="last simple">
+<li><dl class="first docutils">
+<dt>Installing <em>Percona Server for MongoDB</em></dt>
+<dd><a class="reference external" href="https://www.percona.com/doc/percona-server-for-mongodb/4.2/install/yum.html#uninstalling-percona-server-for-mongodb">https://www.percona.com/doc/percona-server-for-mongodb/4.2/install/yum.html#uninstalling-percona-server-for-mongodb</a></dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Installing <em>Percona Backup for MongoDB</em></dt>
+<dd><a class="reference external" href="https://www.percona.com/doc/percona-backup-mongodb/installation.html#installing-pbm-using-yum">https://www.percona.com/doc/percona-backup-mongodb/installation.html#installing-pbm-using-yum</a></dd>
+</dl>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="section" id="uninstalling-pdmdb">
+<h2><a class="toc-backref" href="#id7">Uninstalling Percona Distribution for MongoDB</a><a class="headerlink" href="#uninstalling-pdmdb" title="Permalink to this headline">¶</a></h2>
+<p>To uninstall Percona Distribution for MongoDB, remove the packages using the package manager of your
+operation system. Optionally, disable <em>Percona</em> repository.</p>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<p>Uninstalling <em>Percona Server for MongoDB</em>:</p>
+<ul class="simple">
+<li><a class="reference external" href="https://www.percona.com/doc/percona-server-for-mongodb/4.2/install/apt.html#uninstalling-percona-server-for-mongodb">on Debian or Ubuntu</a></li>
+<li><a class="reference external" href="https://www.percona.com/doc/percona-server-for-mongodb/4.2/install/yum.html#uninstalling-percona-server-for-mongodb">on RHEL or CentOS</a></li>
+</ul>
+<dl class="last docutils">
+<dt>Uninstalling <em>Percona Backup for MongoDB</em></dt>
+<dd><a class="reference external" href="https://www.percona.com/doc/percona-backup-mongodb/uninstalling.html">https://www.percona.com/doc/percona-backup-mongodb/uninstalling.html</a></dd>
+</dl>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+    <div class="related row">
+      
+      <ul class="nav nav-pills">
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="release-notes.html" title="Release Notes"
+             >next</a></li>
+        <li class="right" >
+          <a href="index.html" title="Percona Distribution for MongoDB documentation"
+             >previous</a></li>
+        <li><a href="index.html">Percona Distribution for MongoDB 4.2</a></li> 
+      </ul>
+    </div>
+      </div>
+      <div class="sphinxsidebar  col-md-3 col-md-pull-9">
+        <div class="sphinxsidebarwrapper">
+  
+          {@ product_logo @}          
+
+          {@ product_pdf_download @}
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Installing Percona Distribution for MongoDB</a><ul>
+<li><a class="reference internal" href="#install-percona-release">Install <strong class="program">percona-release</strong></a></li>
+<li><a class="reference internal" href="#set-up-percona-repository">Set up <em>Percona</em> repository</a></li>
+<li><a class="reference internal" href="#install-packages">Install packages</a><ul>
+<li><a class="reference internal" href="#install-on-debian-ubuntu">Install on <em>Debian / Ubuntu</em></a></li>
+<li><a class="reference internal" href="#install-on-red-hat-enterprise-linux-centos">Install on  <em>Red Hat Enterprise Linux / CentOS</em></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#uninstalling-pdmdb">Uninstalling Percona Distribution for MongoDB</a></li>
+</ul>
+</li>
+</ul>
+
+<h3>This Page</h3>
+<ul class="this-page-menu">
+<li><a href="_sources/installation.rst.txt" rel="nofollow">Show Source</a></li>
+{@ product_this_page @}
+</ul>
+          {@ product_series @}
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <!-- div class="footer">
+        &copy; Copyright Percona LLC and/or its affiliates 2009-2020.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.5.5.
+    </div -->
+  </div>
+  </body>

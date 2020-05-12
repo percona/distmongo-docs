@@ -1,0 +1,31 @@
+.. _pdmdb_index:
+
+Percona Distribution for MongoDB documentation
+============================================================
+
+|pdmdb| is a collection of solutions to run and operate your
+|mongodb| efficiently with the data being consistently backed up.  
+
+The |pdmdb| includes the following compoents:
+* |PSMDB| is a fully compatible open, source, drop-in replacement
+  for MongoDB
+* |PBM| is a distributed, low-impact solution for achieving
+  consistent backups of MongoDB sharded clusters and replica sets.
+
+  
+.. seealso::
+
+   Docmentation:
+   - `PSMDB documentation
+     <https://www.percona.com/doc/percona-server-for-mongodb/4.2/index.html>`_
+   - `PBM doumentation
+     <https://www.percona.com/doc/percona-backup-mongodb/index.html>`_
+  
+
+.. toctree::
+   :maxdepth: 1
+ 
+   installation
+   release-notes
+
+
