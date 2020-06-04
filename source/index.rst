@@ -18,11 +18,10 @@ Percona Distribution for MongoDB |version| Documentation
 .. seealso::
 
    Documentation:
-   
-   - `Percona Server for MongoDB documentation
-     <https://www.percona.com/doc/percona-server-for-mongodb/4.2/index.html>`_
-   - `Percona Backup for MongoDB documentation
-     <https://www.percona.com/doc/percona-backup-mongodb/index.html>`_
+      - `Percona Server for MongoDB documentation
+        <https://www.percona.com/doc/percona-server-for-mongodb/4.2/index.html>`_
+      - `Percona Backup for MongoDB documentation
+        <https://www.percona.com/doc/percona-backup-mongodb/index.html>`_
 
      
 

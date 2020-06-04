@@ -54,12 +54,11 @@ Set up |Percona| repository
 ==============================================
 
 As soon as |percona-release| is up-to-date, set up |Percona| repository for the
-required version of |pdmdb| (``pdmdb-<version>``). For example, to set up |pdmdb|
-4.2.6, use the following command as root or via |sudo|:
+required version of |pdmdb| (``pdmdb-<version>``). For example, to set up |pdmdb| |version|, use the following command as root or via |sudo|:
 
 .. code-block:: bash
 
-   $ percona-release setup pdmdb-4.2.6
+   $ percona-release setup pdmdb-4.2.7
 
    
 Install packages
@@ -125,4 +124,6 @@ operation system. Optionally, disable |Percona| repository.
    Uninstalling |PBM|
       https://www.percona.com/doc/percona-backup-mongodb/uninstalling.html
 	 
+.. |version| replace:: 4.2.7
+
 .. include:: .res/replace.txt
