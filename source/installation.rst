@@ -1,6 +1,5 @@
 .. _install:
 
-
 =============================================     
 Installing |pdmdb|
 =============================================
@@ -29,6 +28,14 @@ in |deb| and |rpm| formats for the most 64-bit Linux distributions.
 This is the most straightforward way since |percona-release|
 enables the required repositories for you.
 
+|percona| provides two repositories for |pdmdb|. We recommend to install |pdmdb|  from the *Major Release repository* (e.g. ``pdmdb-4.2``) as it includes the latest version packages. Whenever a package is updated, the package manager of your operating system detects that and prompts you to update. As long as you update all Distribution packages at the same time, you can ensure that the packages you're using have been tested and verified by |percona|. 
+
+The *Minor Release repository* includes a particular minor release of the database and all of the packages that were tested and verified to work with that minor release (e.g. ``pdmdb-4.2.7``). You may choose to install |pdmdb| from the Minor Release repository if you have decided to standardize on a particular release which has passed rigorous testing procedures and which has been verified to work with your applications. This allows you to deploy to a new host and ensure that you'll be using the same version of all the Distribution packages, even if newer releases exist in other repositories.
+
+The disadvantage of using a Minor Release repository is that you are locked in this particular release. When potentially critical fixes are released in a later minor version of the database, you will not be prompted for an upgrade by the package manager of your operating system. You would need to change the configured repository in order to install the upgrade.
+
+----------
+
 The installation of |pdmdb| includes the following steps:
 
 #. Install the |percona-release| utility.
@@ -38,7 +45,7 @@ The installation of |pdmdb| includes the following steps:
 
 .. note::
 
-   Make sure to run all commands as root or via |sudo| during the installation.
+   Run all commands as root or via |sudo| during the installation.
 
 Install |percona-release|
 ==============================================
@@ -46,20 +53,25 @@ Install |percona-release|
 See the `Percona Software Repositories Documentation <https://www.percona.com/doc/percona-repo-config/percona-release.html#installation>`_
 for installation instructions relevant to your operating system.
 
-If you have previously installed |percona-release|, make sure to update it to the
-latest version. Refer to the `documentation <https://www.percona.com/doc/percona-repo-config/percona-release.html#updating-percona-release-to-the-latest-version>`_
-for details.
+If you have previously installed |percona-release|, make sure it is `updated to the
+latest version <https://www.percona.com/doc/percona-repo-config/percona-release.html#updating-percona-release-to-the-latest-version>`_.
 
 Set up |Percona| repository
 ==============================================
 
-As soon as |percona-release| is up-to-date, set up |Percona| repository for the
-required version of |pdmdb| (``pdmdb-<version>``). For example, to set up |pdmdb| |version|, use the following command as root or via |sudo|:
+As soon as |percona-release| is up-to-date, use the ``setup`` command to enable |Percona| repository for |pdmdb| (``pdmdb-4.2``). 
 
 .. code-block:: bash
 
-   $ percona-release setup pdmdb-4.2.7
+   $ sudo percona-release setup pdmdb-4.2
 
+.. hint::
+
+   To enable a minor version repository (e.g. pdmdb-4.2.7), use the following command:
+
+   .. code-block:: bash
+   
+      $ sudo percona-release setup pdmdb-4.2.7
    
 Install packages
 ==============================================
