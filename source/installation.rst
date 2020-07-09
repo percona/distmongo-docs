@@ -43,9 +43,7 @@ The installation of |pdmdb| includes the following steps:
    |pdmdb|.
 #. Install the packages.
 
-.. note::
-
-   Run all commands as root or via |sudo| during the installation.
+|tip.run-all.root|
 
 Install |percona-release|
 ==============================================
@@ -102,7 +100,7 @@ Use the following commands to install |PSMDB| and / or
 Install on  *Red Hat Enterprise Linux / CentOS*
 -------------------------------------------------
 
-Use the following commands to install |PSMDB| and /or
+Use the following commands to install |PSMDB| and / or
 |PBM|:
 
 .. code-block:: bash
