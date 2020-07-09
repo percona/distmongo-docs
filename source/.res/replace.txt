@@ -18,3 +18,4 @@
 .. |amazon-linux| replace:: Amazon Linux
 .. |pbm| replace:: *Percona Backup for MongoDB*
 .. |psmdb| replace:: *Percona Server for MongoDB*
+.. |tip.run-all.root|  replace:: Run the following commands as root or by using the :program:`sudo` command.
