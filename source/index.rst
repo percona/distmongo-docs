@@ -1,7 +1,7 @@
 .. _pdmdb_index:
 
 ============================================================
-Percona Distribution for MongoDB |version| Documentation
+|pdmdb| |version| Documentation
 ============================================================
 
 |pdmdb| is a collection of solutions to run and operate your
@@ -17,18 +17,29 @@ Percona Distribution for MongoDB |version| Documentation
   
 .. seealso::
 
-   Documentation:
+   Percona Documentation:
       - `Percona Server for MongoDB documentation
         <https://www.percona.com/doc/percona-server-for-mongodb/4.2/index.html>`_
       - `Percona Backup for MongoDB documentation
         <https://www.percona.com/doc/percona-backup-mongodb/index.html>`_
 
+
+Installation and Upgrade
+============================================================
      
 
 .. toctree::
    :maxdepth: 1
  
    installation
+
+
+Release Notes
+============================================================
+
+.. toctree::
+   :maxdepth: 2
+
    release-notes
 
 .. include:: .res/replace.txt
