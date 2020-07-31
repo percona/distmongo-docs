@@ -29,6 +29,7 @@ Percona Distribution for MongoDB |version| Documentation
    :maxdepth: 1
  
    installation
+   minor-upgrade
    release-notes
 
 .. include:: .res/replace.txt
