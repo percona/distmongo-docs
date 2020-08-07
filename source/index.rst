@@ -32,7 +32,8 @@ Installation and Upgrade
    :maxdepth: 1
  
    installation
-
+   minor-upgrade
+   
 
 Release Notes
 ============================================================
