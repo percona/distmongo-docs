@@ -28,6 +28,8 @@ in |deb| and |rpm| formats for the most 64-bit Linux distributions.
 This is the most straightforward way since |percona-release|
 enables the required repositories for you.
 
+.. _repository-overview:
+
 |percona| provides two repositories for |pdmdb|. We recommend to install |pdmdb|  from the *Major Release repository* (e.g. ``pdmdb-4.2``) as it includes the latest version packages. Whenever a package is updated, the package manager of your operating system detects that and prompts you to update. As long as you update all Distribution packages at the same time, you can ensure that the packages you're using have been tested and verified by |percona|. 
 
 The *Minor Release repository* includes a particular minor release of the database and all of the packages that were tested and verified to work with that minor release (e.g. ``pdmdb-4.2.8``). You may choose to install |pdmdb| from the Minor Release repository if you have decided to standardize on a particular release which has passed rigorous testing procedures and which has been verified to work with your applications. This allows you to deploy to a new host and ensure that you'll be using the same version of all the Distribution packages, even if newer releases exist in other repositories.
@@ -70,6 +72,8 @@ As soon as |percona-release| is up-to-date, use the ``setup`` command to enable 
    .. code-block:: bash
    
       $ sudo percona-release setup pdmdb-4.2.8
+
+.. _pdmdb-install:
    
 Install packages
 ==============================================
