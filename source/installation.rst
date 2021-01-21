@@ -8,25 +8,9 @@ Installing |pdmdb|
    :local:
 
 Percona provides installation packages for the |pdmdb|
-in |deb| and |rpm| formats for the most 64-bit Linux distributions.
+in |deb| and |rpm| formats for the most 64-bit Linux distributions. Find the list of supported platforms on the `Percona Software and Platform Lifecycle <https://www.percona.com/services/policies/percona-software-platform-lifecycle#mongodb>`_ page.
 
-.. list-table:: 
-   :widths: 100 
-   :header-rows: 1
-
-   * - Supported Distributions
-   * - * Debian 9 (stretch)
-       * Debian 10 (buster)
-       * Ubuntu 16.04 (Xenial Xerus)
-       * Ubuntu 18.04 LTS (Bionic Beaver)
-       * Ubuntu 20.04 LTS (Focal Fossa)
-   * - * Red Hat Enterprise Linux / CentOS 6
-       * Red Hat Enterprise Linux / CentOS 7
-       * Red Hat Enterprise Linux / CentOS 8
-
-|pdmdb| is installed using the |percona-release| utility.
-This is the most straightforward way since |percona-release|
-enables the required repositories for you.
+We recommend installing the |pdmdb| from Percona repositories using the |percona-release| utility. This is the most straightforward way since |percona-release| enables the required repositories for you.
 
 .. _repository-overview:
 
