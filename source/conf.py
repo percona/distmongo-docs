@@ -163,6 +163,13 @@ html_theme_path = ['.', './percona-theme']
 # "<project> v<release> documentation" by default.
 #
 
+# Redirect info for Edit on Github link
+html_context = {
+    'repo_name': '/percona/distmongo-docs',
+    'repo_url': 'https://github.com/percona/distmongo-docs',
+    'edit_uri': 'edit/4.2/source'
+}
+
 html_title = ' '.join([project, version, 'Documentation'])
 
 # A shorter title for the navigation bar.  Default is the same as html_title.
@@ -205,7 +212,7 @@ html_static_path = ['_static']
 # Custom sidebar templates, maps document names to template names.
 #
 html_sidebars = {
-        '**': ['localtoc.html', 'relations.html', 'sourcelink.html', 'searchbox.html'],
+        '**': ['localtoc.html', 'relations.html', 'sourcelink.html', 'edit.html', 'searchbox.html'],
         'using/windows': ['windowssidebar.html'],
 }
 
