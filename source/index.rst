@@ -7,7 +7,7 @@
 |pdmdb| is a collection of solutions to run and operate your
 |mongodb| efficiently with the data being consistently backed up.  
 
-|pdmdb| includes the following components:
+|pdmdb| includes the following components designed and tested to work together:
 
 * |PSMDB| is a fully compatible open source, drop-in replacement
   for MongoDB.
