@@ -19,11 +19,11 @@ Enable |percona| repository
 
 If you installed |pdmdb| from the Major release repository, this step is optional. This repository automatically includes new version packages and you receive a prompt for an upgrade from the package manager of your operating system.
 
-If you installed |pdmdb| from the Minor release repository, you must enable the new version repository (e.g. ``pdmdb-4.4.0``) to upgrade. We recommend to use the ``setup`` subcommand:
+If you installed |pdmdb| from the Minor release repository, you must enable the new version repository (e.g. ``pdmdb-5.0.1``) to upgrade. We recommend to use the ``setup`` subcommand:
 
 .. code-block:: bash
  
-   $ sudo percona-release setup pdmdb-4.4.0
+   $ sudo percona-release setup pdmdb-5.0.1
 
 .. seealso::
 

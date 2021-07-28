@@ -19,7 +19,8 @@ html_theme_options = {
     'version_info': {
         "4.2": "https://distmongo-docs-42.netlify.app/",
         "4.4": "https://distmongo-docs-44.netlify.app/",
-        "Latest": "https://www.percona.com/doc/percona-distribution-for-mongodb/4.4/index.html"
+        "5.0": "https://distmongo-docs-50.netlify.app/",
+        "Latest": "https://www.percona.com/doc/percona-distribution-for-mongodb/5.0/index.html"
     },
 }
 html_logo = '../_static/images/percona-logo.svg'
