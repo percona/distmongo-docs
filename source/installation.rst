@@ -15,7 +15,7 @@ Pakages are available in |deb| and |rpm| formats Percona repositories. We recomm
 
 |percona| provides two repositories for |pdmdb|. We recommend to install |pdmdb|  from the *Major Release repository* (e.g. ``pdmdb-5.0``) as it includes the latest version packages. Whenever a package is updated, the package manager of your operating system detects that and prompts you to update. As long as you update all Distribution packages at the same time, you can ensure that the packages you're using have been tested and verified by |percona|. 
 
-The *Minor Release repository* includes a particular minor release of the database and all of the packages that were tested and verified to work with that minor release (e.g. ``pdmdb-5.0.1``). You may choose to install |pdmdb| from the Minor Release repository if you have decided to standardize on a particular release which has passed rigorous testing procedures and which has been verified to work with your applications. This allows you to deploy to a new host and ensure that you'll be using the same version of all the Distribution packages, even if newer releases exist in other repositories.
+The *Minor Release repository* includes a particular minor release of the database and all of the packages that were tested and verified to work with that minor release (e.g. ``pdmdb-5.0.2``). You may choose to install |pdmdb| from the Minor Release repository if you have decided to standardize on a particular release which has passed rigorous testing procedures and which has been verified to work with your applications. This allows you to deploy to a new host and ensure that you'll be using the same version of all the Distribution packages, even if newer releases exist in other repositories.
 
 The disadvantage of using a Minor Release repository is that you are locked in this particular release. When potentially critical fixes are released in a later minor version of the database, you will not be prompted for an upgrade by the package manager of your operating system. You would need to change the configured repository in order to install the upgrade.
 
@@ -50,11 +50,11 @@ As soon as |percona-release| is up-to-date, use the ``setup`` command to enable 
 
 .. hint::
 
-   To enable a minor version repository (e.g. pdmdb-5.0.1), use the following command:
+   To enable a minor version repository (e.g. pdmdb-5.0.2), use the following command:
 
    .. code-block:: bash
    
-      $ sudo percona-release setup pdmdb-5.0.1
+      $ sudo percona-release setup pdmdb-5.0.2
 
 .. _pdmdb-install:
    

@@ -7,5 +7,7 @@ Release Notes
 .. toctree::
    :maxdepth: 1
 
+   release-notes-v5.0.2
+
    
   
