@@ -34,11 +34,10 @@ The installation of |pdmdb| includes the following steps:
 Install |percona-release|
 ==============================================
 
-See the `Percona Software Repositories Documentation <https://www.percona.com/doc/percona-repo-config/percona-release.html#installation>`_
-for installation instructions relevant to your operating system.
+Follow the `installation instructions <https://www.percona.com/doc/percona-repo-config/installing.html>`_ relevant to your operating system in the Percona Software Repositories Documentation to install ``percona-release``.
 
 If you have previously installed |percona-release|, make sure it is `updated to the
-latest version <https://www.percona.com/doc/percona-repo-config/percona-release.html#updating-percona-release-to-the-latest-version>`_.
+latest version <https://www.percona.com/doc/percona-repo-config/updating.html>`_.
 
 Set up |Percona| repository
 ==============================================
