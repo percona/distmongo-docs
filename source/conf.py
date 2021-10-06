@@ -93,7 +93,7 @@ exclude_patterns = []
 #
 # default_role = None
 
-primary_domain = 'psdom'
+#primary_domain = 'psdom'
 
 # If true, '()' will be appended to :func: etc. cross-reference text.
 #
