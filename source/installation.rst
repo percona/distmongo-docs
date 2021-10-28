@@ -72,17 +72,15 @@ Use the following commands to install |PSMDB| and / or
 .. code-block:: bash
 
    # Install the Percona Server for MongoDB package
-   $ apt-get install percona-server-mongodb
+   $ sudo apt install percona-server-mongodb
    # Install the Percona Backup for MongoDB package
-   $ apt-get install percona-backup-mongodb
+   $ sudo apt install percona-backup-mongodb
    
    
 .. seealso::
 
-      * Installing |PSMDB|
-	   https://www.percona.com/doc/percona-server-for-mongodb/4.2/install/apt.html
-      * Installing |PBM|
-	   https://www.percona.com/doc/percona-backup-mongodb/installation.html#installing-pbm-using-apt
+      * `Installing Percona Server for MongoDB <https://www.percona.com/doc/percona-server-for-mongodb/4.2/install/apt.html>`_
+      * `Installing Percona Backup for MongoDB <https://www.percona.com/doc/percona-backup-mongodb/installation.html#installing-pbm-using-apt>`_
     
 Install on  *Red Hat Enterprise Linux / CentOS*
 -------------------------------------------------
@@ -93,16 +91,14 @@ Use the following commands to install |PSMDB| and / or
 .. code-block:: bash
 
    # Install the Percona Server for MongoDB package
-   $ yum install percona-server-mongodb
+   $ sudo yum install percona-server-mongodb
    # Install the Percona Backup for MongoDB package
-   $ yum install percona-backup-mongodb
+   $ sudo yum install percona-backup-mongodb
 
 .. seealso::
 
-      * Installing |PSMDB|
-	   https://www.percona.com/doc/percona-server-for-mongodb/4.2/install/yum.html#uninstalling-percona-server-for-mongodb
-      * Installing |PBM|
-	   https://www.percona.com/doc/percona-backup-mongodb/installation.html#installing-pbm-using-yum  
+      * `Installing Percona Server for MongoDB <https://www.percona.com/doc/percona-server-for-mongodb/4.2/install/yum.html>`_
+      * `Installing Percona Backup for MongoDB <https://www.percona.com/doc/percona-backup-mongodb/installation.html#installing-pbm-using-yum>`_  
 
 Uninstalling |pdmdb|
 ==============================================
@@ -114,12 +110,11 @@ operation system. Optionally, disable |Percona| repository.
 
    Uninstalling |PSMDB|:       
       * `on Debian or Ubuntu
-        <https://www.percona.com/doc/percona-server-for-mongodb/4.2/install/apt.html#uninstalling-percona-server-for-mongodb>`_
+        <https://www.percona.com/doc/percona-server-for-mongodb/4.2/install/uninstall.html#apt-uninstall>`_
       * `on RHEL or CentOS
-        <https://www.percona.com/doc/percona-server-for-mongodb/4.2/install/yum.html#uninstalling-percona-server-for-mongodb>`_
+        <https://www.percona.com/doc/percona-server-for-mongodb/4.2/install/uninstall.html#yum-uninstall>`_
 
-   Uninstalling |PBM|
-      https://www.percona.com/doc/percona-backup-mongodb/uninstalling.html
+   `Uninstalling Percona Backup for MongoDB <https://www.percona.com/doc/percona-backup-mongodb/uninstalling.html>`_
 	 
 .. |version| replace:: 4.2.9
 
