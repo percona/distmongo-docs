@@ -18,14 +18,20 @@ html_theme_options = {
     'version_dropdown': True,
     'version_dropdown_text': 'Versions',
     'version_info': {
-        "4.2": "https://distmongo-docs-42.netlify.app/",
-        "4.4": "https://distmongo-docs-44.netlify.app/",
-        "Latest": "https://www.percona.com/doc/percona-distribution-for-mongodb/4.4/index.html"
+        "4.2": "https://docs.percona.com/percona-distribution-for-mongodb/4.2/",
+        "4.4": "https://docs.percona.com/percona-distribution-for-mongodb/4.4/",
+        "Latest": "https://docs.percona.com/percona-distribution-for-mongodb/latest/index.html"
     },
 }
 html_logo = '../_static/images/percona-logo.svg'
 html_favicon = '../_static/images/percona_favicon.ico'
 pygments_style = 'emacs'
-gitstamp_fmt = '%b %d, %Y'
+gitstamp_fmt = "%b %d, %Y"
+# Specify the text pattern that won't be copied with the code block contents
 copybutton_prompt_text = '$'
-#html_last_updated_fmt = ''
+# Add any paths that contain templates here, relative to this directory.
+templates_path = ['../_templates/theme']
+# Path to custom css files. These will override the default css attribute if they exist
+html_css_files = [
+    '../_static/css/material.css',
+]
