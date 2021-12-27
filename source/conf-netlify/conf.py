@@ -17,10 +17,10 @@ html_theme_options = {
     'version_dropdown': True,
     'version_dropdown_text': 'Versions',
     'version_info': {
-        "4.2": "https://distmongo-docs-42.netlify.app/",
-        "4.4": "https://distmongo-docs-44.netlify.app/",
-        "5.0": "https://distmongo-docs-50.netlify.app/",
-        "Latest": "https://www.percona.com/doc/percona-distribution-for-mongodb/5.0/index.html"
+        "4.2": "https://docs.percona.com/percona-distribution-for-mongodb/4.2/",
+        "4.4": "https://docs.percona.com/percona-distribution-for-mongodb/4.4/",
+        "5.0": "https://docs.percona.com/percona-distribution-for-mongodb/5.0/",
+        "Latest": "https://docs.percona.com/percona-distribution-for-mongodb/latest/"
     },
 }
 html_logo = '../_static/images/percona-logo.svg'
