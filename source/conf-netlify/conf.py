@@ -25,6 +25,10 @@ html_theme_options = {
 }
 html_logo = '../_static/images/percona-logo.svg'
 html_favicon = '../_static/images/percona_favicon.ico'
+html_sidebars = {
+        '**': ['localtoc.html', 'globaltoc.html', 'sourcelink.html', 'searchbox.html'],
+        'using/windows': ['windowssidebar.html'],
+}
 pygments_style = 'emacs'
 gitstamp_fmt = '%b %d, %Y'
 copybutton_prompt_text = '$'
