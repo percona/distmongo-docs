@@ -25,7 +25,7 @@ This release of |pdmdb| is based on the production release of `Percona Server fo
 
 Release Highlights
 ==================
-This release of Percona Distribution for MongoDB includes bug fixes, provided by MongoDB and included in Percona Server for MongoDB. The most notable from  them are the following:
+This release of Percona Distribution for MongoDB includes bug fixes, provided by MongoDB and included in Percona Server for MongoDB. The most notable from them are the following:
 
 * Added histograms to track latency for tasks scheduled on the reactor thread.
 * Fixed an issue when resharding a collection that could cause data inconsistency (lost writes) due to incorrect actions by the ReshardingCoordinator and attempts to commit anyway. Also could cause fassert() to config server primary.
