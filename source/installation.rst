@@ -9,7 +9,7 @@ Installing |pdmdb|
 
 Percona provides installation packages for the |pdmdb| for the most 64-bit Linux distributions. Find the list of supported platforms on the `Percona Software and Platform Lifecycle <https://www.percona.com/services/policies/percona-software-platform-lifecycle#mongodb>`_ page.
 
-Pakages are available in |deb| and |rpm| formats Percona repositories. We recommend installing the |pdmdb| from Percona repositories using the |percona-release| utility. This is the most straightforward way since |percona-release| enables the required repositories for you.
+Pakages are available in |deb| and |rpm| formats Percona repositories. We recommended installing the |pdmdb| from Percona repositories using the |percona-release| utility. This is the most straightforward way since |percona-release| enables the required repositories for you.
 
 .. _repository-overview:
 
