@@ -319,7 +319,7 @@ latex_documents = [
 # The name of an image file (relative to this directory) to place at the top of
 # the title page.
 #
-latex_logo = 'Percona-Logo-Color.png'
+latex_logo = 'Percona_Logo_Color.png'
 
 # For "manual" documents, if this is true, then toplevel headings are parts,
 # not chapters.
