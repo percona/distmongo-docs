@@ -59,7 +59,7 @@ The most notable bug fixes, provided by MongoDB and included in Percona Server f
 
 * Support for `physical backups <https://docs.percona.com/percona-backup-mongodb/backup-types.html#backup-types>`_ in |PSMDB| starting from versions 4.2.15-16 and 4.4.6-8 and higher. Physical backups drastically speed up backup and restore performance for large databases (several terabytes). This is a technical preview feature. 
 * `Oplog replay <https://docs.percona.com/percona-backup-mongodb/oplog-replay.html>`_ from the arbitrary start time. This reduces Recovery Point Objective (RPO) when database is recovered from physical or storage-level backups.
-* Ability to configure compression method and level for |PITR| chunks and compression level for backups.
+* Ability to configure compression method and level for point-in-time recovery chunks and compression level for backups.
 * Ability to configure the number of S3 multipart upload chunks to comply with various S3-compatible storage provider requirements. 
 * Ability to configure the number of upload retries. This facilitates data upload in case of unstable network connection.
 
