@@ -37,19 +37,27 @@ help:
 clean:
 	-rm -rf $(BUILDDIR)/*
 
+#html:
+#	@echo "Downloading percona-theme ..."
+#	@wget -O percona-theme.tar.gz https://www.percona.com/docs/theme-1-4/percona-server/5.6
+#	@echo "Extracting theme."
+#	@tar -mzxf percona-theme.tar.gz
+#	@rm -rf source/percona-theme
+#	@mv percona-theme-1-4 source/percona-theme
+#	@rm percona-theme.tar.gz
+#	@echo "Building html doc"
+#
+#	$(SPHINXBUILD) -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html
+#	@echo
+#	@echo "Build finished. The HTML pages are in $(BUILDDIR)/html."
+
 html:
-	@echo "Downloading percona-theme ..."
-	@wget -O percona-theme.tar.gz https://www.percona.com/docs/theme-1-4/percona-server/5.6
-	@echo "Extracting theme."
-	@tar -mzxf percona-theme.tar.gz
-	@rm -rf source/percona-theme
-	@mv percona-theme-1-4 source/percona-theme
-	@rm percona-theme.tar.gz
 	@echo "Building html doc"
 
 	$(SPHINXBUILD) -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html
 	@echo
 	@echo "Build finished. The HTML pages are in $(BUILDDIR)/html."
+
 
 netlify:
 	$(SPHINXBUILD) -b html $(ALLSPHINXOPTS) -c source/conf-material $(BUILDDIR)/html
