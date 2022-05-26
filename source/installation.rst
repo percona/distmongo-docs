@@ -69,11 +69,16 @@ Install on *Debian / Ubuntu*
 Use the following commands to install |PSMDB| and / or
 |PBM|:
 
+Install the Percona Server for MongoDB package
+
 .. code-block:: bash
 
-   # Install the Percona Server for MongoDB package
    $ sudo apt install percona-server-mongodb
-   # Install the Percona Backup for MongoDB package
+
+Install the Percona Backup for MongoDB package
+
+.. code-block:: bash
+
    $ sudo apt install percona-backup-mongodb
    
    
@@ -88,11 +93,16 @@ Install on  *Red Hat Enterprise Linux / CentOS*
 Use the following commands to install |PSMDB| and / or
 |PBM|:
 
+Install the Percona Server for MongoDB package:
+
 .. code-block:: bash
 
-   # Install the Percona Server for MongoDB package
    $ sudo yum install percona-server-mongodb
-   # Install the Percona Backup for MongoDB package
+
+Install the Percona Backup for MongoDB package
+
+.. code-block:: bash
+
    $ sudo yum install percona-backup-mongodb
 
 .. seealso::
