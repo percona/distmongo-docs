@@ -36,13 +36,13 @@ Stop |PSMDB|:
 
 .. code-block:: bash
 
-   $ systemctl mongod stop
+   $ sudo systemctl mongod stop
 
 Stop |pbm-agent|:
 
 .. code-block:: bash
 
-  $ systmectl pbm-agent stop
+  $ sudo systmectl pbm-agent stop
 
 Install new version packages
 ===========================================================================
@@ -56,13 +56,13 @@ Start |PSMDB|:
 
 .. code-block:: bash
 
-   $ systemctl mongod start
+   $ sudo systemctl mongod start
 
 Start |pbm-agent|:
 
 .. code-block:: bash
 
-  $ systmectl pbm-agent start
+  $ sudo systmectl pbm-agent start
 
 
 .. include:: .res/replace.txt

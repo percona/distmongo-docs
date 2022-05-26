@@ -33,11 +33,11 @@ The installation of |pdmdb| includes the following steps:
 Install |percona-release|
 ==============================================
 
-See the `Percona Software Repositories Documentation <https://www.percona.com/doc/percona-repo-config/percona-release.html#installation>`_
+See the `Percona Software Repositories Documentation <https://docs.percona.com/percona-software-repositories/installing.html>`_
 for installation instructions relevant to your operating system.
 
 If you have previously installed |percona-release|, make sure it is `updated to the
-latest version <https://www.percona.com/doc/percona-repo-config/percona-release.html#updating-percona-release-to-the-latest-version>`_.
+latest version <https://docs.percona.com/percona-software-repositories/updating.html>`_.
 
 Set up |Percona| repository
 ==============================================
@@ -72,9 +72,9 @@ Use the following commands to install |PSMDB| and / or
 .. code-block:: bash
 
    # Install the Percona Server for MongoDB package
-   $ apt-get install percona-server-mongodb
+   $ sudo apt install percona-server-mongodb
    # Install the Percona Backup for MongoDB package
-   $ apt-get install percona-backup-mongodb
+   $ sudo apt install percona-backup-mongodb
    
    
 .. seealso::
@@ -93,9 +93,9 @@ Use the following commands to install |PSMDB| and / or
 .. code-block:: bash
 
    # Install the Percona Server for MongoDB package
-   $ yum install percona-server-mongodb
+   $ sudo yum install percona-server-mongodb
    # Install the Percona Backup for MongoDB package
-   $ yum install percona-backup-mongodb
+   $ sudo yum install percona-backup-mongodb
 
 .. seealso::
 
