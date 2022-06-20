@@ -5,7 +5,7 @@
 ================================================================================
 
 :Date: |date|
-:Installation: `Installing Percona Distribution for MongoDB <https://www.percona.com/doc/percona-distribution-for-mongodb/5.0/installation.html>`_
+:Installation: :ref:`install`
 
 Percona Distribution for MongoDB is a freely available MongoDB database alternative, giving you a single solution that combines enterprise components from the open source community, designed and tested to work together. The aim of Percona Distribution for MongoDB is to enable you to run and operate your
 |mongodb| efficiently with the data being consistently backed up.
@@ -39,7 +39,7 @@ The bug fixes, provided by MongoDB and included in Percona Server for MongoDB an
 |PBM| 1.8.0 improvements include the following:
 
 * Ability to `restore data to a replica set with a different name and configuration <https://docs.percona.com/percona-backup-mongodb/running.html#pbm-restore-new-env>`_. This extends the list of environments compatible for the restore.
-* When you use EBS-snapshots or other tools for physical backups, you `no longer have to create a mandatory base backup snapshot in Percona Backup for MongoDB as the starting point for Point-in-Time Recovery oplog slicing <https://docs.percona.com/percona-backup-mongodb/configuration-options.html#pitr-oplog-only>`_. This reduces time and effort on managing excessive backups and makes |PITR| from physical or storage-level backups more straightforward.
+* When you use EBS-snapshots or other tools for physical backups, you `no longer have to create a mandatory base backup snapshot in Percona Backup for MongoDB as the starting point for Point-in-Time Recovery oplog slicing <https://docs.percona.com/percona-backup-mongodb/configuration-options.html#pitr-oplog-only>`_. This reduces time and effort on managing excessive backups and makes Point-in-time recovery from physical or storage-level backups more straightforward.
 * The ability to wait for the backup operation to finish before doing further actions through the session lock. This simplifies the automation of operations with |PBM|.
 * Ability to define backup compression level and method in |PBM| configuration.  
 * To simplify the |PBM| configuration, the example configuration file is now included in the |PBM| package. 
