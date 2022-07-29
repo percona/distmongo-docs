@@ -32,6 +32,7 @@ Installation and Upgrade
    :maxdepth: 1
  
    installation
+   repo-overview
    minor-upgrade
    
 
