@@ -35,7 +35,9 @@ sys.path.append(os.path.abspath('ext'))
 author = "Percona LLC and/or its affiliates 2015-2022"
 extensions = ['sphinx.ext.intersphinx', 'sphinx.ext.todo', 
               'sphinx.ext.coverage', 'sphinx.ext.ifconfig', 
-              'sphinx.ext.extlinks', 'sphinx_gitstamp', 'sphinx_copybutton']
+              'sphinx.ext.extlinks', 'sphinx_gitstamp', 
+              'sphinx_copybutton', 'sphinx_tabs.tabs',
+              'sphinx_togglebutton']
 
 # Add any paths that contain templates here, relative to this directory.
 #templates_path = ['_templates']
