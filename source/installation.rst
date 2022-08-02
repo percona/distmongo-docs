@@ -1,110 +1,132 @@
 .. _install:
 
 =============================================     
-Installing |pdmdb|
+Install |pdmdb|
 =============================================
 
-.. contents::
-   :local:
+We recommend to install |pdmdb| from Percona repositories using the package manager of your operating system. Find the list of supported Linux distributions on the `Percona Software and Platform Lifecycle <https://www.percona.com/services/policies/percona-software-platform-lifecycle#mongodb>`_ page.
 
-Percona provides installation packages for the |pdmdb| for the most 64-bit Linux distributions. Find the list of supported platforms on the `Percona Software and Platform Lifecycle <https://www.percona.com/services/policies/percona-software-platform-lifecycle#mongodb>`_ page.
+Alternatively, you can download |pdmdb| from Percona website and install it manually from binary tarballs. 
 
-Pakages are available in |deb| and |rpm| formats Percona repositories. We recommend installing the |pdmdb| from Percona repositories using the |percona-release| utility. This is the most straightforward way since |percona-release| enables the required repositories for you.
+Choose how you wish to install |pdmdb|:
 
-.. _repository-overview:
+.. tabs:: 
 
-|percona| provides two repositories for |pdmdb|. We recommend to install |pdmdb|  from the *Major Release repository* (e.g. ``pdmdb-5.0``) as it includes the latest version packages. Whenever a package is updated, the package manager of your operating system detects that and prompts you to update. As long as you update all Distribution packages at the same time, you can ensure that the packages you're using have been tested and verified by |percona|. 
+   .. tab:: On Debian / Ubuntu
+ 
+      |tip.run-all.root|
 
-The *Minor Release repository* includes a particular minor release of the database and all of the packages that were tested and verified to work with that minor release (e.g. ``pdmdb-5.0.1``). You may choose to install |pdmdb| from the Minor Release repository if you have decided to standardize on a particular release which has passed rigorous testing procedures and which has been verified to work with your applications. This allows you to deploy to a new host and ensure that you'll be using the same version of all the Distribution packages, even if newer releases exist in other repositories.
+      1. Install |percona-release|
 
-The disadvantage of using a Minor Release repository is that you are locked in this particular release. When potentially critical fixes are released in a later minor version of the database, you will not be prompted for an upgrade by the package manager of your operating system. You would need to change the configured repository in order to install the upgrade.
+         Install the |percona-release| repository management tool to subscribe to Percona repositories:
 
-----------
+         * Install ``curl``:
 
-The installation of |pdmdb| includes the following steps:
+           .. code-block:: bash
 
-#. Install the |percona-release| utility.
-#. Set up the |Percona| repository for the required version of
-   |pdmdb|.
-#. Install the packages.
+              $ sudo apt update
+              $ sudo apt install curl 
 
-|tip.run-all.root|
+         * Download the |percona-release| package
 
-Install |percona-release|
-==============================================
+           .. code-block:: bash
 
-See the `Percona Software Repositories Documentation <https://docs.percona.com/percona-software-repositories/installing.html>`_
-for installation instructions relevant to your operating system.
+              $ curl -O https://repo.percona.com/apt/percona-release_latest.generic_all.deb
+         
+         * Install the package and dependencies
 
-If you have previously installed |percona-release|, make sure it is `updated to the
-latest version <https://docs.percona.com/percona-software-repositories/updating.html>`_.
+           .. code-block:: bash 
 
-Set up |Percona| repository
-==============================================
+              $ sudo apt install gnupg2 lsb-release ./percona-release_latest.generic_all.deb
 
-As soon as |percona-release| is up-to-date, use the ``setup`` command to enable |Percona| repository for |pdmdb| (``pdmdb-5.0``). 
+          * Refresh the local cache
+            
+            .. code-block:: bash
 
-.. code-block:: bash
+               $ supo apt update
 
-   $ sudo percona-release setup pdmdb-5.0
+       #. Enable the repository
 
-.. hint::
+          Percona provides :ref:`two repositories <repo-overview>` for |pdmdb|. To enable a repo, we recommend using the ``setup`` command:
+       
+          .. code-block:: bash
 
-   To enable a minor version repository (e.g. pdmdb-5.0.1), use the following command:
+             $ sudo percona-release setup pdmdb-5.0
 
-   .. code-block:: bash
-   
-      $ sudo percona-release setup pdmdb-5.0.1
+       #. Install |pdmdb| packages:
 
-.. _pdmdb-install:
-   
-Install packages
-==============================================
+         .. code-block:: bash
 
-Install |pdmdb| components using the package manager of your operating system.
+            $ sudo apt install percona-server-mongodb percona-backup-mongodb
 
-Install on *Debian / Ubuntu*
-----------------------------------------------
+   .. tab:: On RHEL / derivatives
 
-Use the following commands to install |PSMDB| and / or
-|PBM|:
+      |tip.run-all.root|
 
-.. code-block:: bash
+      1. Install |percona-release|
 
-   # Install the Percona Server for MongoDB package
-   $ sudo apt install percona-server-mongodb
-   # Install the Percona Backup for MongoDB package
-   $ sudo apt install percona-backup-mongodb
-   
-   
-.. seealso::
+         Install the |percona-release| repository management tool to subscribe to Percona repositories:
 
-      * Installing |PSMDB|
-	   https://www.percona.com/doc/percona-server-for-mongodb/5.0/install/apt.html
-      * Installing |PBM|
-	   https://www.percona.com/doc/percona-backup-mongodb/installation.html#installing-pbm-using-apt
-    
-Install on  *Red Hat Enterprise Linux / CentOS*
--------------------------------------------------
+         .. code-block:: bash
 
-Use the following commands to install |PSMDB| and / or
-|PBM|:
+            $ sudo yum install -y https://repo.percona.com/yum/percona-release-latest.noarch.rpm
+         
+      #. Enable the repository 
 
-.. code-block:: bash
+         Percona provides :ref:`two repositories <repo-overview>` for |pdmdb|. To enable a repo, we recommend using the ``setup`` command:
 
-   # Install the Percona Server for MongoDB package
-   $ sudo yum install percona-server-mongodb
-   # Install the Percona Backup for MongoDB package
-   $ sudo yum install percona-backup-mongodb
+         .. code-block:: bash
 
-.. seealso::
+            $ sudo percona-release setup pdmdb-5.0
 
-      * Installing |PSMDB|
-	   https://www.percona.com/doc/percona-server-for-mongodb/5.0/install/yum.html#uninstalling-percona-server-for-mongodb
-      * Installing |PBM|
-	   https://www.percona.com/doc/percona-backup-mongodb/installation.html#installing-pbm-using-yum  
+      #. Install |pdmdb| packages
 
-Uninstalling |pdmdb|
+         .. code-block:: bash
+
+            $ sudo yum install percona-server-mongodb percona-backup-mongodb
+
+   .. tab:: From tarballs
+
+      You can find binary tarbals on the `Percona software downloads page <https://www.percona.com/downloads/percona-distribution-mongodb-5.0/>`_
+
+      1. Select *Generic Linux* from the dropdown.
+      2. Download binary tarballs.  Replace the ``<version>`` variable with the desired version:
+
+         .. code-block:: bash 
+
+            $ wget https://downloads.percona.com/downloads/percona-distribution-mongodb-LATEST/percona-distribution-mongodb-<version>/binary/tarball/percona-backup-mongodb-<version>-x86_64.tar.gz 
+            $ wget https://downloads.percona.com/downloads/percona-distribution-mongodb-LATEST/percona-distribution-mongodb-<version>/binary/tarball/percona-server-mongodb-<version>-x86_64.glibc2.17.tar.gz
+
+      #. Extract the tarballs
+
+         .. code-block:: bash
+
+            $ tar -xf percona-backup-mongodb-<version>-x86_64.tar.gz 
+            $ tar -xf percona-server-mongodb-<version>-x86_64.glibc2.17.tar.gz
+      
+      #. Export the location of the binaries to the PATH variable
+         
+         For example, if you’ve extracted the tarballs to your home directory, the commands would be the following:
+
+         .. code-block:: bash
+
+            $ export PATH=~/percona-backup-mongodb-<version>/:~/percona-server-mongodb-<version>/:$PATH
+
+      #. Create the default data directory for |PSMDB|:
+
+         .. code-block:: bash
+            
+            $ sudo mkdir -p /data/db
+
+      #. Check that you have read and write permissions for the data directory and run ``mongod``.
+
+   .. tab:: On Kubernetes
+
+      Deploy and run |pdmdb| on Kubernetes with `Percona Operator for MongoDB <https://www.percona.com/software/percona-kubernetes-operators>`_. See `Quickstart guides <https://www.percona.com/doc/kubernetes-operator-for-psmongodb/index.html#quickstart-guides>`_ for the installation instructions on your favorite Kubernetes flavor.
+
+To set up monitoring of your |pdmdb| in PMM, see `Set up PMM to monitor MongoDB <https://docs.percona.com/percona-monitoring-and-management/setting-up/client/mongodb.html>`_ 
+
+Uninstall |pdmdb|
 ==============================================
 
 To uninstall |pdmdb|, remove the packages using the package manager of your
