@@ -26,7 +26,7 @@ Release Highlights
 
    With this release, the ``kmipKeyIdentifier`` option for data-at-rest encryption using the KMIP protocol (tech preview feature) is optional. This change serves to improve the user experience with |PSMDB| as the option names and behavior are similar to those of MongoDB Enterprise. However, if data-at-rest encryption using KMIP is configured, it is the breaking change because the standard upgrade procedure does not work. We do recommend to use the data-at-rest encryption using the KMIP protocol only for testing purposes until it is in the general availability stage.
 
-   If you have configured data at rest encryption and it is absolutely necessary to upgrade your MongoDB instance, see the :ref:`upgrade instructions <upgrade-kmip>`.
+   If you have configured data at rest encryption and it is absolutely necessary to upgrade your MongoDB instance, see the `upgrade instructions <https://docs.percona.com/percona-server-for-mongodb/5.0/kmip.html#upgrade-kmip>`_.
 
 
 This release of |pdmdb| includes bug fixes and improvements provided by MongoDB and included in Percona Server for MongoDB and |pdmdb|. Among them are the following:
