@@ -7,6 +7,13 @@
 :Date: April 20, 2022
 :Installation: `Installing Percona Distribution for MongoDB <https://www.percona.com/doc/percona-distribution-for-mongodb/5.0/installation.html>`_
 
+.. warning::
+
+   We don't recommend this version for the production use due to the critical issue with sharding metadata inconsistency: `SERVER-68511 <https://jira.mongodb.org/browse/SERVER-68511>`_. The metadata inconsistency is observed when running the ``movePrimary`` command on the database that has the Feature Compatibility Version (FCV) set to 4.4 or earlier. Affects MongoDB versions 5.0.0 through 5.0.10 and MongoDB 6.0.0. Upgrade to the fixed version of MongoDB 5.0.11 / Percona Server for MongoDB 5.0.11-10 or |pdmdb| 5.0.11 as soon as possible.
+
+   Please follow closely the upstream recommendations outlined in `SERVER-68511 <https://jira.mongodb.org/browse/SERVER-68511>`_ to work around this issue and for the remediation steps, if your cluster is affected.
+   
+
 Percona Distribution for MongoDB is a freely available MongoDB database alternative, giving you a single solution that combines enterprise components from the open source community, designed and tested to work together. The aim of Percona Distribution for MongoDB is to enable you to run and operate your
 |mongodb| efficiently with the data being consistently backed up.
 
