@@ -7,6 +7,7 @@ Release Notes
 .. toctree::
    :maxdepth: 1
 
+   release-notes-v4.2.22
    release-notes-v4.2.21
    release-notes-v4.2.20
    Percona Distribution for MongoDB 4.2.19 (2022-03-29) <release-notes-v4.2.19>
