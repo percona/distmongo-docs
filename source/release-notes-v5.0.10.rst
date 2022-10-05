@@ -18,7 +18,7 @@ Percona Distribution for MongoDB is a freely available MongoDB database alternat
 
 |pdmdb| includes the following components:
 
-* |PSMDB| is a fully compatible open source, drop-in replacement
+* |PSMDB| is a fully compatible source-available, drop-in replacement
   for MongoDB.
 * |pbm| is a distributed, low-impact solution for achieving
   consistent backups of |mongodb| sharded clusters and replica sets.
