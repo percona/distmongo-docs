@@ -38,7 +38,7 @@ This release of |pdmdb| includes bug fixes and improvements provided by MongoDB 
 |PBM| 2.0.1 improvements include the following:
 
 * The support of `server-side encryption with customer-provided keys managed on the customer side (SSE-C) <https://docs.percona.com/percona-backup-mongodb/details/storage-configuration.html#server-side-encryption>`_ enables you to use the S3-compatible storage of your choice thus preventing the vendor lock-in and saving your costs on AWS KMS (Key Management Service).
-* The ability to `configure Percona Backup for MongoDB remotely <https://docs.percona.com/percona-backup-mongodb/manage/remote-config.html>`_ simplifies its management when |PBM| is deployed in Docker, Kubernetes or other cloud services. 
+* The ability to `configure Percona Backup for MongoDB remotely <https://docs.percona.com/percona-backup-mongodb/manage/configure-remotely.html>`_ simplifies its management when |PBM| is deployed in Docker, Kubernetes or other cloud services. 
 * The ability to configure the sidecar mode for Percona Backup for MongoDB improves its operation as part of `Kubernetes Operator for MongoDB <https://docs.percona.com/percona-operator-for-mongodb/index.html>`_.
 * Troubleshooting enhancements:
   

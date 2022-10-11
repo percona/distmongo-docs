@@ -39,21 +39,21 @@ Choose how you wish to install |pdmdb|:
 
               $ sudo apt install gnupg2 lsb-release ./percona-release_latest.generic_all.deb
 
-          * Refresh the local cache
+         * Refresh the local cache
             
-            .. code-block:: bash
+           .. code-block:: bash
 
-               $ supo apt update
+              $ supo apt update
 
-       #. Enable the repository
+      #. Enable the repository
 
-          Percona provides :ref:`two repositories <repo-overview>` for |pdmdb|. To enable a repo, we recommend using the ``setup`` command:
+         Percona provides :ref:`two repositories <repo-overview>` for |pdmdb|. To enable a repo, we recommend using the ``setup`` command:
        
-          .. code-block:: bash
+         .. code-block:: bash
 
              $ sudo percona-release setup pdmdb-5.0
 
-       #. Install |pdmdb| packages:
+      #. Install |pdmdb| packages:
 
          .. code-block:: bash
 
