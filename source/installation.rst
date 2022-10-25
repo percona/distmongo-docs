@@ -43,15 +43,15 @@ Choose how you wish to install |pdmdb|:
             
            .. code-block:: bash
 
-              $ supo apt update
+              $ sudo apt update
 
       #. Enable the repository
 
-         Percona provides :ref:`two repositories <repo-overview>` for |pdmdb|. To enable a repo, we recommend using the ``setup`` command:
+         Percona provides :ref:`two repositories <repo-overview>` for |pdmdb|. To enable a repository, we recommend using the ``setup`` command:
        
          .. code-block:: bash
 
-             $ sudo percona-release setup pdmdb-5.0
+             $ sudo percona-release setup pdmdb-6.0
 
       #. Install |pdmdb| packages:
 
@@ -87,7 +87,7 @@ Choose how you wish to install |pdmdb|:
 
    .. tab:: From tarballs
 
-      You can find binary tarbals on the `Percona software downloads page <https://www.percona.com/downloads/percona-distribution-mongodb-5.0/>`_
+      You can find binary tarbals on the `Percona software downloads page <https://www.percona.com/downloads/percona-distribution-mongodb-6.0/>`_
 
       1. Select *Generic Linux* from the dropdown.
       2. Download binary tarballs.  Replace the ``<version>`` variable with the desired version:
@@ -104,7 +104,7 @@ Choose how you wish to install |pdmdb|:
             $ tar -xf percona-backup-mongodb-<version>-x86_64.tar.gz 
             $ tar -xf percona-server-mongodb-<version>-x86_64.glibc2.17.tar.gz
       
-      #. Export the location of the binaries to the PATH variable
+      #. Export the location of the binaries to the ``PATH`` variable
          
          For example, if you’ve extracted the tarballs to your home directory, the commands would be the following:
 
