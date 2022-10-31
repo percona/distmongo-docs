@@ -183,7 +183,8 @@ html_theme_options = {
         "4.2": "https://docs.percona.com/percona-distribution-for-mongodb/4.2/",
         "4.4": "https://docs.percona.com/percona-distribution-for-mongodb/4.4/",
         "5.0": "https://docs.percona.com/percona-distribution-for-mongodb/5.0/",
-        "Latest": "https://docs.percona.com/percona-distribution-for-mongodb/latest/index.html"
+        "6.0": "https://docs.percona.com/percona-distribution-for-mongodb/6.0/",
+        "Latest": "https://docs.percona.com/percona-distribution-for-mongodb/latest/"
     },
 }
 
