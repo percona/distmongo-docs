@@ -26,6 +26,7 @@ This release of |pdmdb| includes bug fixes and improvements provided by MongoDB 
 
 * `Data at rest encryption using the KMIP protocol <https://docs.percona.com/percona-server-for-mongodb/5.0/kmip.html>`_ is now generally available, enabling you to use this functionality in production environments.
 * |PSMDB| Docker container now includes the ``mongodb-tools`` utility set to align with the upstream container. This enables users to manage backup/restore operations of |PSMDB|.
+* Fixed security vulnerability `CVE-2022-3602 <https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-3602>`_ for |pdmdb| 5.0.8 and higher installed from tarballs on Ubuntu 22.04.
 * Updated exit code and status message during the master key rotation improves the user experience while using data-at-rest encryption with KMIP.
 * Detected and resolved table logging inconsistencies for WiredTiger tables at startup
 * Prevented the server from hanging in chunk migration when a step-down occurs.
