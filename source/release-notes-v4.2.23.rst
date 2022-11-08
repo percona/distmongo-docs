@@ -23,8 +23,8 @@ This release of |pdmdb| is based on `Percona Server for MongoDB 4.2.23-23 <https
 Release Highlights
 ===================
 
-* :ref:`Data-at-rest encryption using the Key Management Interoperability Protocol (KMIP) <kmip>` is generally available enabling you to use it in your production environment
-* :ref:`backup-cursor` functionality is generally available, enabling your application developers to use it for building custom backup solutions. 
+* `Data-at-rest encryption using the Key Management Interoperability Protocol (KMIP) <https://docs.percona.com/percona-server-for-mongodb/4.2/kmip.html>`_ is generally available enabling you to use it in your production environment
+* `$backupCursor and $backupCursorExtend aggregation stages <https://docs.percona.com/percona-server-for-mongodb/4.2/backup-cursor.html>`_ functionality is generally available, enabling your application developers to use it for building custom backup solutions. 
   
   .. note::
 
