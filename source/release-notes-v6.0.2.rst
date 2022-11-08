@@ -33,6 +33,7 @@ Release Highlights
      |pdmdb| includes `Percona Backup for MongoDB <https://docs.percona.com/percona-backup-mongodb/index.html>`_ - the open source tool for consistent backups and restores in MongoDB sharded clusters.
 
 * |PSMDB| packages now include ``mongosh`` instead of ``mongo`` CLI. If you `install Percona Server for MongoDB from tarballs <https://docs.percona.com/percona-server-for-mongodb/6.0/install/tarball.html#tarball>`_, you must install ``mongosh`` from a separate tarball.
+* Fixed security vulnerability `CVE-2022-3602 <https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-3602>`_ for |pdmdb| installed from tarballs on Ubuntu 22.04.
 
 |pdmdb| 6.0.2 includes all the features of MongoDB 6.0.2 Community Edition, among which are the following:
 
