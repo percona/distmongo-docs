@@ -26,14 +26,14 @@ Release Highlights
 
 This release of Percona Distribution for MongoDB includes improvements and bug fixes, provided by MongoDB and included in Percona Server for MongoDB. The most notable from them are the following:
 
-* `Data-at-rest encryption using the Key Management Interoperability Protocol (KMIP) <https://docs.percona.com/percona-server-for-mongodb/4.2/kmip.html>`_ is generally available enabling you to use it in your production environment
-* `$backupCursor and $backupCursorExtend aggregation stages <https://docs.percona.com/percona-server-for-mongodb/4.2/backup-cursor.html>`_ functionality is generally available, enabling your application developers to use it for building custom backup solutions. 
+* `Data-at-rest encryption using the Key Management Interoperability Protocol (KMIP) <https://docs.percona.com/percona-server-for-mongodb/4.4/kmip.html>`_ is generally available enabling you to use it in your production environment
+* `$backupCursor and $backupCursorExtend aggregation stages <https://docs.percona.com/percona-server-for-mongodb/4.4/backup-cursor.html>`_ functionality is generally available, enabling your application developers to use it for building custom backup solutions. 
 
   .. note::
 
      Percona provides `Percona Backup for MongoDB <https://docs.percona.com/percona-backup-mongodb/index.html>`_ - the open source tool for consistent backups and restores in MongoDB sharded clusters.
 
-* Fixed security vulnerability `CVE-2022-3602 <https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-3602>`_ for |pdmdb| 4.2.21 and higher installed from tarballs on Ubuntu 22.04.
+* Fixed security vulnerability `CVE-2022-3602 <https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-3602>`_ for |pdmdb| 4.4.15-15 and higher installed from tarballs on Ubuntu 22.04.
 
 * Detected and resolved table logging inconsistencies for WiredTiger tables at startup
 * Fixed retryable writes on update and delete commands to not execute more than once if chunk is migrated and shard key pattern uses nested fields
@@ -41,7 +41,7 @@ This release of Percona Distribution for MongoDB includes improvements and bug f
 * Prevented the use of ``clientReadable`` function in ``AutoSplitVector`` when reordering shard key fields
 * Fixed the global time window state before performing the rollback to stable operation by updating the pinned timestamp as part of the transaction setup.
   
-||PBM| 2.0.x improvements are the following:
+|PBM| 2.0.x improvements are the following:
 
 * Physical backups and restores are now generally available. This enables you to use them in production environments.
 * `Data-at-rest encryption <https://docs.percona.com/percona-backup-mongodb/usage/restore.html#physical-restores-with-data-at-rest-encryption>`_ is supported for physical backups and restores. This enables you to comply to data security regulations and save time on operating with large data sets.
