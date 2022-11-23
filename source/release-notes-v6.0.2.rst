@@ -19,7 +19,7 @@ Percona Distribution for MongoDB is a freely available MongoDB database alternat
 * |pbm| is a distributed, low-impact solution for achieving
   consistent backups of |mongodb| sharded clusters and replica sets.
 
-This release of |pdmdb| is based on the production release of `Percona Server for MongoDB 6.0.2-1 <https://www.percona.com/doc/percona-server-for-mongodb/6.0/release_notes/6.0.2-1.html>`_ and `Percona Backup for MongoDB 2.0.2 <https://www.percona.com/doc/percona-backup-mongodb/release-notes/2.0.2.html>`_.
+This release of |pdmdb| is based on the production release of `Percona Server for MongoDB 6.0.2-1 <https://docs.percona.com/percona-distribution-for-mongodb/6.0/release-notes-v6.0.2.html>`_ and `Percona Backup for MongoDB 2.0.2 <https://www.percona.com/doc/percona-backup-mongodb/release-notes/2.0.2.html>`_.
 
 
 Release Highlights
