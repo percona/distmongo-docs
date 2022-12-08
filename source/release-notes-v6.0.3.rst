@@ -23,8 +23,14 @@ This release of |pdmdb| is based on the production release of `Percona Server fo
 Release Highlights
 ==================
   
+Bug fixes and improvements introduced in MongoDB and included in |pdmdb| are the following:
+
+* Fixed the condition where issuing concurrent ``removeShard`` and ``movePrimary`` commands may delete unsharded collections in a database thus causing data loss.
+* Fixed the issue with the resharding command failure if the required projection sort relating to sample chunks and planned number of initial chunks is greater than 100MB.
+* Corrected a situation where the order of Resharding steps could cause segmentation faults
+* Corrected a situation where a requested stepdown could run into an uninterruptible lock during the election process and cause a deadlock.
+* Prevented yielding strong locks upon startup recovery when ``_id`` index is missing
 * Fixed the issue with how the server handles batches of writes when running $out with secondary read preference by updating write size estimation logic in ``DocumentSourceWriter``
-* Allowed search queries to pass through query analysis when Client-Side Field Level Encryption is enabled for the MongoClient
 * Prevented dropping empty path component from `elemMatch` path during index selection
 * Prevented yielding strong locks upon startup recovery when ``_id`` index is missing
 
