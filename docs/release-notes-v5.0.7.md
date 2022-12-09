@@ -1,12 +1,8 @@
 # Percona Distribution for MongoDB 5.0.7 (2022-04-20)
 
-* **Date**
-
-    April 20, 2022
-
-* **Installation**
-
-    [Installing Percona Distribution for MongoDB](https://www.percona.com/doc/percona-distribution-for-mongodb/5.0/installation.html)
+| Release date:     | April 20, 2022      |
+|:------------------|:----------------------|
+| **Installation**: | [Installing Percona Distribution for MongoDB](installation.md) |
 
 !!! warning
 

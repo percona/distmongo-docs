@@ -1,12 +1,9 @@
 # Percona Distribution for MongoDB 5.0.5 (2021-12-28)
 
-* **Date**
+| Release date:     | December 28, 2021     |
+|:------------------|:----------------------|
+| **Installation**: | [Installing Percona Distribution for MongoDB](installation.md) |
 
-    December 28, 2021
-
-* **Installation**
-
-    [Installing Percona Distribution for MongoDB](https://www.percona.com/doc/percona-distribution-for-mongodb/5.0/installation.html)
 
 !!! warning
 
