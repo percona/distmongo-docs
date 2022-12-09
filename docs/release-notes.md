@@ -1,4 +1,4 @@
-# Release Notes
+# Percona Distribution for MongoDB release notes
 
 * [Percona Distribution for MongoDB 4.2.23 (2022-11-08)](release-notes-v4.2.23.md)
 

@@ -3,6 +3,7 @@ on:
   push:
     branches: 
       - 4.2
+      
 
 jobs:
   build:
