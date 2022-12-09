@@ -117,7 +117,8 @@ nav:
       - repo-overview.md
       - minor-upgrade.md
   - Release Notes: 
-      - release-notes.md
+      - "Release notes index": "release-notes.md"
+      - release-notes-v6.0.3.md
       - release-notes-v6.0.2.md
   - Copyright and Licensing:
       - copyright.md
