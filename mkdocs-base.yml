@@ -117,7 +117,7 @@ nav:
       - repo-overview.md
       - minor-upgrade.md
   - Release Notes: 
-      - release-notes.md
+      - "Release notes index": "release-notes.md"
       - release-notes-v4.4.17.md
       - release-notes-v4.4.16.md
       - release-notes-v4.4.15.md
