@@ -8,10 +8,10 @@ Percona Distribution for MongoDB is a collection of open-source solutions to run
 
 Percona Distribution for MongoDB consists of the following components:
 
-- [Percona Server for MongoDB](https://www.percona.com/doc/percona-server-for-mongodb/4.4/index.html) - a fully-compatible open-source replacement for MongoDB Community Edition.
+- [Percona Server for MongoDB](https://www.percona.com/doc/percona-server-for-mongodb/6.0/index.html) - a fully-compatible open-source replacement for MongoDB Community Edition.
 - [Percona Backup for MongoDB](https://www.percona.com/doc/percona-backup-mongodb/index.html) - a distributed, low-impact solution for achieving consistent backups of MongoDB sharded clusters and replica sets.
 
-This repository contains the source files for the [Percona Distribution for MongoDB documentation](https://www.percona.com/doc/percona-distribution-for-mongodb/4.4/index.html).
+This repository contains the source files for the [Percona Distribution for MongoDB documentation](https://www.percona.com/doc/percona-distribution-for-mongodb/6.0/index.html).
 
 The documentation is written in [reStructured text markup language](https://docutils.sourceforge.io/rst.html) and is created using [Sphinx Python Documentation Generator](https://www.sphinx-doc.org/en/master/).
 
@@ -19,7 +19,7 @@ The documentation is written in [reStructured text markup language](https://docu
 
 We welcome all contributions and are always looking for new members that are as dedicated to serving the community as we are. You can reach out to us using our [forums](https://forums.percona.com/c/mongodb/percona-distribution-for-mongodb/43) and [Discord](https://discord.gg/mQEyGPkNbR).
 
-For how to contribute to documentation, read the [Contributing guide](https://github.com/percona/distmongo-docs/blob/4.4/CONTRIBUTING.md).
+For how to contribute to documentation, read the [Contributing guide](https://github.com/percona/distmongo-docs/blob/6.0/CONTRIBUTING.md).
 
 ## License
 

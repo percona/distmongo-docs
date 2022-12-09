@@ -6,3 +6,4 @@ source/ext/psdom.pyc
 source/ext/__pycache__
 source/__pycache__/
 .netlify
+site/
