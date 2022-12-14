@@ -19,7 +19,7 @@
 
    Percona Documentation:
       - `Percona Server for MongoDB documentation
-        <https://www.percona.com/doc/percona-server-for-mongodb/5.0/index.html>`_
+        <https://docs.percona.com/percona-server-for-mongodb/6.0/index.html>`_
       - `Percona Backup for MongoDB documentation
         <https://www.percona.com/doc/percona-backup-mongodb/index.html>`_
 
