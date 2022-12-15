@@ -1,5 +1,3 @@
-# Contributing Guide
-
 Thank you for deciding to contribute and help us improve Percona Distribution for MongoDB documentation!
 
 We welcome contributors from all users and community. By contributing, you agree to the [Percona Community code of conduct](https://github.com/percona/community/blob/main/content/contribute/coc.md).
@@ -33,9 +31,9 @@ The source .md files are in the ``docs`` directory.
 
 3. Commit your changes.
 
-	 - In the *Commit changes* section, describe your changes.
-	 - Select the **Create a new branch for this commit and start a pull request** option
-	 - Click **Propose changes**.
+    - In the *Commit changes* section, describe your changes.
+    - Select the **Create a new branch for this commit and start a pull request** option
+    - Click **Propose changes**.
 
 4. GitHub creates a branch and a commit for your changes. It loads a new page on which you can open a pull request to Percona. The page shows the base branch - the one you offer your changes for, your commit message and a diff - a visual representation of your changes against the original page.  This allows you to make a last-minute review. When you are ready, click the **Create pull request** button.
 5. Someone from our team reviews the pull request and if everything is correct, merges it into the documentation. Then it gets published on the site.
