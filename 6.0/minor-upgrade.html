@@ -626,7 +626,7 @@
 <h2 id="enable-percona-repository">Enable Percona repository<a class="headerlink" href="#enable-percona-repository" title="Permanent link">&para;</a></h2>
 <p>If you installed Percona Distribution for MongoDB from the Major release repository, this step is optional. This repository automatically includes new version packages and you receive a prompt for an upgrade from the package manager of your operating system.</p>
 <p>If you installed Percona Distribution for MongoDB from the Minor release repository, you must enable the new version repository (for example, <code>pdmdb-6.0.2</code>) to upgrade. We recommend to use the <code>setup</code> subcommand:</p>
-<div class="highlight" data-prompt="$"><pre><span></span><code>$ sudo percona-release setup pdmdb-6.0.2
+<div class="highlight" data-prompt="$"><pre><span></span><code>$<span class="w"> </span>sudo<span class="w"> </span>percona-release<span class="w"> </span>setup<span class="w"> </span>pdmdb-6.0.2
 </code></pre></div>
 <div class="admonition admonition">
 <p class="admonition-title">See also</p>
@@ -634,19 +634,19 @@
 </div>
 <h2 id="stop-the-service">Stop the service<a class="headerlink" href="#stop-the-service" title="Permanent link">&para;</a></h2>
 <p>Stop Percona Server for MongoDB:</p>
-<div class="highlight" data-prompt="$"><pre><span></span><code>$ sudo systemctl mongod stop
+<div class="highlight" data-prompt="$"><pre><span></span><code>$<span class="w"> </span>sudo<span class="w"> </span>systemctl<span class="w"> </span>mongod<span class="w"> </span>stop
 </code></pre></div>
 <p>Stop <strong>pbm-agent</strong>:</p>
-<div class="highlight" data-prompt="$"><pre><span></span><code>$ sudo systmectl pbm-agent stop
+<div class="highlight" data-prompt="$"><pre><span></span><code>$<span class="w"> </span>sudo<span class="w"> </span>systmectl<span class="w"> </span>pbm-agent<span class="w"> </span>stop
 </code></pre></div>
 <h2 id="install-new-version-packages">Install new version packages<a class="headerlink" href="#install-new-version-packages" title="Permanent link">&para;</a></h2>
 <p>Install Percona Server for MongoDB and Percona Backup for MongoDB using the package manager of your operating system. Please refer to the pdmdb-install section for the corresponding installation instructions.</p>
 <h2 id="restart-the-service">Restart the service<a class="headerlink" href="#restart-the-service" title="Permanent link">&para;</a></h2>
 <p>Start Percona Server for MongoDB:</p>
-<div class="highlight" data-prompt="$"><pre><span></span><code>$ sudo systemctl mongod start
+<div class="highlight" data-prompt="$"><pre><span></span><code>$<span class="w"> </span>sudo<span class="w"> </span>systemctl<span class="w"> </span>mongod<span class="w"> </span>start
 </code></pre></div>
 <p>Start <strong>pbm-agent</strong>:</p>
-<div class="highlight" data-prompt="$"><pre><span></span><code>$ sudo systmectl pbm-agent start
+<div class="highlight" data-prompt="$"><pre><span></span><code>$<span class="w"> </span>sudo<span class="w"> </span>systmectl<span class="w"> </span>pbm-agent<span class="w"> </span>start
 </code></pre></div>
 
                 
@@ -738,7 +738,7 @@
     <div class="md-footer-meta__inner md-grid">
       <div class="md-copyright">
     <div class="md-copyright__highlight">
- <a href='https://percona.com' target='_blank'>Percona LLC and/or its affiliates, </a> &copy; 2022
+ <a href='https://percona.com' target='_blank'>Percona LLC and/or its affiliates, </a> &copy; 2023
     </div>
   
     Made with

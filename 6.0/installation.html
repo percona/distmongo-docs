@@ -590,34 +590,34 @@
 <ul>
 <li>Install <code>curl</code></li>
 </ul>
-<div class="highlight" data-prompt="$"><pre><span></span><code>$ sudo apt update
-$ sudo apt install curl
+<div class="highlight" data-prompt="$"><pre><span></span><code>$<span class="w"> </span>sudo<span class="w"> </span>apt<span class="w"> </span>update
+$<span class="w"> </span>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>curl
 </code></pre></div>
 <ul>
 <li>Download the <strong>percona-release</strong> package</li>
 </ul>
-<div class="highlight" data-prompt="$"><pre><span></span><code>$ curl -O https://repo.percona.com/apt/percona-release_latest.generic_all.deb
+<div class="highlight" data-prompt="$"><pre><span></span><code>$<span class="w"> </span>curl<span class="w"> </span>-O<span class="w"> </span>https://repo.percona.com/apt/percona-release_latest.generic_all.deb
 </code></pre></div>
 <ul>
 <li>Install the package and dependancies</li>
 </ul>
-<div class="highlight" data-prompt="$"><pre><span></span><code>$ sudo apt install gnupg2 lsb-release ./percona-release_latest.generic_all.deb
+<div class="highlight" data-prompt="$"><pre><span></span><code>$<span class="w"> </span>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>gnupg2<span class="w"> </span>lsb-release<span class="w"> </span>./percona-release_latest.generic_all.deb
 </code></pre></div>
 <ul>
 <li>Refresh the local cache</li>
 </ul>
-<div class="highlight" data-prompt="$"><pre><span></span><code>$ supo apt update
+<div class="highlight" data-prompt="$"><pre><span></span><code>$<span class="w"> </span>supo<span class="w"> </span>apt<span class="w"> </span>update
 </code></pre></div>
 </li>
 <li>
 <p>Enable the repository</p>
 <p>Percona provides <a href="repo-overview.html#repo-overview">two repositories</a> for Percona Distribution for MongoDB. To enable a repo, we recommend using the <code>setup</code> command:</p>
-<div class="highlight" data-prompt="$"><pre><span></span><code>$ sudo percona-release setup pdmdb-6.0
+<div class="highlight" data-prompt="$"><pre><span></span><code>$<span class="w"> </span>sudo<span class="w"> </span>percona-release<span class="w"> </span>setup<span class="w"> </span>pdmdb-6.0
 </code></pre></div>
 </li>
 <li>
 <p>Install Percona Distribution for MongoDB packages</p>
-<div class="highlight" data-prompt="$"><pre><span></span><code>$ sudo apt install percona-server-mongodb percona-backup-mongodb
+<div class="highlight" data-prompt="$"><pre><span></span><code>$<span class="w"> </span>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>percona-server-mongodb<span class="w"> </span>percona-backup-mongodb
 </code></pre></div>
 </li>
 </ol>
@@ -628,18 +628,18 @@ $ sudo apt install curl
 <li>
 <p>Install <strong>percona-release</strong></p>
 <p>Install the <strong>percona-release</strong> repository management tool to subscribe to Percona repositories:</p>
-<div class="highlight" data-prompt="$"><pre><span></span><code>$ sudo yum install -y https://repo.percona.com/yum/percona-release-latest.noarch.rpm
+<div class="highlight" data-prompt="$"><pre><span></span><code>$<span class="w"> </span>sudo<span class="w"> </span>yum<span class="w"> </span>install<span class="w"> </span>-y<span class="w"> </span>https://repo.percona.com/yum/percona-release-latest.noarch.rpm
 </code></pre></div>
 </li>
 <li>
 <p>Enable the repository</p>
 <p>Percona provides <a href="repo-overview.html#repo-overview">two repositories</a> for Percona Distribution for MongoDB. To enable a repo, we recommend using the <code>setup</code> command:</p>
-<div class="highlight" data-prompt="$"><pre><span></span><code>$ sudo percona-release setup pdmdb-6.0
+<div class="highlight" data-prompt="$"><pre><span></span><code>$<span class="w"> </span>sudo<span class="w"> </span>percona-release<span class="w"> </span>setup<span class="w"> </span>pdmdb-6.0
 </code></pre></div>
 </li>
 <li>
 <p>Install Percona Distribution for MongoDB packages</p>
-<div class="highlight" data-prompt="$"><pre><span></span><code>$ sudo yum install percona-server-mongodb percona-backup-mongodb
+<div class="highlight" data-prompt="$"><pre><span></span><code>$<span class="w"> </span>sudo<span class="w"> </span>yum<span class="w"> </span>install<span class="w"> </span>percona-server-mongodb<span class="w"> </span>percona-backup-mongodb
 </code></pre></div>
 </li>
 </ol>
@@ -652,25 +652,25 @@ $ sudo apt install curl
 </li>
 <li>
 <p>Download binary tarballs. Replace the &#60;version&#62; variable with the desired version:</p>
-<div class="highlight" data-prompt="$"><pre><span></span><code>$ wget https://downloads.percona.com/downloads/percona-distribution-mongodb-6.0/percona-distribution-mongodb-&lt;version&gt;/binary/tarball/percona-backup-mongodb-&lt;version&gt;-x86_64.tar.gz
-$ wget https://downloads.percona.com/downloads/percona-distribution-mongodb-6.0/percona-distribution-mongodb-&lt;version&gt;/binary/tarball/percona-server-mongodb-&lt;version&gt;-x86_64.glibc2.17.tar.gz
+<div class="highlight" data-prompt="$"><pre><span></span><code>$<span class="w"> </span>wget<span class="w"> </span>https://downloads.percona.com/downloads/percona-distribution-mongodb-6.0/percona-distribution-mongodb-&lt;version&gt;/binary/tarball/percona-backup-mongodb-&lt;version&gt;-x86_64.tar.gz
+$<span class="w"> </span>wget<span class="w"> </span>https://downloads.percona.com/downloads/percona-distribution-mongodb-6.0/percona-distribution-mongodb-&lt;version&gt;/binary/tarball/percona-server-mongodb-&lt;version&gt;-x86_64.glibc2.17.tar.gz
 </code></pre></div>
 </li>
 <li>
 <p>Extract the tarballs</p>
-<div class="highlight" data-prompt="$"><pre><span></span><code>$ tar -xf percona-backup-mongodb-&lt;version&gt;-x86_64.tar.gz
-$ tar -xf percona-server-mongodb-&lt;version&gt;-x86_64.glibc2.17.tar.gz
+<div class="highlight" data-prompt="$"><pre><span></span><code>$<span class="w"> </span>tar<span class="w"> </span>-xf<span class="w"> </span>percona-backup-mongodb-&lt;version&gt;-x86_64.tar.gz
+$<span class="w"> </span>tar<span class="w"> </span>-xf<span class="w"> </span>percona-server-mongodb-&lt;version&gt;-x86_64.glibc2.17.tar.gz
 </code></pre></div>
 </li>
 <li>
 <p>Export the location of the binaries to the PATH variable</p>
 <p>For example, if you’ve extracted the tarballs to your home directory, the commands would be the following:</p>
-<div class="highlight" data-prompt="$"><pre><span></span><code>$ <span class="nb">export</span> <span class="nv">PATH</span><span class="o">=</span>~/percona-backup-mongodb-&lt;version&gt;/:~/percona-server-mongodb-&lt;version&gt;/:<span class="nv">$PATH</span>
+<div class="highlight" data-prompt="$"><pre><span></span><code>$<span class="w"> </span><span class="nb">export</span><span class="w"> </span><span class="nv">PATH</span><span class="o">=</span>~/percona-backup-mongodb-&lt;version&gt;/:~/percona-server-mongodb-&lt;version&gt;/:<span class="nv">$PATH</span>
 </code></pre></div>
 </li>
 <li>
 <p>Create the default data directory for <em>Percona Server for MongoDB</em>:</p>
-<div class="highlight" data-prompt="$"><pre><span></span><code>$ sudo mkdir -p /data/db
+<div class="highlight" data-prompt="$"><pre><span></span><code>$<span class="w"> </span>sudo<span class="w"> </span>mkdir<span class="w"> </span>-p<span class="w"> </span>/data/db
 </code></pre></div>
 </li>
 <li>
@@ -790,7 +790,7 @@ operation system. Optionally, disable <em>Percona</em> repository.</p>
     <div class="md-footer-meta__inner md-grid">
       <div class="md-copyright">
     <div class="md-copyright__highlight">
- <a href='https://percona.com' target='_blank'>Percona LLC and/or its affiliates, </a> &copy; 2022
+ <a href='https://percona.com' target='_blank'>Percona LLC and/or its affiliates, </a> &copy; 2023
     </div>
   
     Made with
