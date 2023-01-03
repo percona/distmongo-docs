@@ -1,13 +1,10 @@
 # Percona Distribution for MongoDB 4.2.11 (2020-12-07)
 
-* **Date**
+| **Release date** | December 7, 2020   |
+| ---------------- | ------------------ |
+| **Installation** | [Install Percona Distribution for MongoDB](installation.md)|
 
-    December 7, 2020
-
-* **Installation**
-
-    [Installing Percona Distribution for MongoDB](https://www.percona.com/doc/percona-server-for-mongodb/4.2/install/index.html)
-
+ 
 Percona Distribution for MongoDB is a collection of solutions to run and operate your
 MongoDB efficiently with the data being consistently backed up.
 
@@ -19,4 +16,4 @@ for MongoDB.
 * *Percona Backup for MongoDB* is a distributed, low-impact solution for achieving
 consistent backups of MongoDB sharded clusters and replica sets.
 
-This release of Percona Distribution for MongoDB is based on [Percona Server for MongoDB 4.2.11-12](https://www.percona.com/doc/percona-server-for-mongodb/4.2/release_notes/4.2.11-12.html)  and [Percona Backup for MongoDB 1.3.4](https://www.percona.com/doc/percona-backup-mongodb/release-notes/1.3.4.html).
+This release of Percona Distribution for MongoDB is based on [Percona Server for MongoDB 4.2.11-12](https://docs.percona.com/percona-server-for-mongodb/4.2/release_notes/4.2.11-12.html) and [Percona Backup for MongoDB 1.3.4](https://docs.percona.com/percona-backup-mongodb/release-notes/1.3.4.html).

@@ -1,12 +1,9 @@
 # Percona Distribution for MongoDB 4.2.17 (2021-10-11)
 
-* **Date**
+| **Release date** | October 11, 2021   |
+| ---------------- | ------------------ |
+| **Installation** | [Install Percona Distribution for MongoDB](installation.md)|
 
-    October 11, 2021
-
-* **Installation**
-
-    [Installing Percona Distribution for MongoDB](https://www.percona.com/doc/percona-server-for-mongodb/4.2/install/index.html)
 
 Percona Distribution for MongoDB is a collection of solutions to run and operate your
 MongoDB efficiently with the data being consistently backed up.
@@ -19,7 +16,7 @@ for MongoDB.
 * *Percona Backup for MongoDB* is a distributed, low-impact solution for achieving
 consistent backups of MongoDB sharded clusters and replica sets.
 
-This release of Percona Distribution for MongoDB is based on [Percona Server for MongoDB 4.2.17-17](https://www.percona.com/doc/percona-server-for-mongodb/4.2/release_notes/4.2.17-17.html) and [Percona Backup for MongoDB 1.6.0](https://www.percona.com/doc/percona-backup-mongodb/release-notes/1.6.0.html).
+This release of Percona Distribution for MongoDB is based on [Percona Server for MongoDB 4.2.17-17](https://docs.percona.com/percona-server-for-mongodb/4.2/release_notes/4.2.17-17.html) and [Percona Backup for MongoDB 1.6.0](https://docs.percona.com/percona-backup-mongodb/release-notes/1.6.0.html).
 
 ## Release Highlights
 
@@ -41,4 +38,4 @@ The bug fixes, provided by MongoDB and included in Percona Server for MongoDB 4.
 
 * Point-in-time recovery enhancements: ability to restore from any previous snapshot and configurable span of oplog events
 
-* JSON output for [PBM commands](https://www.percona.com/doc/percona-backup-mongodb/pbm-commands.html) to simplify interfacing PBM with applications
+* JSON output for [PBM commands](https://docs.percona.com/percona-backup-mongodb/pbm-commands.html) to simplify interfacing PBM with applications
