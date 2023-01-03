@@ -17,8 +17,14 @@
       
         <link rel="canonical" href="https://docs.percona.com/percona-distribution-for-mongodb/4.4/index.html/4.4/minor-upgrade.html">
       
+      
+        <link rel="prev" href="repo-overview.html">
+      
+      
+        <link rel="next" href="release-notes.html">
+      
       <link rel="icon" href="_images/percona-favicon.ico">
-      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-8.5.10">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.1">
     
     
       
@@ -26,11 +32,10 @@
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.975780f9.min.css">
+      <link rel="stylesheet" href="assets/stylesheets/main.3bd4f189.min.css">
       
         
         <link rel="stylesheet" href="assets/stylesheets/palette.2505c338.min.css">
-        
       
       
 
@@ -110,7 +115,7 @@
     
     
       <header class="md-header" data-md-component="header">
-  <nav class="md-header__inner md-grid" aria-label="Header">
+  <nav class="md-header__inner md-grid" aria-label="">
     <a href="https://percona.com/software/documentation" class="md-header__button md-logo" aria-label="Percona Product Documentation" data-md-component="logo">
       
   <img src="_images/percona-logo.png" alt="logo">
@@ -160,39 +165,6 @@
     
     
     
-      <label class="md-header__button md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
-      </label>
-      <div class="md-search" data-md-component="search" role="dialog">
-  <label class="md-search__overlay" for="__search"></label>
-  <div class="md-search__inner" role="search">
-    <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
-      <label class="md-search__icon md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
-      </label>
-      <nav class="md-search__options" aria-label="Search">
-        
-        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
-        </button>
-      </nav>
-      
-    </form>
-    <div class="md-search__output">
-      <div class="md-search__scrollwrap" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="search-result">
-          <div class="md-search-result__meta">
-            Initializing search
-          </div>
-          <ol class="md-search-result__list"></ol>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-    
     
       <div class="md-header__source">
         <a href="https://github.com/percona/distmongo-docs" title="Go to repository" class="md-source" data-md-component="source">
@@ -227,7 +199,7 @@
                     
 
 
-<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+<nav class="md-nav md-nav--primary" aria-label="" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href="." title="Percona Distribution for MongoDB 4.4" class="md-nav__button md-logo" aria-label="Percona Distribution for MongoDB 4.4" data-md-component="logo">
       
@@ -366,30 +338,43 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#enable-percona-repository" class="md-nav__link">
-    Enable Percona repository
+  <a href="#prerequisites" class="md-nav__link">
+    Prerequisites
   </a>
   
 </li>
       
         <li class="md-nav__item">
+  <a href="#procedure" class="md-nav__link">
+    Procedure
+  </a>
+  
+    <nav class="md-nav" aria-label="Procedure">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#stop-the-service" class="md-nav__link">
     Stop the service
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#install-new-version-packages" class="md-nav__link">
     Install new version packages
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#restart-the-service" class="md-nav__link">
     Restart the service
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -773,30 +758,43 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#enable-percona-repository" class="md-nav__link">
-    Enable Percona repository
+  <a href="#prerequisites" class="md-nav__link">
+    Prerequisites
   </a>
   
 </li>
       
         <li class="md-nav__item">
+  <a href="#procedure" class="md-nav__link">
+    Procedure
+  </a>
+  
+    <nav class="md-nav" aria-label="Procedure">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#stop-the-service" class="md-nav__link">
     Stop the service
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#install-new-version-packages" class="md-nav__link">
     Install new version packages
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#restart-the-service" class="md-nav__link">
     Restart the service
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -819,7 +817,7 @@
                   
                   <a
                     href="https://github.com/percona/distmongo-docs/edit/4.4/docs/minor-upgrade.md"
-                    title="Edit this page"
+                    title=""
                     class="md-content__button md-icon"
                   >
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
@@ -843,34 +841,38 @@
                 <!-- Markdown content -->
                 <h1 id="minor-upgrade-of-percona-distribution-for-mongodb">Minor upgrade of Percona Distribution for MongoDB<a class="headerlink" href="#minor-upgrade-of-percona-distribution-for-mongodb" title="Permanent link">&para;</a></h1>
 <p>To receive bug fixes and feature enhancements that come with minor releases, keep your Percona Distribution for MongoDB upgraded to the latest version.</p>
+<p>This document describes the upgrade from Percona repositories as the recommended method. </p>
 <p>Before the upgrade, we recommend to back up your data in order to be on the safe side if anything goes wrong.</p>
-<p>Similar to installing, Percona Distribution for MongoDB is upgraded from <em>Percona</em> repositories using the <strong>percona-release</strong> utility. Update <strong>percona-release</strong> to the latest version using <a href="https://www.percona.com/doc/percona-repo-config/percona-release.html#updating-percona-release-to-the-latest-version">these instructions</a>. This is required to install new version packages of Percona Distribution for MongoDB.</p>
-<p>Run the following commands as root or by using the <strong>sudo</strong> command.</p>
-<p>The upgrade procedure includes the following steps:</p>
-<h2 id="enable-percona-repository">Enable Percona repository<a class="headerlink" href="#enable-percona-repository" title="Permanent link">&para;</a></h2>
+<h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">&para;</a></h2>
+<ol>
+<li>
+<p><a href="https://docs.percona.com/percona-software-repositories/percona-release.html#updating-percona-release-to-the-latest-version">Update <strong>percona-release</strong></a> repository management tool to the latest version. This is required to install new version packages of Percona Distribution for MongoDB.</p>
+</li>
+<li>
+<p>Enable the repository</p>
 <p>If you installed Percona Distribution for MongoDB from the Major release repository, this step is optional. This repository automatically includes new version packages and you receive a prompt for an upgrade from the package manager of your operating system.</p>
 <p>If you installed Percona Distribution for MongoDB from the Minor release repository, you must enable the new version repository (for example, <code>pdmdb-4.4.0</code>) to upgrade. We recommend to use the <code>setup</code> subcommand:</p>
-<div class="highlight" data-prompt="$"><pre><span></span><code>$ sudo percona-release setup pdmdb-4.4.0
+<div class="highlight" data-prompt="$"><pre><span></span><code>$<span class="w"> </span>sudo<span class="w"> </span>percona-release<span class="w"> </span>setup<span class="w"> </span>pdmdb-4.4.0
 </code></pre></div>
-<div class="admonition admonition">
-<p class="admonition-title">See also</p>
-<p><a href="installation.html#install">Install Percona Distribution for MongoDB</a></p>
-</div>
-<h2 id="stop-the-service">Stop the service<a class="headerlink" href="#stop-the-service" title="Permanent link">&para;</a></h2>
+</li>
+</ol>
+<h2 id="procedure">Procedure<a class="headerlink" href="#procedure" title="Permanent link">&para;</a></h2>
+<p>Run the following commands as root or by using the <strong>sudo</strong> command.</p>
+<h3 id="stop-the-service">Stop the service<a class="headerlink" href="#stop-the-service" title="Permanent link">&para;</a></h3>
 <p>Stop Percona Server for MongoDB:</p>
-<div class="highlight" data-prompt="$"><pre><span></span><code>$ sudo systemctl mongod stop
+<div class="highlight" data-prompt="$"><pre><span></span><code>$<span class="w"> </span>sudo<span class="w"> </span>systemctl<span class="w"> </span>mongod<span class="w"> </span>stop
 </code></pre></div>
 <p>Stop <strong>pbm-agent</strong>:</p>
-<div class="highlight" data-prompt="$"><pre><span></span><code>$ sudo systmectl pbm-agent stop
+<div class="highlight" data-prompt="$"><pre><span></span><code>$<span class="w"> </span>sudo<span class="w"> </span>systmectl<span class="w"> </span>pbm-agent<span class="w"> </span>stop
 </code></pre></div>
-<h2 id="install-new-version-packages">Install new version packages<a class="headerlink" href="#install-new-version-packages" title="Permanent link">&para;</a></h2>
-<p>Install Percona Server for MongoDB and Percona Backup for MongoDB using the package manager of your operating system. Please refer to the pdmdb-install section for the corresponding installation instructions.</p>
-<h2 id="restart-the-service">Restart the service<a class="headerlink" href="#restart-the-service" title="Permanent link">&para;</a></h2>
+<h3 id="install-new-version-packages">Install new version packages<a class="headerlink" href="#install-new-version-packages" title="Permanent link">&para;</a></h3>
+<p><a href="installation.html">Install a new version of Percona Distribution for MongoDB</a> using the package manager of your operating system. </p>
+<h3 id="restart-the-service">Restart the service<a class="headerlink" href="#restart-the-service" title="Permanent link">&para;</a></h3>
 <p>Start Percona Server for MongoDB:</p>
-<div class="highlight" data-prompt="$"><pre><span></span><code>$ sudo systemctl mongod start
+<div class="highlight" data-prompt="$"><pre><span></span><code>$<span class="w"> </span>sudo<span class="w"> </span>systemctl<span class="w"> </span>mongod<span class="w"> </span>start
 </code></pre></div>
 <p>Start <strong>pbm-agent</strong>:</p>
-<div class="highlight" data-prompt="$"><pre><span></span><code>$ sudo systmectl pbm-agent start
+<div class="highlight" data-prompt="$"><pre><span></span><code>$<span class="w"> </span>sudo<span class="w"> </span>systmectl<span class="w"> </span>pbm-agent<span class="w"> </span>start
 </code></pre></div>
 
                 
@@ -893,7 +895,7 @@
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 9, 2022</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 3, 2023</span>
       
         <br>
         Created:
@@ -922,47 +924,11 @@
       
         <footer class="md-footer">
   
-    
-    <nav class="md-footer__inner md-grid" aria-label="Footer" >
-      
-        
-        <a href="repo-overview.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: Repository overview" rel="prev">
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
-          </div>
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Previous
-              </span>
-              Repository overview
-            </div>
-          </div>
-        </a>
-      
-      
-        
-        <a href="release-notes.html" class="md-footer__link md-footer__link--next" aria-label="Next: Release notes index" rel="next">
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Next
-              </span>
-              Release notes index
-            </div>
-          </div>
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
-          </div>
-        </a>
-      
-    </nav>
-  
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
       <div class="md-copyright">
     <div class="md-copyright__highlight">
- <a href='https://percona.com' target='_blank'>Percona LLC and/or its affiliates, </a> &copy; 2022
+ <a href='https://percona.com' target='_blank'>Percona LLC and/or its affiliates, </a> &copy; 2023
     </div>
   
     Made with
@@ -981,16 +947,15 @@
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": ".", "features": ["search.highlight", "navigation.top", "navigation.tracking", "content.tabs.link"], "search": "assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "version": {"provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": ".", "features": ["search.highlight", "navigation.top", "navigation.tracking", "content.tabs.link"], "search": "assets/javascripts/workers/search.12658920.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
     
     
-      <script src="assets/javascripts/bundle.5a2dcb6a.min.js"></script>
+      <script src="assets/javascripts/bundle.5cf534bf.min.js"></script>
       
         <script src="js/version-select.js"></script>
       
         <script src="js/promptremover.js"></script>
       
-    
     
   </body>
 </html>
