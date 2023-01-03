@@ -1,15 +1,8 @@
 # Percona Distribution for MongoDB 4.2.20 (2022-05-23)
 
-
-* **Date**
-
-    May 23, 2022
-
-
-
-* **Installation**
-
-    [Install Percona Distribution for MongoDB](installation.md#install)
+| **Release date** | May 23, 2022   |
+| ---------------- | ------------------ |
+| **Installation** | [Install Percona Distribution for MongoDB](installation.md)|
 
 
 Percona Distribution for MongoDB is a collection of solutions to run and operate your
@@ -25,7 +18,7 @@ for MongoDB.
 * *Percona Backup for MongoDB* is a distributed, low-impact solution for achieving
 consistent backups of MongoDB sharded clusters and replica sets.
 
-This release of Percona Distribution for MongoDB is based on [Percona Server for MongoDB 4.2.20-20](https://www.percona.com/doc/percona-server-for-mongodb/4.2/release_notes/4.2.20-20.html) and [Percona Backup for MongoDB 1.7.0](https://www.percona.com/doc/percona-backup-mongodb/release-notes/1.7.0.html).
+This release of Percona Distribution for MongoDB is based on [Percona Server for MongoDB 4.2.20-20](https://docs.percona.com/percona-server-for-mongodb/4.2/release_notes/4.2.20-20.html) and [Percona Backup for MongoDB 1.7.0](https://docs.percona.com/percona-backup-mongodb/release-notes/1.7.0.html).
 
 !!! important
 

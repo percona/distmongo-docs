@@ -15,6 +15,6 @@ consistent backups of MongoDB sharded clusters and replica sets.
 
     Percona Documentation:
 
-      * [Percona Server for MongoDB documentation](https://www.percona.com/doc/percona-server-for-mongodb/4.2/index.html)
+      * [Percona Server for MongoDB documentation](https://docs.percona.com/percona-server-for-mongodb/4.2/index.html)
       
-      * [Percona Backup for MongoDB documentation](https://www.percona.com/doc/percona-backup-mongodb/index.html)
+      * [Percona Backup for MongoDB documentation](https://docs.percona.com/percona-backup-mongodb/index.html)
