@@ -17,7 +17,7 @@ for MongoDB.
 * *Percona Backup for MongoDB* is a distributed, low-impact solution for achieving
 consistent backups of MongoDB sharded clusters and replica sets.
 
-This release of Percona Distribution for MongoDB is based on the production release of [Percona Server for MongoDB 6.0.3-2](https://docs.percona.com/percona-server-for-mongodb/6.0/release_notes/6.0.3-2.html) and [Percona Backup for MongoDB 2.0.2](https://www.percona.com/doc/percona-backup-mongodb/release-notes/2.0.2.html).
+This release of Percona Distribution for MongoDB is based on the production release of [Percona Server for MongoDB 6.0.3-2](https://docs.percona.com/percona-server-for-mongodb/6.0/release_notes/6.0.3-2.html) and [Percona Backup for MongoDB 2.0.2](https://docs.percona.com/percona-backup-mongodb/release-notes/2.0.2.html).
 
 
 ## Release Highlights
