@@ -1,12 +1,8 @@
 # Percona Distribution for MongoDB 4.4.13 (2022-03-23)
 
-* **Date**
-
-    March 23, 2022
-
-* **Installation**
-
-    [Installing Percona Distribution for MongoDB](https://www.percona.com/doc/percona-distribution-for-mongodb/4.4/installation.html)
+| **Release date** |  March 23, 2022  |
+| ---------------- | ------------------ |
+| **Installation** | [Install Percona Distribution for MongoDB](installation.md)|
 
 Percona Distribution for MongoDB is a freely available MongoDB database alternative, giving you a single solution that combines enterprise components from the open source community, designed and tested to work together. The aim of Percona Distribution for MongoDB is to enable you to run and operate your
 MongoDB efficiently with the data being consistently backed up.
@@ -19,7 +15,7 @@ for MongoDB.
 * *Percona Backup for MongoDB* is a distributed, low-impact solution for achieving
 consistent backups of MongoDB sharded clusters and replica sets.
 
-This release of Percona Distribution for MongoDB is based on [Percona Server for MongoDB 4.4.13-13](https://www.percona.com/doc/percona-server-for-mongodb/4.4/release_notes/4.4.13-13.html) and [Percona Backup for MongoDB 1.6.1](https://www.percona.com/doc/percona-backup-mongodb/release-notes/1.6.1.html).
+This release of Percona Distribution for MongoDB is based on [Percona Server for MongoDB 4.4.13-13](https://docs.percona.com/percona-server-for-mongodb/4.4/release_notes/4.4.13-13.html) and [Percona Backup for MongoDB 1.6.1](https://docs.percona.com/percona-backup-mongodb/release-notes/1.6.1.html).
 
 !!! warning
 
@@ -34,7 +30,7 @@ This release of Percona Distribution for MongoDB is based on [Percona Server for
 
 This release of Percona Distribution for MongoDB includes improvements and bug fixes, provided by MongoDB and included in Percona Server for MongoDB. The most notable from  them are the following:
 
-* Added support for [Keys Management Interoperability Protocol (KMIP)](https://www.percona.com/doc/percona-server-for-mongodb/4.4/kmip.html) so that users can store encryption keys in their favorite KMIP-compatible key manager to set up encryption at rest. This is a tech preview feature [^1].
+* Added support for [Keys Management Interoperability Protocol (KMIP)](https://docs.percona.com/percona-server-for-mongodb/4.4/kmip.html) so that users can store encryption keys in their favorite KMIP-compatible key manager to set up encryption at rest. This is a tech preview feature [^1].
 
 * Fixed the issue where having a large number of split points causes the chunk splitter to not function correctly and huge chunks would not be split without manual intervention. This can be caused when having small shard key ranges and a very high number of documents and where more than 8192 split points would be needed.
 
