@@ -117,7 +117,7 @@ Choose how you wish to install Percona Distribution for MongoDB:
 
 === "On Kubernetes"
 
-    Deploy and run Percona Distribution for MongoDB on Kubernetes with [Percona Operator for MongoDB](https://www.percona.com/software/percona-kubernetes-operators). See [Quickstart guides](https://www.percona.com/doc/kubernetes-operator-for-psmongodb/index.html#quickstart-guides) for the installation instructions on your favorite Kubernetes flavor.
+    Deploy and run Percona Distribution for MongoDB on Kubernetes with [Percona Operator for MongoDB](https://www.percona.com/software/percona-kubernetes-operators). See [Quickstart guides](https://docs.percona.com/kubernetes-operator-for-psmongodb/index.html#quickstart-guides) for the installation instructions on your favorite Kubernetes flavor.
 
 To set up monitoring of your Percona Distribution for MongoDB in PMM, see [Set up PMM to monitor MongoDB](https://docs.percona.com/percona-monitoring-and-management/setting-up/client/mongodb.html)
 
@@ -128,13 +128,9 @@ operation system. Optionally, disable *Percona* repository.
 
 !!! admonition "See also"
 
-    Uninstalling Percona Server for MongoDB:
+    * [Uninstall Percona Server for MongoDB](https://docs.percona.com/percona-server-for-mongodb/6.0/install/uninstall.html#apt-uninstall)
 
-      * [on Debian or Ubuntu](https://www.percona.com/doc/percona-server-for-mongodb/6.0/install/uninstall.html#apt-uninstall)
-
-      * [on RHEL or CentOS](https://www.percona.com/doc/percona-server-for-mongodb/6.0/install/uninstall.html#yum-uninstall)
-
-    [Uninstalling Percona Backup for MongoDB](https://www.percona.com/doc/percona-backup-mongodb/uninstalling.html)
+    * [Uninstall Percona Backup for MongoDB](https://docs.percona.com/percona-backup-mongodb/uninstalling.html)
 
 
 
