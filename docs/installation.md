@@ -41,7 +41,7 @@ Choose how you wish to install Percona Distribution for MongoDB:
 
     2. Enable the repository
 
-        Percona provides [two repositories](repo-overview.md#repo-overview) for Percona Distribution for MongoDB. To enable a repo, we recommend using the `setup` command:
+        Percona provides [two repositories](repo-overview.md) for Percona Distribution for MongoDB. To enable a repository, we recommend using the `setup` command:
 
         ```{.bash data-prompt="$"}
         $ sudo percona-release setup pdmdb-4.2
@@ -67,7 +67,7 @@ Choose how you wish to install Percona Distribution for MongoDB:
 
     2. Enable the repository
 
-        Percona provides [two repositories](repo-overview.md#repo-overview) for Percona Distribution for MongoDB. To enable a repo, we recommend using the `setup` command:
+        Percona provides [two repositories](repo-overview.md) for Percona Distribution for MongoDB. To enable a repository, we recommend using the `setup` command:
 
         ```{.bash data-prompt="$"}
         $ sudo percona-release setup pdmdb-4.2
@@ -123,18 +123,14 @@ To set up monitoring of your Percona Distribution for MongoDB in PMM, see [Set u
 
 ## Uninstall Percona Distribution for MongoDB
 
-To uninstall Percona Distribution for MongoDB, remove the packages using the package manager of your
+To uninstall Percona Distribution for MongoDB, stop the service and remove the packages using the package manager of your
 operation system. Optionally, disable *Percona* repository.
 
 !!! admonition "See also"
 
-    Uninstalling Percona Server for MongoDB:
+    * [Uninstall Percona Server for MongoDB](https://docs.percona.com/percona-server-for-mongodb/4.2/install/uninstall.html)
 
-      * [on Debian or Ubuntu](https://www.percona.com/doc/percona-server-for-mongodb/4.2/install/uninstall.html#apt-uninstall)
-
-      * [on RHEL or CentOS](https://www.percona.com/doc/percona-server-for-mongodb/4.2/install/uninstall.html#yum-uninstall)
-
-    [Uninstalling Percona Backup for MongoDB](https://www.percona.com/doc/percona-backup-mongodb/uninstalling.html)
+    * [Uninstall Percona Backup for MongoDB](https://docs.percona.com/percona-backup-mongodb/uninstalling.html)
 
 
 
