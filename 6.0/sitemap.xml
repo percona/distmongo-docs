@@ -2,52 +2,52 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://docs.percona.com/percona-distribution-for-mongodb/6.0/6.0/index.html</loc>
-         <lastmod>2023-01-03</lastmod>
+         <lastmod>2023-01-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.percona.com/percona-distribution-for-mongodb/6.0/6.0/404.html</loc>
-         <lastmod>2023-01-03</lastmod>
+         <lastmod>2023-01-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.percona.com/percona-distribution-for-mongodb/6.0/6.0/copyright.html</loc>
-         <lastmod>2023-01-03</lastmod>
+         <lastmod>2023-01-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.percona.com/percona-distribution-for-mongodb/6.0/6.0/installation.html</loc>
-         <lastmod>2023-01-03</lastmod>
+         <lastmod>2023-01-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.percona.com/percona-distribution-for-mongodb/6.0/6.0/minor-upgrade.html</loc>
-         <lastmod>2023-01-03</lastmod>
+         <lastmod>2023-01-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.percona.com/percona-distribution-for-mongodb/6.0/6.0/release-notes-v6.0.2.html</loc>
-         <lastmod>2023-01-03</lastmod>
+         <lastmod>2023-01-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.percona.com/percona-distribution-for-mongodb/6.0/6.0/release-notes-v6.0.3.html</loc>
-         <lastmod>2023-01-03</lastmod>
+         <lastmod>2023-01-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.percona.com/percona-distribution-for-mongodb/6.0/6.0/release-notes.html</loc>
-         <lastmod>2023-01-03</lastmod>
+         <lastmod>2023-01-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.percona.com/percona-distribution-for-mongodb/6.0/6.0/repo-overview.html</loc>
-         <lastmod>2023-01-03</lastmod>
+         <lastmod>2023-01-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.percona.com/percona-distribution-for-mongodb/6.0/6.0/trademark-policy.html</loc>
-         <lastmod>2023-01-03</lastmod>
+         <lastmod>2023-01-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
