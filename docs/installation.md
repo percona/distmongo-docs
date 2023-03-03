@@ -36,7 +36,7 @@ Choose how you wish to install Percona Distribution for MongoDB:
         * Refresh the local cache
 
         ```{.bash data-prompt="$"}
-        $ supo apt update
+        $ sudo apt update
         ```
 
     2. Enable the repository
