@@ -1,0 +1,6 @@
+# PDMDB Variables set for HTML output
+# See also mkdocs.yml plugins.with-pdf.cover_subtitle and output_path
+
+release: 'release-notes-v5.0.15'
+version: '5.0'
+release_date: 2023-03-16
