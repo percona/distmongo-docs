@@ -1,7 +1,7 @@
 # Percona Distribution for MongoDB 4.4.19 (2023-03-20)
 
 
-| **Release date** | December 19, 2022 |
+| **Release date** | March 20, 2023 |
 |----------------- | ---------------- | 
 | **Installation** | [Install Percona Distribution for MongoDB](installation.md) |
 
@@ -16,15 +16,15 @@ for MongoDB.
 * *Percona Backup for MongoDB* is a distributed, low-impact solution for achieving
 consistent backups of MongoDB sharded clusters and replica sets.
 
-This release of Percona Distribution for MongoDB is based on [Percona Server for MongoDB 4.4.19-19](https://docs.percona.com/percona-server-for-mongodb/4.4/release_notes/4.4.19-19.html) and [Percona Backup for MongoDB 2.0.2](https://docs.percona.com/percona-backup-mongodb/release-notes/2.0.2.html).
+This release of Percona Distribution for MongoDB is based on [Percona Server for MongoDB 4.4.19-19](https://docs.percona.com/percona-server-for-mongodb/4.4/release_notes/4.4.19-19.html) and [Percona Backup for MongoDB 2.0.4](https://docs.percona.com/percona-backup-mongodb/release-notes/2.0.4.html).
 
 
 ## Release Highlights
 
-* The support for authentication using [AWS IAM](https://docs.percona.com/percona-server-for-mongodb/4.4/aws-iam.html) enables you to natively integrate Percona Server for MongoDB with AWS services, increase security of your infrastructure by setting up password-less authentication and offload your DBAs from managing different sets of secrets. This is the [technical preview feature](https://docs.percona.com/percona-server-for-mongodb/4.4/glossary.html#technical-preview-feature)
+* The support for authentication using [AWS IAM](https://docs.percona.com/percona-server-for-mongodb/4.4/aws-iam.html) enables you to natively integrate Percona Server for MongoDB with AWS services, increase security of your infrastructure by setting up password-less authentication and offload your DBAs from managing different sets of secrets. This is a [technical preview feature](https://docs.percona.com/percona-server-for-mongodb/4.4/glossary.html#technical-preview-feature)
 * Improved master key rotation for data at rest encrypted with HashiCorp Vault enables you to use the same secret key path on every server in your entire deployment thus significantly simplifying the secrets management and key rotation process.
 
-The bug fixes and improvements provided by MongoDB and included in Percona Server for MongoDB 5.0.15-13 are the following:
+The bug fixes and improvements provided by MongoDB and included in Percona Server for MongoDB 4.4.19-19 are the following:
 
 * Fixed the issue with adding a new unencrypted node into an encrypted replica set by removing options which might not apply for this node.
 * Changed the yielding policy of dataSize command to YIELD_AUTO for both when the command is called with estimate:true or false
