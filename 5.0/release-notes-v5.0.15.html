@@ -724,8 +724,12 @@ for MongoDB.</p>
 consistent backups of MongoDB sharded clusters and replica sets.</p>
 </li>
 </ul>
-<p>This release of |pdmdb| is based on <a href="https://docs.percona.com/percona-server-for-mongodb/5.0/release_notes/5.0.15-13.html">Percona Server for MongoDB 5.0.15-13</a> and <a href="https://docs.percona.com/percona-backup-mongodb/release-notes/2.0.4.html">Percona Backup for MongoDB 2.0.4</a>.</p>
+<p>This release of Percona Distribution for MongoDB is based on <a href="https://docs.percona.com/percona-server-for-mongodb/5.0/release_notes/5.0.15-13.html">Percona Server for MongoDB 5.0.15-13</a> and <a href="https://docs.percona.com/percona-backup-mongodb/release-notes/2.0.4.html">Percona Backup for MongoDB 2.0.4</a>.</p>
 <h2 id="release-highlights">Release Highlights<a class="headerlink" href="#release-highlights" title="Permanent link">&para;</a></h2>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Due to critical issues identified in previous releases that may affect data integrity and performance, we recommend upgrading all production environments to the latest version - currently Percona Distribution for MongoDB 5.0.15. Find details about those issues in <a href="https://www.mongodb.com/docs/manual/release-notes/5.0/">MongoDB 5.0 Community Edition release notes</a>.</p>
+</div>
 <ul>
 <li>The support for authentication using <a href="https://docs.percona.com/percona-server-for-mongodb/5.0/aws-iam.html">AWS IAM</a> enables you to natively integrate Percona Server for MongoDB with AWS services, increase security of your infrastructure by setting up password-less authentication and offload your DBAs from managing different sets of secrets. This is the <a href="https://docs.percona.com/percona-server-for-mongodb/5.0/glossary.html#technical-preview-feature">technical preview feature</a></li>
 <li>Improved master key rotation for data at rest encrypted with HashiCorp Vault enables you to use the same secret key path on every server in your entire deployment thus significantly simplifying the secrets management and key rotation process.</li>
@@ -737,6 +741,11 @@ consistent backups of MongoDB sharded clusters and replica sets.</p>
 <li>Changed the yielding policy of dataSize command to YIELD_AUTO for both when the command is called with estimate:true or false</li>
 <li>Disallowed creating the ‘admin’, ‘local’, and ‘config’ databases with alternative cases in names on sharded clusters</li>
 <li>Fixed the incorrect behavior of the <code>mapReduce</code> command with single reduce optimization in sharded clusters</li>
+<li>Fixed a crash during startup from backup can lose metadata by not deleting checkpoints during recovery from backup</li>
+<li>Fixed a memory leak in reconciliation after aborted eviction</li>
+<li>Fixed mapReduce with single reduce optimization from failing in sharded clusters</li>
+<li>Fixed the issue with not removing the jumbo flag upon successful split of the chunk</li>
+<li>Fixed the deadlock between index build setup, prepared transaction and stepdown by unlocking and relocking Replication State Transition Lock (RSTL) during index build setup </li>
 </ul>
 <p>Percona Backup for MongoDB 2.0.4 provides the ability to <a href="https://docs.percona.com/percona-backup-mongodb/usage/restore#define-mongod-binary-location">specify the custom path to <code>mongod</code> binaries</a> to simplify the physical restore process.</p>
 
@@ -760,7 +769,7 @@ consistent backups of MongoDB sharded clusters and replica sets.</p>
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 16, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 20, 2023</span>
       
         <br>
         Created:
