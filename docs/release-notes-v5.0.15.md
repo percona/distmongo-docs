@@ -15,9 +15,13 @@ for MongoDB.
 * *Percona Backup for MongoDB* is a distributed, low-impact solution for achieving
 consistent backups of MongoDB sharded clusters and replica sets.
 
-This release of |pdmdb| is based on [Percona Server for MongoDB 5.0.15-13](https://docs.percona.com/percona-server-for-mongodb/5.0/release_notes/5.0.15-13.html) and [Percona Backup for MongoDB 2.0.4](https://docs.percona.com/percona-backup-mongodb/release-notes/2.0.4.html).
+This release of Percona Distribution for MongoDB is based on [Percona Server for MongoDB 5.0.15-13](https://docs.percona.com/percona-server-for-mongodb/5.0/release_notes/5.0.15-13.html) and [Percona Backup for MongoDB 2.0.4](https://docs.percona.com/percona-backup-mongodb/release-notes/2.0.4.html).
 
 ## Release Highlights
+
+!!! warning
+
+    Due to critical issues identified in previous releases that may affect data integrity and performance, we recommend upgrading all production environments to the latest version - currently Percona Distribution for MongoDB 5.0.15. Find details about those issues in [MongoDB 5.0 Community Edition release notes](https://www.mongodb.com/docs/manual/release-notes/5.0/).
 
 * The support for authentication using [AWS IAM](https://docs.percona.com/percona-server-for-mongodb/5.0/aws-iam.html) enables you to natively integrate Percona Server for MongoDB with AWS services, increase security of your infrastructure by setting up password-less authentication and offload your DBAs from managing different sets of secrets. This is the [technical preview feature](https://docs.percona.com/percona-server-for-mongodb/5.0/glossary.html#technical-preview-feature)
 * Improved master key rotation for data at rest encrypted with HashiCorp Vault enables you to use the same secret key path on every server in your entire deployment thus significantly simplifying the secrets management and key rotation process.
@@ -30,6 +34,11 @@ The bug fixes and improvements provided by MongoDB and included in Percona Serve
 * Changed the yielding policy of dataSize command to YIELD_AUTO for both when the command is called with estimate:true or false
 * Disallowed creating the ‘admin’, ‘local’, and ‘config’ databases with alternative cases in names on sharded clusters
 * Fixed the incorrect behavior of the `mapReduce` command with single reduce optimization in sharded clusters
+* Fixed a crash during startup from backup can lose metadata by not deleting checkpoints during recovery from backup
+* Fixed a memory leak in reconciliation after aborted eviction
+* Fixed mapReduce with single reduce optimization from failing in sharded clusters
+* Fixed the issue with not removing the jumbo flag upon successful split of the chunk
+* Fixed the deadlock between index build setup, prepared transaction and stepdown by unlocking and relocking Replication State Transition Lock (RSTL) during index build setup 
 
 Percona Backup for MongoDB 2.0.4 provides the ability to [specify the custom path to `mongod` binaries](https://docs.percona.com/percona-backup-mongodb/usage/restore#define-mongod-binary-location) to simplify the physical restore process.
 
