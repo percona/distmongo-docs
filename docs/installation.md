@@ -130,7 +130,7 @@ operation system. Optionally, disable *Percona* repository.
 
     * [Uninstall Percona Server for MongoDB](https://docs.percona.com/percona-server-for-mongodb/4.4/install/uninstall.html#apt-uninstall)
 
-    * [Uninstall Percona Backup for MongoDB](https://docs.percona.com/percona-backup-mongodb/uninstalling.html)
+    * [Uninstall Percona Backup for MongoDB](https://docs.percona.com/percona-backup-mongodb/manage/uninstalling.html)
 
 
 
