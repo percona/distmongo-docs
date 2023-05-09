@@ -134,6 +134,7 @@ nav:
       - index.md
   - Release notes: 
       - "Release notes index": "release-notes.md"
+      - release-notes-v4.4.21.md
       - release-notes-v4.4.19.md
       - release-notes-v4.4.18.md
       - release-notes-v4.4.17.md
