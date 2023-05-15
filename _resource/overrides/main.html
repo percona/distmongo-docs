@@ -54,6 +54,10 @@ by adding marketing-requested elements
               <!-- End Google Tag Manager (noscript) -->
               {% endblock %}
 
+              {% block outdated %}
+              <div>This documentation is for the end of life version of Percona Distribution for MongoDB 4.2 and is no longer supported.<br> <strong><a href="https://www.percona.com/blog/how-to-upgrade-mongodb-v4.2-eol">Learn how to upgrade MongoDB</a>.</strong> See the <strong><a href= {{ '../' ~ base_url }}>current documentation</a></strong>. </div>
+              {% endblock %}
+
               {% block content %}
 
                 <!-- Edit and view button -->
