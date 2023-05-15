@@ -64,6 +64,14 @@ margin: 1em 0 .54em;
     color:var(--md-accent-bg-color)
 }
 
+.md-banner--warning {
+    background: #F0B336;
+    color: black;
+    --md-typeset-a-color: #0d184c;
+}
+
+
+
 /*.git-revision-date-localized-plugin:before {
   content: url('https://api.iconify.design/mdi/clock-edit-outline.svg');
 }*/
