@@ -1,6 +1,6 @@
-# Percona Distribution for MongoDB 6.0.6 (2023-05-18)
+# Percona Distribution for MongoDB 6.0.6 (2023-05-25)
 
-| Release date:     | May 18, 2023      |
+| Release date:     | May 25, 2023      |
 |:------------------|:----------------------|
 | **Installation**: | [Installing Percona Distribution for MongoDB](installation.md)
 
