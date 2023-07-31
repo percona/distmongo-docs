@@ -5,5 +5,10 @@ INHERIT: mkdocs-base.yml
 
 markdown_extensions:
   pymdownx.tabbed: {}
+<<<<<<< HEAD
   admonition: {} 
+=======
+  pymdownx.superfences: {}
+  admonition: {}
+>>>>>>> DISTMONGO-237 Release note 6.0.8
 
