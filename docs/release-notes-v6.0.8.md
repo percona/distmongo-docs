@@ -25,23 +25,26 @@ This release of Percona Distribution for MongoDB is based on the production rele
 
     Several changes have been incrementally introduced within 6.0.x releases.
 
-    * The name of a subset of data has changed from a `chunk` to a `range`
+    * The name of a subset of data has changed from a `chunk` to a `range`. 
+    * The data size has changed from 64 MB for a chunk to 128 MB for a range.
 
-    * The balancer now distributes ranges based on the actual data size of a collections. Formerly the balancer migrated and balanced data across shards based strictly on the number of chunks of data that exist for a collection across each shard.
+    * The balancer now distributes ranges based on the actual data size of collections. Formerly the balancer migrated and balanced data across shards based strictly on the number of chunks of data that exist for a collection across each shard. This, combined with the auto-splitter process could cause quite a heavy performance impact to heavy write environments. 
 
-    * The default size of a range is 128 megabytes. To go along with this, the auto-splitter process no longer splits chunks. It currently is still available but it serves no purpose and does nothing active to the data. This also means that the Enable/Disable AutoSplit helpers should no longer be used.
+    * Ranges (formerly chunks) are no longer auto-split and will be split only when they move across shards for distribution purposes. The auto-splitter process is currently still available but it serves no purpose and does nothing active to the data. This also means that the Enable/Disable AutoSplit helpers should no longer be used. 
 
-    The above changes represent a drastic change in the behavior and activities of the balancer. 
-    Previously the 64M default size and the high activity level of the balancer and auto-splitter when having to split all of those could cause quite a heavy performance impact to heavy write environments. The new ranges (or even possibly smaller sub-ranges) are moved or migrated by the balancer only when data needs to move.
-
-    This is expected to lead to better performance overall going forward.
+    The above changes are expected to lead to better performance overall going forward.
 
 ## Release Highlights
 
 Bug fixes and improvements introduced in MongoDB and included in Percona Distribution for MongoDB are the following:
 
+<<<<<<< HEAD
 
 * The ability to [configure AWS STS endpoint](https://docs.percona.com/percona-server-for-mongodb/6.0/aws-iam-setup.html#configure-aws-sts-endpoint) improves authentication and connectivity with AWS services.
+=======
+* The ability to [configure AWS STS endpoint](https://docs.percona.com/percona-backup-mongodb/aws-iam-setup.html#configure-aws-sts-endpoint) improves authentication and connectivity with AWS services.
+* The ability to configure AWS STS endpoint improves authentication and connectivity with AWS services.
+>>>>>>> updated warning
 * Enabled automatic of retry time series insert on `DuplicateKey` error.
 * Added the CURL_OPT_SEEKFUNCTION to resend the data during multi-pass authentication.
 * Prevented unnecessary logging of `WriteConflictExceptions` during the execution of a `findAndModify` command.
