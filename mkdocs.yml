@@ -10,7 +10,9 @@ theme:
 
 
 
-
+#Plugins
+plugins:
+  section-index: {}
   
 #Google Analytics configuration 
 extra:
