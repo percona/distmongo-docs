@@ -38,13 +38,8 @@ This release of Percona Distribution for MongoDB is based on the production rele
 
 Bug fixes and improvements introduced in MongoDB and included in Percona Distribution for MongoDB are the following:
 
-<<<<<<< HEAD
 
 * The ability to [configure AWS STS endpoint](https://docs.percona.com/percona-server-for-mongodb/6.0/aws-iam-setup.html#configure-aws-sts-endpoint) improves authentication and connectivity with AWS services.
-=======
-* The ability to [configure AWS STS endpoint](https://docs.percona.com/percona-backup-mongodb/aws-iam-setup.html#configure-aws-sts-endpoint) improves authentication and connectivity with AWS services.
-* The ability to configure AWS STS endpoint improves authentication and connectivity with AWS services.
->>>>>>> updated warning
 * Enabled automatic of retry time series insert on `DuplicateKey` error.
 * Added the CURL_OPT_SEEKFUNCTION to resend the data during multi-pass authentication.
 * Prevented unnecessary logging of `WriteConflictExceptions` during the execution of a `findAndModify` command.
