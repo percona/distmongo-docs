@@ -23,7 +23,7 @@ This release of Percona Distribution for MongoDB is based on [Percona Server for
 
 The bug fixes and improvements provided by MongoDB and included in Percona Server for MongoDB are the following:
 
-* The ability to [configure AWS STS endpoint](https://docs.percona.com/percona-backup-mongodb/4.4/aws-iam-setup.html#configure-aws-sts-endpoint) improves authentication and connectivity with AWS services.
+* The ability to [configure AWS STS endpoint](https://docs.percona.com/percona-server-for-mongodb/4.4/aws-iam-setup.html#configure-aws-sts-endpoint) improves authentication and connectivity with AWS services.
 
 
 * Improved the behavior of systems without swap memory space by pinning program code segments in memory on `mongod` startup.
@@ -32,7 +32,7 @@ The bug fixes and improvements provided by MongoDB and included in Percona Serve
 
 Percona Backup for MongoDB 2.2.x improvements include the following:
 
-* Automated [Point-in-time recovery from physical backups](https://docs.percona.com/percona-backup-mongodb/usage/pitr-tutorial.html#from-physical-backups) offloads your DBAs on performing manual oplog replay on top of physical restore, ensures data consistency and unifies the user experience with PBM.  
+* Automated [Point-in-time recovery from physical backups](https://docs.percona.com/percona-backup-mongodb/usage/pitr-tutorial.html#from-physical-backups) offloads your DBAs from performing manual oplog replay on top of physical restore, ensures data consistency and unifies the user experience with PBM.  
 * Owners of large data sets can now use PBM to [create external physical backups](https://docs.percona.com/percona-backup-mongodb/features/snapshots.html) as EBS snapshots or via a technology of their choice and restore from those backups with the data consistency guaranteed by PBM. Thereby they benefit from increased performance and reduced downtime, and are sure that their data remains consistent. This is the technical preview feature.
 * The ability to [restore from physical and incremental backups to a new environment](https://docs.percona.com/percona-backup-mongodb/usage/restore.html#restoring-into-a-cluster-replica-set-with-a-different-name) with different replica set names extends the set of compatible environments for physical restore. 
 * The ability to increase the wait time for physical backup to start eliminates the PBM failure when creating `$backupCursor` takes longer than usual.
