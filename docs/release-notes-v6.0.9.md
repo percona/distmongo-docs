@@ -1,4 +1,4 @@
-# Percona Distribution for MongoDB 6.0.9 (2023-09-13)
+# Percona Distribution for MongoDB 6.0.9 (2023-09-14)
 
 [Installation](installation.md){.md-button}
 
