@@ -1,5 +1,7 @@
 # Release Notes
 
+* [*Percona Distribution for MongoDB* 5.0.22 (2023-11-09)](release-notes-v5.0.22.md)
+
 * [*Percona Distribution for MongoDB* 5.0.21 (2023-10-12)](release-notes-v5.0.21.md)
 
 * [*Percona Distribution for MongoDB* 5.0.20 (2023-09-07)](release-notes-v5.0.20.md)
