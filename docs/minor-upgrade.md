@@ -17,7 +17,7 @@ Before the upgrade, we recommend to back up your data in order to be on the safe
     If you installed Percona Distribution for MongoDB from the Minor release repository, you must enable the new version repository (for example, `pdmdb-7.0.3`) to upgrade. We recommend to use the `setup` subcommand:
 
     ```{.bash data-prompt="$"}
-    $ sudo percona-release setup pdmdb-7.0.3
+    $ sudo percona-release setup pdmdb-7.0.4
     ```
 
 ## Procedure
