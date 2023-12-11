@@ -1,8 +1,8 @@
-name: Build Percona Distribution for MongoDB 6.0 docs
+name: Build Percona Distribution for MongoDB 7.0 docs
 on:
   push:
     branches: 
-      - 6.0
+      - 7.0
 
 jobs:
   build:
