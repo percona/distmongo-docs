@@ -3,7 +3,8 @@
 site_name: Percona Distribution for MongoDB 7.0
 site_description: Documentation
 site_author: Percona LLC
-copyright: Percona LLC, &#169; 2023
+copyright: >
+  <a href="https://www.percona.com/about">Percona LLC</a> and/or its affiliates © 2023 — <a href="#__consent">Cookie Consent</a>
 
 repo_name: percona/distmongo-docs
 repo_url: https://github.com/percona/distmongo-docs
@@ -84,8 +85,8 @@ markdown_extensions:
   pymdownx.inlinehilite: {}
   pymdownx.snippets: {}
   pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
        
 
@@ -145,6 +146,7 @@ nav:
       - minor-upgrade.md
   - Release Notes: 
       - "Release notes index": "release-notes.md"
+      - release-notes-v7.0.4.md
   - Copyright and Licensing:
       - copyright.md
   - Trademark policy:
