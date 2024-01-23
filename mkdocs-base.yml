@@ -4,7 +4,7 @@ site_name: Percona Distribution for MongoDB 7.0
 site_description: Documentation
 site_author: Percona LLC
 copyright: >
-  <a href="https://www.percona.com/about">Percona LLC</a> and/or its affiliates © 2023 — <a href="#__consent">Cookie Consent</a>
+  <a href="https://www.percona.com/about">Percona LLC</a> and/or its affiliates © 2024 — <a href="#__consent">Cookie Consent</a>
 
 repo_name: percona/distmongo-docs
 repo_url: https://github.com/percona/distmongo-docs
@@ -112,7 +112,7 @@ plugins:
   with-pdf: # https://github.com/orzih/mkdocs-with-pdf
           output_path: '_pdf/PerconaDistributionforMongoDB-7.0.pdf'
           cover_title: 'Distribution for MongoDB Documentation 7.0'
-          cover_subtitle: 7.0.4 (December 11, 2023)
+          cover_subtitle: 7.0.4 (January 23, 2024)
           author: 'Percona Technical Documentation Team'
           cover_logo: docs/_images/Percona_Logo_Color.png
           debug_html: false
@@ -146,6 +146,7 @@ nav:
       - minor-upgrade.md
   - Release Notes: 
       - "Release notes index": "release-notes.md"
+      - release-notes-v7.0.5.md
       - release-notes-v7.0.4.md
   - Copyright and Licensing:
       - copyright.md
