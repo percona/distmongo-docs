@@ -29,3 +29,7 @@ Percona Backup for MongoDB 2.3.1 enhancements include the following:
 * The ability to define custom endpoints when using Microsoft Azure Blob Storage for backups
 * Improved PBM Docker image to allow making physical backups with the shared mongodb data volume
 * Updated Golang libraries that include fixes for the security vulnerability CVE-2023-39325.
+
+## Packaging changes
+
+Percona Distribution for MongoDB 5.0.24 is no longer available on Ubuntu 18.04 (Bionic Beaver). 
