@@ -112,7 +112,7 @@ plugins:
   with-pdf: # https://github.com/orzih/mkdocs-with-pdf
           output_path: '_pdf/PerconaDistributionforMongoDB-4.4.pdf'
           cover_title: 'Distribution for MongoDB Documentation 4.4'
-          cover_subtitle: 4.4.27 (January 17, 2024)
+          cover_subtitle: 4.4.28 (February 7, 2024)
           author: 'Percona Technical Documentation Team'
           cover_logo: docs/_images/Percona_Logo_Color.png
           debug_html: false
@@ -142,6 +142,7 @@ nav:
       - index.md
   - Release notes: 
       - "Release notes index": "release-notes.md"
+      - release-notes-v4.4.28.md
       - release-notes-v4.4.27.md
       - 2023 (versions 4.4.19 to 4.4.26):
         - release-notes-v4.4.26.md
