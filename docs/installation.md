@@ -110,7 +110,7 @@ Choose how you wish to install Percona Distribution for MongoDB:
             ```ini title='/etc/yum.repos.d/percona-pdmdb-6.0.13-release.repo'
             [pdmdb-6.0.13-release-aarch64]
             name = Percona Distribution for MongoDB 6.0.13 release/aarch64 YUM repository
-            baseurl = http://repo.percona.com/pdmdb-6.0.12/yum/release/$releasever/RPMS/aarch64
+            baseurl = http://repo.percona.com/pdmdb-6.0.13/yum/release/$releasever/RPMS/aarch64
             enabled = 1
             gpgcheck = 1
             gpgkey = file:///etc/pki/rpm-gpg/PERCONA-PACKAGING-KEY
