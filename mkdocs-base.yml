@@ -3,7 +3,7 @@
 site_name: Percona Distribution for MongoDB 6.0
 site_description: Documentation
 site_author: Percona LLC
-copyright: Percona LLC, &#169; 2023
+copyright: Percona LLC, &#169; 2024
 
 repo_name: percona/distmongo-docs
 repo_url: https://github.com/percona/distmongo-docs
@@ -39,9 +39,9 @@ theme:
   features:
     - search.share
     - search.highlight
-    - content.action.copy
+    - content.code.copy
     - content.action.view
-    - content.account.edit
+    - content.action.edit
     - content.tabs.link
     - navigation.top
     - navigation.tracking 
@@ -53,6 +53,7 @@ extra_css:
   - css/percona.css
   - css/nocopy.css
   - css/extra.css
+#  - css/design.css
 
 extra_javascript:
   - js/version-select.js
@@ -82,10 +83,16 @@ markdown_extensions:
   pymdownx.highlight:
       linenums: false
   pymdownx.inlinehilite: {}
-  pymdownx.snippets: {}
+  pymdownx.snippets:
+      base_path: ["snippets"]
+      auto_append:
+        - services-banner.md
   pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
+      options:
+        custom_icons:
+          - _resource/.icons
 
        
 
@@ -111,7 +118,7 @@ plugins:
   with-pdf: # https://github.com/orzih/mkdocs-with-pdf
           output_path: '_pdf/PerconaDistributionforMongoDB-6.0.pdf'
           cover_title: 'Distribution for MongoDB Documentation 6.0'
-          cover_subtitle: 6.0.12 (December 14, 2023)
+          cover_subtitle: 6.0.13 (February 20, 2024)
           author: 'Percona Technical Documentation Team'
           cover_logo: docs/_images/Percona_Logo_Color.png
           debug_html: false
