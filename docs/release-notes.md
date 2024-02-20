@@ -1,5 +1,7 @@
 # Percona Distribution for MongoDB release notes
 
+* [Percona Distribution for MongoDB 6.0.13 (2024-02-20)](release-notes-v6.0.13.md)
+
 * [Percona Distribution for MongoDB 6.0.12 (2023-12-14)](release-notes-v6.0.12.md)
 
 * [Percona Distribution for MongoDB 6.0.11 (2023-10-19)](release-notes-v6.0.11.md)

@@ -152,6 +152,7 @@ nav:
       - minor-upgrade.md
   - Release Notes: 
       - "Release notes index": "release-notes.md"
+      - release-notes-v6.0.13.md
       - release-notes-v6.0.12.md
       - release-notes-v6.0.11.md
       - release-notes-v6.0.9.md
