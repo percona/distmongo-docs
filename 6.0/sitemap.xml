@@ -36,6 +36,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://docs.percona.com/percona-distribution-for-mongodb/6.0/release-notes-v6.0.13.html</loc>
+         <lastmod>2024-02-20</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://docs.percona.com/percona-distribution-for-mongodb/6.0/release-notes-v6.0.2.html</loc>
          <lastmod>2024-02-20</lastmod>
          <changefreq>daily</changefreq>
