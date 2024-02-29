@@ -19,8 +19,16 @@ theme:
   favicon: _images/percona-favicon.ico
   custom_dir: _resource/overrides/
   font:
-    text: Poppins
+    text: Roboto
+    code: Roboto Mono
   palette:
+    
+    # Automatic mode based on system preferences
+
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
 
     # Light mode
     - media: "(prefers-color-scheme: light)"
@@ -40,9 +48,9 @@ theme:
   features:
     - search.share
     - search.highlight
-    - content.action.copy
+    - content.account.copy
     - content.action.view
-    - content.account.edit
+    - content.action.edit
     - content.tabs.link
     - navigation.top
     - navigation.tracking 
@@ -55,6 +63,7 @@ extra_css:
   - css/nocopy.css
   - css/extra.css
   - css/osano.css
+  - css/design.css
 
 extra_javascript:
   - js/version-select.js
@@ -81,15 +90,26 @@ markdown_extensions:
   pymdownx.tabbed: 
       {alternate_style: true}
   pymdownx.tilde: {}
-  pymdownx.superfences: {}
+  pymdownx.superfences: 
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   pymdownx.highlight:
       linenums: false
   pymdownx.inlinehilite: {}
-  pymdownx.snippets: {}
+  pymdownx.snippets: 
+      base_path: ["snippets"]
+      auto_append:
+        - services-banner.md
+  pymdownx.tasklist:
+     custom_checkbox: true
   pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
-
+      options:
+        custom_icons:
+          - _resource/.icons
        
 
 plugins:
