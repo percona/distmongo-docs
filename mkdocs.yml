@@ -4,22 +4,12 @@ INHERIT: mkdocs-base.yml
 
 site_url: "https://docs.percona.com/percona-distribution-for-mongodb/"
 
-theme:
-  name: material
-  custom_dir: _resource/overrides
-
-
-
-#Plugins
-plugins:
-  section-index: {}
-  
 #Google Analytics configuration 
 extra:
   analytics:
     analytics: 
     provider: google
-    property: !ENV GOOGLE_ANALYTICS_KEY
+    property: G-J4J70BNH0G
     feedback:
       title: Was this page helpful?
       ratings:
@@ -27,7 +17,7 @@ extra:
           name: This page was helpful
           data: 1
           note: >-
-            Thanks for your feedback!
+            Thank you for your feedback!
         - icon: material/emoticon-sad-outline
           name: This page could be improved
           data: 0
