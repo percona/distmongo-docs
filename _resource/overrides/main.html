@@ -25,11 +25,10 @@ by adding marketing-requested elements
               </html>     
 
               {% endblock %}
-
               
 
               {% block site_nav %}
-            {% if nav %}
+           {% if nav %}
               {% if page.meta and page.meta.hide %}
                 {% set hidden = "hidden" if "navigation" in page.meta.hide %}
               {% endif %}
