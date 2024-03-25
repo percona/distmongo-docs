@@ -1,4 +1,4 @@
-# Percona Distribution for MongoDB 4.4.29 (2024-03-)
+# Percona Distribution for MongoDB 4.4.29 (2024-04-02)
 
 [Installation](installation.md){.md-button}
 
@@ -13,9 +13,7 @@ for MongoDB.
 * *Percona Backup for MongoDB* is a distributed, low-impact solution for achieving
 consistent backups of MongoDB sharded clusters and replica sets.
 
-This release of Percona Distribution for MongoDB is based on [Percona Server for MongoDB 4.4.29-28](https://docs.percona.com/percona-server-for-mongodb/4.4/release_notes/4.4.29-28.html) and [Percona Backup for MongoDB 2.4.0](https://docs.percona.com/percona-backup-mongodb/release-notes/2.4.0.html).
-
-## Release Highlights
+This release of Percona Distribution for MongoDB is based on [Percona Server for MongoDB 4.4.29-28](https://docs.percona.com/percona-server-for-mongodb/4.4/release_notes/4.4.29-28.html) and [Percona Backup for MongoDB 2.4.1](https://docs.percona.com/percona-backup-mongodb/release-notes/2.4.1.html).
 
 !!! warning
 
@@ -25,6 +23,10 @@ This release of Percona Distribution for MongoDB is based on [Percona Server for
     
     Now, configuring MongoDB to use TLS requires specifying the value for the `--tlsCAFile` flag, the `net.tls.CAFile `configuration option, or the `tlsUseSystemCA` parameter.
 
+## Release Highlights
+
+* This is the last minor release in Percona Distribution for MongoDB 4.4. 
+
 The bug fixes and improvements provided by MongoDB and included in Percona Distribution for MongoDB are the following:
 
 * Fixed the issue with missing peer certificate validation if neither CAFile nor clusterCAFile is provided.
@@ -33,7 +35,8 @@ The bug fixes and improvements provided by MongoDB and included in Percona Distr
 * Added an index on the process field for the `config.locks` collection to ensure update operations on it are completed even in heavy loaded deployments.
 * Prevented triggerring write conflicts when removing unindexed documents on unique partial indexes
 
-Percona Backup for MongoDB 2.4.0 enhancements include the following:
+Percona Backup for MongoDB 2.4.x enhancements include the following:
 
-* You can now [delete backup snapshots of a specific type](https://docs.percona.com/percona-backup-mongodb/usage/delete-backup.html#__tabbed_2_3). For example, delete only logical backups which you might have created and no longer need. You can also check what exactly will be deleted with the new `--dry-run flag`. This improvement helps you better meet the organization's backup policy and improves your experience with cleaning up outdated data.
+* Ability to [delete backup snapshots of a specific type](https://docs.percona.com/percona-backup-mongodb/usage/delete-backup.html#__tabbed_2_3). For example, you can delete only logical backups which you might have created and no longer need. You can also check what exactly will be deleted with the new `--dry-run flag`. This improvement helps you better meet the organization's backup policy and improves your experience with cleaning up outdated data.
 * Point-in-time recovery oplog slicing is now running in parallel with backup snapshots. This ensures that you can make a [point-in-time recovery](https://docs.percona.com/percona-backup-mongodb/usage/pitr-tutorial.html) to any timestamp from very large backups that take hours to make.
+* Fixed the issue with failing incremental backups. It was caused by the backup metadata document reaching the maximum size limit of 16MB. The issue is fixed by introducing the new approach of handling the metadatada document: it no longer contains the list of backup files which is now stored separately on the storage and is read by PBM on demand. The new metadata handling approach applies to physical, incremental and shapshot-based backups.
