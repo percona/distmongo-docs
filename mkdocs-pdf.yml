@@ -5,16 +5,10 @@ INHERIT: mkdocs-base.yml
 
 copyright: Percona LLC, &#169; 2024
 
-<<<<<<< HEAD
-markdown_extensions:
-  pymdownx.tabbed: {}
-  admonition: {} 
-=======
 extra_css:
   - https://unicons.iconscout.com/release/v3.0.3/css/line.css
   - https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css
   - css/percona.css
   - css/nocopy.css
   - css/extra.css
->>>>>>> e1e876c... DISTMONGO-281 Changed color scheme for docs
 
