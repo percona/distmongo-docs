@@ -1,6 +1,6 @@
 # Release Notes
 
-* [*Percona Distribution for MongoDB* 4.4.29 (2024-03-)](release-notes-v4.4.29.md)
+* [*Percona Distribution for MongoDB* 4.4.29 (2024-04-02)](release-notes-v4.4.29.md)
 
 * [*Percona Distribution for MongoDB* 4.4.28 (2024-02-07)](release-notes-v4.4.28.md)
 
