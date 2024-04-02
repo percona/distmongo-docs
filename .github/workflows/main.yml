@@ -43,7 +43,7 @@ jobs:
         run: |
           mike deploy 7.0 -b publish -p
           mike set-default 7.0 -b publish -p
-          mike retitle 7.0 "7.0.5 (LATEST)" -b publish -p
+          mike retitle 7.0 "7.0.7 (LATEST)" -b publish -p
 # - name: Install Node.js 14.x
 #        uses: percona-platform/setup-node@v2
 #        with:
