@@ -9,19 +9,19 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Percona Distribution for MongoDB 7.0.7 (2024-04-04)">
+        <meta name="description" content="Installation">
       
       
         <meta name="author" content="Percona LLC">
       
       
-        <link rel="canonical" href="https://docs.percona.com/percona-distribution-for-mongodb/7.0/release-notes.html">
+        <link rel="canonical" href="https://docs.percona.com/percona-distribution-for-mongodb/7.0/release-notes-v7.0.7.html">
       
       
-        <link rel="prev" href="minor-upgrade.html">
+        <link rel="prev" href="release-notes.html">
       
       
-        <link rel="next" href="release-notes-v7.0.7.html">
+        <link rel="next" href="release-notes-v7.0.5.html">
       
       
       <link rel="icon" href="_images/percona-favicon.ico">
@@ -29,7 +29,7 @@
     
     
       
-        <title>Release notes index - Percona Distribution for MongoDB 7.0</title>
+        <title>Percona Distribution for MongoDB 7.0.7 (2024-04-04) - Percona Distribution for MongoDB 7.0</title>
       
     
     
@@ -92,7 +92,7 @@
                  
                  
                  <meta property="og:type" content="website" />
-                 <meta property="og:title" content="Percona Distribution for MongoDB 7.0 - Release notes index" />
+                 <meta property="og:title" content="Percona Distribution for MongoDB 7.0 - Percona Distribution for MongoDB 7.0.7 (2024-04-04)" />
                  <meta property="og:image" content="https://docs.percona.com/percona-distribution-for-mongodb/6.0/_images/mongodb.png">
                  <meta property="og:url" content="https://docs.percona.com/percona-distribution-for-mongodb/">
                 </head>
@@ -120,7 +120,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#percona-distribution-for-mongodb-release-notes" class="md-skip">
+        <a href="#percona-distribution-for-mongodb-707-2024-04-04" class="md-skip">
           Skip to content
         </a>
       
@@ -159,7 +159,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Release notes index
+              Percona Distribution for MongoDB 7.0.7 (2024-04-04)
             
           </span>
         </div>
@@ -475,6 +475,27 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="release-notes.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Release notes index
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -491,18 +512,18 @@
           
   
   <span class="md-ellipsis">
-    Release notes index
+    Percona Distribution for MongoDB 7.0.7 (2024-04-04)
   </span>
   
 
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <a href="release-notes.html" class="md-nav__link md-nav__link--active">
+      <a href="release-notes-v7.0.7.html" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
-    Release notes index
+    Percona Distribution for MongoDB 7.0.7 (2024-04-04)
   </span>
   
 
@@ -526,6 +547,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#release-highlights" class="md-nav__link">
+    <span class="md-ellipsis">
+      Release Highlights
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#get-expert-help" class="md-nav__link">
     <span class="md-ellipsis">
       Get expert help
@@ -538,27 +568,6 @@
   
 </nav>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="release-notes-v7.0.7.html" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Percona Distribution for MongoDB 7.0.7 (2024-04-04)
-  </span>
-  
-
-      </a>
     </li>
   
 
@@ -688,6 +697,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#release-highlights" class="md-nav__link">
+    <span class="md-ellipsis">
+      Release Highlights
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#get-expert-help" class="md-nav__link">
     <span class="md-ellipsis">
       Get expert help
@@ -711,7 +729,7 @@
                   
 
   
-    <a href="https://github.com/percona/distmongo-docs/edit/7.0/docs/release-notes.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/percona/distmongo-docs/edit/7.0/docs/release-notes-v7.0.7.md" title="Edit this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
     </a>
@@ -720,24 +738,50 @@
     
       
     
-    <a href="https://github.com/percona/distmongo-docs/raw/7.0/docs/release-notes.md" title="View source of this page" class="md-content__button md-icon">
+    <a href="https://github.com/percona/distmongo-docs/raw/7.0/docs/release-notes-v7.0.7.md" title="View source of this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.15 8.15 0 0 1-1.23-2Z"/></svg>
     </a>
   
 
 
-<h1 id="percona-distribution-for-mongodb-release-notes">Percona Distribution for MongoDB release notes<a class="headerlink" href="#percona-distribution-for-mongodb-release-notes" title="Permanent link">&para;</a></h1>
+<h1 id="percona-distribution-for-mongodb-707-2024-04-04">Percona Distribution for MongoDB 7.0.7 (2024-04-04)<a class="headerlink" href="#percona-distribution-for-mongodb-707-2024-04-04" title="Permanent link">&para;</a></h1>
+<p><a class="md-button" href="installation.html">Installation</a></p>
+<p>Percona Distribution for MongoDB is a freely available MongoDB database alternative, giving you a single solution that combines enterprise components from the open source community, designed and tested to work together. Its aim is to enable you to run and operate your
+MongoDB efficiently with the data being consistently backed up.</p>
+<p>Percona Distribution for MongoDB includes the following components:</p>
 <ul>
 <li>
-<p><a href="release-notes-v7.0.7.html">Percona Distribution for MongoDB 7.0.7 (2024-04-04)</a></p>
+<p><em>Percona Server for MongoDB</em> is a fully compatible source-available, drop-in replacement
+for MongoDB.</p>
 </li>
 <li>
-<p><a href="release-notes-v7.0.5.html">Percona Distribution for MongoDB 7.0.5 (2024-01-23)</a></p>
+<p><em>Percona Backup for MongoDB</em> is a distributed, low-impact solution for achieving
+consistent backups of MongoDB sharded clusters and replica sets.</p>
 </li>
-<li>
-<p><a href="release-notes-v7.0.4.html">Percona Distribution for MongoDB 7.0.4 (2023-12-11)</a></p>
-</li>
+</ul>
+<p>This release of Percona Distribution for MongoDB is based on the production release of <a href="https://docs.percona.com/percona-server-for-mongodb/7.0/release_notes/7.0.7-4.html">Percona Server for MongoDB 7.0.7-4</a> and <a href="https://docs.percona.com/percona-backup-mongodb/release-notes/2.4.1.html">Percona Backup for MongoDB 2.4.1</a>.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Due to <a href="https://www.cve.org/CVERecord?id=CVE-2024-1351">CVE-2024-1351</a>, in all MongoDB versions prior to 4.4.29, the <code>mongod</code> server allows incoming connections to skip peer certificate validation which results in untrusted connections to succeed. This issue occurs when the <code>mongod</code> is started with TLS enabled (<code>net.tls.mode</code> set to <code>allowTLS</code>, <code>preferTLS</code>, or <code>requireTLS</code>) and without a <code>net.tls.CAFile</code> configured. For details, see <a href="https://jira.mongodb.org/browse/SERVER-72839">SERVER-72839</a>.</p>
+<p>The issue is fixed upstream in versions 4.4.29, 5.0.25, 6.0.14 and 7.0.6 and in Percona Server for MongoDB 4.4.29-28, 5.0.25-22, 6.0.14-11 and 7.0.7-4. Now, configuring MongoDB to use TLS requires specifying the value for the <code>--tlsCAFile</code> flag, the <code>net.tls.CAFile</code>configuration option, or the <code>tlsUseSystemCA</code> parameter.</p>
+</div>
+<h2 id="release-highlights">Release Highlights<a class="headerlink" href="#release-highlights" title="Permanent link">&para;</a></h2>
+<p>The bug fixes and improvements provided by MongoDB and included in Percona Distribution for MongoDB are the following:</p>
+<p>Fixed the issue with missing peer certificate validation if neither CAFile nor clusterCAFile is provided.
+Fixed the issue with multi-document transactions missing documents when the movePrimary operation runs concurrently by detecting placement conflicts in multi-document transactions.
+* Changed the requirement to use exclusive write lock to intent exclusive write lock that doesn&rsquo;t prevent reading from a collection during the <code>$out</code> stage when running the rename collection command.
+* Fixed the issue in SBE (Storage Based Encryption) engine with returning incorrect results when running queries/aggregations with a <code>$or</code> operator and the is enabled.
+* Ensured sharding catalog is valid when acquiring collections in multi-document transactions.
+* Fixed the issue with the <code>createIndex</code> command failing with the <code>StaleConfig</code> error if it is run from a stale mongos against a sharded non-empty collection.
+* Improved the warning about persisted Read/Write Consern defaults on startup by showing it only for shard servers. 
+* In mixed replica sets where nodes have different Feature Compatibilty Version value, the primary nodes reject the commands with parameters that cannot be recognized by other replica set members.
+* Fixed the issue with exhaustive find command on config shard returning stale data by making shard registry use snapshot readConcern for reads from <code>config.shards</code> collection. </p>
+<p>Percona Backup for MongoDB 2.4.x improvements are the following:</p>
+<ul>
+<li>Ability to <a href="https://docs.percona.com/percona-backup-mongodb/usage/delete-backup.html#__tabbed_2_3">delete backup snapshots of a specific type</a>. For example, you can delete only logical backups which you might have created and no longer need. You can also check what exactly will be deleted with the new <code>--dry-run flag</code>. This improvement helps you better meet the organization&rsquo;s backup policy and improves your experience with cleaning up outdated data.</li>
+<li>Point-in-time recovery oplog slicing is now running in parallel with backup snapshots. This ensures that you can make a <a href="https://docs.percona.com/percona-backup-mongodb/usage/pitr-tutorial.html">point-in-time recovery</a> to any timestamp from very large backups that take hours to make.</li>
+<li>Fixed the issue with failing incremental backups. It was caused by the backup metadata document reaching the maximum size limit of 16MB. The issue is fixed by introducing the new approach of handling the metadatada document: it no longer contains the list of backup files which is now stored separately on the storage and is read by PBM on demand. The new metadata handling approach applies to physical, incremental and shapshot-based backups.</li>
 </ul>
 <div data-banner="data-banner">
 <h2 class="title" id="get-expert-help">Get expert help<a class="headerlink" href="#get-expert-help" title="Permanent link">&para;</a></h2>
@@ -757,7 +801,7 @@
       
         <br>
         Created:
-        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 9, 2022</span>
+        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 4, 2024</span>
       
     
   </small>
