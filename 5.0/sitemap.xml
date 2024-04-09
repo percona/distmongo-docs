@@ -2,132 +2,137 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://docs.percona.com/percona-distribution-for-mongodb/5.0/index.html</loc>
-         <lastmod>2024-03-11</lastmod>
+         <lastmod>2024-04-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.percona.com/percona-distribution-for-mongodb/5.0/404.html</loc>
-         <lastmod>2024-03-11</lastmod>
+         <lastmod>2024-04-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.percona.com/percona-distribution-for-mongodb/5.0/copyright.html</loc>
-         <lastmod>2024-03-11</lastmod>
+         <lastmod>2024-04-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.percona.com/percona-distribution-for-mongodb/5.0/installation.html</loc>
-         <lastmod>2024-03-11</lastmod>
+         <lastmod>2024-04-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.percona.com/percona-distribution-for-mongodb/5.0/minor-upgrade.html</loc>
-         <lastmod>2024-03-11</lastmod>
+         <lastmod>2024-04-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.percona.com/percona-distribution-for-mongodb/5.0/release-notes-v5.0.10.html</loc>
-         <lastmod>2024-03-11</lastmod>
+         <lastmod>2024-04-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.percona.com/percona-distribution-for-mongodb/5.0/release-notes-v5.0.11.html</loc>
-         <lastmod>2024-03-11</lastmod>
+         <lastmod>2024-04-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.percona.com/percona-distribution-for-mongodb/5.0/release-notes-v5.0.13.html</loc>
-         <lastmod>2024-03-11</lastmod>
+         <lastmod>2024-04-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.percona.com/percona-distribution-for-mongodb/5.0/release-notes-v5.0.14.html</loc>
-         <lastmod>2024-03-11</lastmod>
+         <lastmod>2024-04-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.percona.com/percona-distribution-for-mongodb/5.0/release-notes-v5.0.15.html</loc>
-         <lastmod>2024-03-11</lastmod>
+         <lastmod>2024-04-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.percona.com/percona-distribution-for-mongodb/5.0/release-notes-v5.0.17.html</loc>
-         <lastmod>2024-03-11</lastmod>
+         <lastmod>2024-04-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.percona.com/percona-distribution-for-mongodb/5.0/release-notes-v5.0.18.html</loc>
-         <lastmod>2024-03-11</lastmod>
+         <lastmod>2024-04-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.percona.com/percona-distribution-for-mongodb/5.0/release-notes-v5.0.19.html</loc>
-         <lastmod>2024-03-11</lastmod>
+         <lastmod>2024-04-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.percona.com/percona-distribution-for-mongodb/5.0/release-notes-v5.0.20.html</loc>
-         <lastmod>2024-03-11</lastmod>
+         <lastmod>2024-04-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.percona.com/percona-distribution-for-mongodb/5.0/release-notes-v5.0.21.html</loc>
-         <lastmod>2024-03-11</lastmod>
+         <lastmod>2024-04-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.percona.com/percona-distribution-for-mongodb/5.0/release-notes-v5.0.22.html</loc>
-         <lastmod>2024-03-11</lastmod>
+         <lastmod>2024-04-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.percona.com/percona-distribution-for-mongodb/5.0/release-notes-v5.0.23.html</loc>
-         <lastmod>2024-03-11</lastmod>
+         <lastmod>2024-04-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.percona.com/percona-distribution-for-mongodb/5.0/release-notes-v5.0.24.html</loc>
-         <lastmod>2024-03-11</lastmod>
+         <lastmod>2024-04-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.percona.com/percona-distribution-for-mongodb/5.0/release-notes-v5.0.26.html</loc>
+         <lastmod>2024-04-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.percona.com/percona-distribution-for-mongodb/5.0/release-notes-v5.0.5.html</loc>
-         <lastmod>2024-03-11</lastmod>
+         <lastmod>2024-04-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.percona.com/percona-distribution-for-mongodb/5.0/release-notes-v5.0.6.html</loc>
-         <lastmod>2024-03-11</lastmod>
+         <lastmod>2024-04-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.percona.com/percona-distribution-for-mongodb/5.0/release-notes-v5.0.7.html</loc>
-         <lastmod>2024-03-11</lastmod>
+         <lastmod>2024-04-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.percona.com/percona-distribution-for-mongodb/5.0/release-notes-v5.0.8.html</loc>
-         <lastmod>2024-03-11</lastmod>
+         <lastmod>2024-04-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.percona.com/percona-distribution-for-mongodb/5.0/release-notes-v5.0.9.html</loc>
-         <lastmod>2024-03-11</lastmod>
+         <lastmod>2024-04-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.percona.com/percona-distribution-for-mongodb/5.0/release-notes.html</loc>
-         <lastmod>2024-03-11</lastmod>
+         <lastmod>2024-04-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.percona.com/percona-distribution-for-mongodb/5.0/repo-overview.html</loc>
-         <lastmod>2024-03-11</lastmod>
+         <lastmod>2024-04-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.percona.com/percona-distribution-for-mongodb/5.0/trademark-policy.html</loc>
-         <lastmod>2024-03-11</lastmod>
+         <lastmod>2024-04-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
