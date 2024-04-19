@@ -150,7 +150,7 @@ plugins:
 extra:
   version:
     provider: mike
-  homepage: https://docs.percona.com
+  homepage: https://docs.percona.com/percona-for-mongodb
 
 nav:
   - Home:
