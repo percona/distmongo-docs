@@ -14,8 +14,8 @@ use_directory_urls: false
 # Theme setup
 theme:
   name: material
-  logo: _images/percona-logo.svg
-  favicon: _images/percona-favicon.ico
+  logo: _images/mongodb-mark.svg
+  favicon: _images/mongodb-fav.svg
   custom_dir: _resource/overrides/
   font:
     text: Roboto
@@ -27,7 +27,7 @@ theme:
     - media: "(prefers-color-scheme)"
       toggle:
         icon: material/brightness-auto
-        name: Switch to light mode
+        name: Color theme set to Automatic. Click to change
 
     # Light mode
     - media: "(prefers-color-scheme: light)"
@@ -58,11 +58,12 @@ theme:
 extra_css:
   - https://unicons.iconscout.com/release/v3.0.3/css/line.css
   - https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css
-  - css/percona.css
+#  - css/percona.css
   - css/nocopy.css
   - css/extra.css
   - css/design.css
   - css/osano.css
+  - css/mongodb.css
 
 
 extra_javascript:
@@ -149,7 +150,7 @@ plugins:
 extra:
   version:
     provider: mike
-  homepage: https://docs.percona.com
+#  homepage: https://docs.percona.com
   
 nav:
   - Home:
