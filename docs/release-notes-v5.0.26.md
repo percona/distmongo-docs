@@ -1,4 +1,4 @@
-# Percona Distribution for MongoDB 5.0.26-22 (2024-04-09)
+# Percona Distribution for MongoDB 5.0.26 (2024-04-09)
 
 [Installation](installation.md){.md-button}
 
