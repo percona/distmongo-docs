@@ -25,7 +25,7 @@
       
       
       <link rel="icon" href="_images/mongodb-fav.svg">
-      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.25">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.27">
     
     
       
@@ -305,7 +305,7 @@
       
     </form>
     <div class="md-search__output">
-      <div class="md-search__scrollwrap" data-md-scrollfix>
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
         <div class="md-search-result" data-md-component="search-result">
           <div class="md-search-result__meta">
             Initializing search
@@ -869,66 +869,116 @@
 <div class="tabbed-content">
 <div class="tabbed-block">
 <p>Run the following commands as root or by using the <strong>sudo</strong> command.</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">x86_64</label><label for="__tabbed_2_2">ARM64</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
 <ol>
 <li>
-<p>Install <strong>percona-release</strong></p>
-<p>Install the <strong>percona-release</strong> repository management tool to subscribe to Percona repositories:</p>
+<p>Install <strong>percona-release</strong>    </p>
+<p>Install the <strong>percona-release</strong> repository management tool to subscribe to Percona repositories:    </p>
 <ul>
-<li>Install <code>curl</code></li>
+<li>Install <code>curl</code>    </li>
 </ul>
 <div class="highlight" data-prompt="$"><pre><span></span><code>$<span class="w"> </span>sudo<span class="w"> </span>apt<span class="w"> </span>update
 $<span class="w"> </span>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>curl
 </code></pre></div>
 <ul>
-<li>Download the <strong>percona-release</strong> package</li>
+<li>Download the <strong>percona-release</strong> package    </li>
 </ul>
 <div class="highlight" data-prompt="$"><pre><span></span><code>$<span class="w"> </span>curl<span class="w"> </span>-O<span class="w"> </span>https://repo.percona.com/apt/percona-release_latest.generic_all.deb
 </code></pre></div>
 <ul>
-<li>Install the package and dependancies</li>
+<li>Install the package and dependancies    </li>
 </ul>
 <div class="highlight" data-prompt="$"><pre><span></span><code>$<span class="w"> </span>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>gnupg2<span class="w"> </span>lsb-release<span class="w"> </span>./percona-release_latest.generic_all.deb
 </code></pre></div>
 <ul>
-<li>Refresh the local cache</li>
+<li>Refresh the local cache    </li>
 </ul>
 <div class="highlight" data-prompt="$"><pre><span></span><code>$<span class="w"> </span>sudo<span class="w"> </span>apt<span class="w"> </span>update
 </code></pre></div>
 </li>
 <li>
-<p>Enable the repository</p>
-<p>Percona provides <a href="repo-overview.html#repo-overview">two repositories</a> for Percona Distribution for MongoDB. To enable a repo, we recommend using the <code>setup</code> command:</p>
+<p>Enable the repository    </p>
+<p>Percona provides <a href="repo-overview.html#repo-overview">two repositories</a> for Percona Distribution for MongoDB. To enable a repo, we recommend using the <code>setup</code> command:    </p>
 <div class="highlight" data-prompt="$"><pre><span></span><code>$<span class="w"> </span>sudo<span class="w"> </span>percona-release<span class="w"> </span>setup<span class="w"> </span>pdmdb-7.0
 </code></pre></div>
 </li>
 <li>
-<p>Install Percona Distribution for MongoDB packages</p>
+<p>Install Percona Distribution for MongoDB packages    </p>
 <div class="highlight" data-prompt="$"><pre><span></span><code>$<span class="w"> </span>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>percona-server-mongodb<span class="w"> </span>percona-backup-mongodb
 </code></pre></div>
 </li>
 </ol>
 </div>
 <div class="tabbed-block">
-<p>Run the following commands as root or by using the <strong>sudo</strong> command.</p>
 <ol>
 <li>
-<p>Install <strong>percona-release</strong></p>
-<p>Install the <strong>percona-release</strong> repository management tool to subscribe to Percona repositories:</p>
+<p>Configure the repository. Create the <code>/etc/apt/sources.list.d/percona-pdmdb-&lt;version&gt;-release.list</code> configuration file with the following contents:</p>
+<div class="highlight"><span class="filename">/etc/apt/sources.list.d/percona-pdmdb-7.0.11-release.list</span><pre><span></span><code><span class="na">deb http</span><span class="o">:</span><span class="s">//repo.percona.com/pdmdb-7.0.11/apt OPERATING_SYSTEM main</span>
+</code></pre></div>
+</li>
+<li>
+<p>Refresh the local cache:</p>
+<div class="highlight" data-prompt="$"><pre><span></span><code>$<span class="w"> </span>sudo<span class="w"> </span>apt<span class="w"> </span>update
+</code></pre></div>
+</li>
+<li>
+<p>Install Percona Distribution for MongoDB packages    </p>
+<div class="highlight" data-prompt="$"><pre><span></span><code>$<span class="w"> </span>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>percona-server-mongodb<span class="w"> </span>percona-backup-mongodb
+</code></pre></div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div class="tabbed-block">
+<p>Run the following commands as root or by using the <strong>sudo</strong> command.</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="3:2"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">x86_64</label><label for="__tabbed_3_2">ARM64</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<ol>
+<li>
+<p>Install <strong>percona-release</strong>    </p>
+<p>Install the <strong>percona-release</strong> repository management tool to subscribe to Percona repositories:    </p>
 <div class="highlight" data-prompt="$"><pre><span></span><code>$<span class="w"> </span>sudo<span class="w"> </span>yum<span class="w"> </span>install<span class="w"> </span>-y<span class="w"> </span>https://repo.percona.com/yum/percona-release-latest.noarch.rpm
 </code></pre></div>
 </li>
 <li>
-<p>Enable the repository</p>
-<p>Percona provides <a href="repo-overview.html#repo-overview">two repositories</a> for Percona Distribution for MongoDB. To enable a repo, we recommend using the <code>setup</code> command:</p>
+<p>Enable the repository    </p>
+<p>Percona provides <a href="repo-overview.html#repo-overview">two repositories</a> for Percona Distribution for MongoDB. To enable a repo, we recommend using the <code>setup</code> command:    </p>
 <div class="highlight" data-prompt="$"><pre><span></span><code>$<span class="w"> </span>sudo<span class="w"> </span>percona-release<span class="w"> </span>setup<span class="w"> </span>pdmdb-7.0
 </code></pre></div>
 </li>
 <li>
-<p>Install Percona Distribution for MongoDB packages</p>
+<p>Install Percona Distribution for MongoDB packages    </p>
 <div class="highlight" data-prompt="$"><pre><span></span><code>$<span class="w"> </span>sudo<span class="w"> </span>yum<span class="w"> </span>install<span class="w"> </span>percona-server-mongodb<span class="w"> </span>percona-backup-mongodb
 </code></pre></div>
 </li>
 </ol>
+</div>
+<div class="tabbed-block">
+<ol>
+<li>
+<p>Configure the repository. Create the <code>/etc/yum.repos.d/percona-pdmdb-&lt;version&gt;-release.repo</code> configuration file with the following contents:</p>
+<div class="highlight"><span class="filename">/etc/yum.repos.d/percona-pdmdb-7.0.11-release.repo</span><pre><span></span><code><span class="k">[pdmdb-7.0.11-release-aarch64]</span>
+<span class="na">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">Percona Distribution for MongoDB 7.0.11 release/aarch64 YUM repository</span>
+<span class="na">baseurl</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">http://repo.percona.com/pdmdb-7.0.11/yum/release/$releasever/RPMS/aarch64</span>
+<span class="na">enabled</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">1</span>
+<span class="na">gpgcheck</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">1</span>
+<span class="na">gpgkey</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">file:///etc/pki/rpm-gpg/PERCONA-PACKAGING-KEY</span>
+</code></pre></div>
+</li>
+<li>
+<p>Install Percona Distribution for MongoDB packages    </p>
+<div class="highlight" data-prompt="$"><pre><span></span><code>$<span class="w"> </span>sudo<span class="w"> </span>yum<span class="w"> </span>install<span class="w"> </span>percona-server-mongodb<span class="w"> </span>percona-backup-mongodb
+</code></pre></div>
+</li>
+</ol>
+</div>
+</div>
+</div>
 </div>
 <div class="tabbed-block">
 <p>You can find binary tarballs on the <a href="https://www.percona.com/downloads/percona-distribution-mongodb-7.0/LATEST/">Percona software downloads page</a></p>
@@ -998,7 +1048,7 @@ operation system. Optionally, disable <em>Percona</em> repository.</p>
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 11, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 18, 2024</span>
       
         <br>
         Created:
@@ -1109,7 +1159,7 @@ operation system. Optionally, disable <em>Percona</em> repository.</p>
     
 <script src="https://cmp.osano.com/Azqe5vTyLOSbN3OuT/49ad85b5-0418-4794-ab81-7599dddd534c/osano.js"></script>
 
-      <script src="assets/javascripts/bundle.081f42fc.min.js"></script>
+      <script src="assets/javascripts/bundle.ad660dcc.min.js"></script>
       
         <script src="js/version-select.js"></script>
       
