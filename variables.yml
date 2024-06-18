@@ -3,3 +3,4 @@
 
 release: 'release-notes-v7.0.11'
 version: '7.0'
+tag: '7.0.11'
