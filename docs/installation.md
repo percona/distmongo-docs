@@ -10,117 +10,80 @@ Choose how you wish to install Percona Distribution for MongoDB:
 
     Run the following commands as root or by using the **sudo** command.
 
-    === "x86_64"
+    1. Install **percona-release** repository management tool to subscribe to Percona repositories:    
 
-        1. Install **percona-release**    
+        * Install `curl`    
 
-            Install the **percona-release** repository management tool to subscribe to Percona repositories:    
+           ```{.bash data-prompt="$"}
+           $ sudo apt update
+           $ sudo apt install curl
+           ```    
 
-            * Install `curl`    
+        * Download the **percona-release** package    
 
-            ```{.bash data-prompt="$"}
-            $ sudo apt update
-            $ sudo apt install curl
-            ```    
+           ```{.bash data-prompt="$"}
+           $ curl -O https://repo.percona.com/apt/percona-release_latest.generic_all.deb
+           ```    
 
-            * Download the **percona-release** package    
+        * Install the package and dependencies    
 
-            ```{.bash data-prompt="$"}
-            $ curl -O https://repo.percona.com/apt/percona-release_latest.generic_all.deb
-            ```    
+           ```{.bash data-prompt="$"}
+           $ sudo apt install gnupg2 lsb-release ./percona-release_latest.generic_all.deb
+           ```    
 
-            * Install the package and dependancies    
+        * Refresh the local cache    
 
-            ```{.bash data-prompt="$"}
-            $ sudo apt install gnupg2 lsb-release ./percona-release_latest.generic_all.deb
-            ```    
+           ```{.bash data-prompt="$"}
+           $ sudo apt update
+           ``` 
 
-            * Refresh the local cache    
+        !!! note
 
-            ```{.bash data-prompt="$"}
-            $ sudo apt update
-            ```    
+            If you have already installed `percona-release`, [upgrade it to the latest version](https://docs.percona.com/percona-software-repositories/updating.html).
 
-        2. Enable the repository    
+    2. Enable the repository    
 
-            Percona provides [two repositories](repo-overview.md#repo-overview) for Percona Distribution for MongoDB. To enable a repo, we recommend using the `setup` command:    
+        Percona provides [two repositories](repo-overview.md#repo-overview) for Percona Distribution for MongoDB. To enable a repo, we recommend using the `setup` command:    
 
-            ```{.bash data-prompt="$"}
-            $ sudo percona-release setup pdmdb-7.0
-            ```    
+        ```{.bash data-prompt="$"}
+        $ sudo percona-release setup pdmdb-7.0
+        ```    
 
-        3. Install Percona Distribution for MongoDB packages    
+    3. Install Percona Distribution for MongoDB packages    
 
-            ```{.bash data-prompt="$"}
-            $ sudo apt install percona-server-mongodb percona-backup-mongodb
-            ```
+        ```{.bash data-prompt="$"}
+        $ sudo apt install percona-server-mongodb percona-backup-mongodb
+        ```
 
-    === "ARM64"
-
-        1. Configure the repository. Create the `/etc/apt/sources.list.d/percona-pdmdb-<version>-release.list` configuration file with the following contents:
-
-            ```ini title='/etc/apt/sources.list.d/percona-pdmdb-{{tag}}-release.list'
-            deb http://repo.percona.com/pdmdb-{{tag}}/apt OPERATING_SYSTEM main
-            ```
-        
-        2. Refresh the local cache:
-
-            ```{.bash data-prompt="$"}
-            $ sudo apt update
-            ```
-
-        3. Install Percona Distribution for MongoDB packages    
-
-            ```{.bash data-prompt="$"}
-            $ sudo apt install percona-server-mongodb percona-backup-mongodb
-            ```
 
 === "On RHEL/derivatives"
 
     Run the following commands as root or by using the **sudo** command.
 
-    === "x86_64"
+    1. Install **percona-release** repository management tool to subscribe to Percona repositories:    
 
-        1. Install **percona-release**    
+        ```{.bash data-prompt="$"}
+        $ sudo yum install -y https://repo.percona.com/yum/percona-release-latest.noarch.rpm
+        ```
+         
+        !!! note
 
-            Install the **percona-release** repository management tool to subscribe to Percona repositories:    
+            If you have already installed `percona-release`, [upgrade it to the latest version](https://docs.percona.com/percona-software-repositories/updating.html).   
 
-            ```{.bash data-prompt="$"}
-            $ sudo yum install -y https://repo.percona.com/yum/percona-release-latest.noarch.rpm
-            ```    
+    2. Enable the repository    
 
-        2. Enable the repository    
+        Percona provides [two repositories](repo-overview.md#repo-overview) for Percona Distribution for MongoDB. To enable a repo, we recommend using the `setup` command:    
 
-            Percona provides [two repositories](repo-overview.md#repo-overview) for Percona Distribution for MongoDB. To enable a repo, we recommend using the `setup` command:    
+        ```{.bash data-prompt="$"}
+        $ sudo percona-release setup pdmdb-7.0
+        ```    
 
-            ```{.bash data-prompt="$"}
-            $ sudo percona-release setup pdmdb-7.0
-            ```    
+    3. Install Percona Distribution for MongoDB packages    
 
-        3. Install Percona Distribution for MongoDB packages    
-
-            ```{.bash data-prompt="$"}
-            $ sudo yum install percona-server-mongodb percona-backup-mongodb
-            ```
+        ```{.bash data-prompt="$"}
+        $ sudo yum install percona-server-mongodb percona-backup-mongodb
+        ```
     
-    === "ARM64"
-
-        1. Configure the repository. Create the `/etc/yum.repos.d/percona-pdmdb-<version>-release.repo` configuration file with the following contents:
-
-            ```ini title='/etc/yum.repos.d/percona-pdmdb-{{tag}}-release.repo'
-            [pdmdb-7.0.11-release-aarch64]
-            name = Percona Distribution for MongoDB {{tag}} release/aarch64 YUM repository
-            baseurl = http://repo.percona.com/pdmdb-{{tag}}/yum/release/$releasever/RPMS/aarch64
-            enabled = 1
-            gpgcheck = 1
-            gpgkey = file:///etc/pki/rpm-gpg/PERCONA-PACKAGING-KEY
-            ```
-
-        2. Install Percona Distribution for MongoDB packages    
-
-            ```{.bash data-prompt="$"}
-            $ sudo yum install percona-server-mongodb percona-backup-mongodb
-            ```
 
 === "From tarballs"
 
