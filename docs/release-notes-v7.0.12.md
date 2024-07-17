@@ -1,6 +1,6 @@
 # Percona Distribution for MongoDB 7.0.12 (2024-07-18)
 
-[Installation](installation.md){.md-button}
+[Upgrade now](installation.md){.md-button}
 
 Percona Distribution for MongoDB is a freely available MongoDB database alternative, giving you a single solution that combines enterprise components from the open source community, designed and tested to work together. Its aim is to enable you to run and operate your
 MongoDB efficiently with the data being consistently backed up.
