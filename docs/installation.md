@@ -31,7 +31,7 @@ Choose how you wish to install Percona Distribution for MongoDB:
            $ sudo apt install gnupg2 lsb-release ./percona-release_latest.generic_all.deb
            ```    
 
-        * Refresh the local cache    
+        * Update the local packages list
 
            ```{.bash data-prompt="$"}
            $ sudo apt update
