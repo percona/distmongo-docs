@@ -1,4 +1,4 @@
-# Percona Distribution for MongoDB 7.0.12 (2024-07-18)
+# Percona Distribution for MongoDB 7.0.12 (2024-07-23)
 
 [Upgrade now](installation.md){.md-button}
 
