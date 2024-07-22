@@ -1,4 +1,4 @@
-# Percona Distribution for MongoDB 6.0.16 (2024-07-22)
+# Percona Distribution for MongoDB 6.0.16 (2024-07-25)
 
 [Upgrade now](minor-upgrade.md){.md-button}
 
