@@ -2,67 +2,72 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://docs.percona.com/percona-distribution-for-mongodb/7.0/index.html</loc>
-         <lastmod>2024-07-18</lastmod>
+         <lastmod>2024-07-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.percona.com/percona-distribution-for-mongodb/7.0/404.html</loc>
-         <lastmod>2024-07-18</lastmod>
+         <lastmod>2024-07-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.percona.com/percona-distribution-for-mongodb/7.0/copyright.html</loc>
-         <lastmod>2024-07-18</lastmod>
+         <lastmod>2024-07-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.percona.com/percona-distribution-for-mongodb/7.0/installation.html</loc>
-         <lastmod>2024-07-18</lastmod>
+         <lastmod>2024-07-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.percona.com/percona-distribution-for-mongodb/7.0/minor-upgrade.html</loc>
-         <lastmod>2024-07-18</lastmod>
+         <lastmod>2024-07-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.percona.com/percona-distribution-for-mongodb/7.0/release-notes-v7.0.11.html</loc>
-         <lastmod>2024-07-18</lastmod>
+         <lastmod>2024-07-23</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.percona.com/percona-distribution-for-mongodb/7.0/release-notes-v7.0.12.html</loc>
+         <lastmod>2024-07-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.percona.com/percona-distribution-for-mongodb/7.0/release-notes-v7.0.4.html</loc>
-         <lastmod>2024-07-18</lastmod>
+         <lastmod>2024-07-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.percona.com/percona-distribution-for-mongodb/7.0/release-notes-v7.0.5.html</loc>
-         <lastmod>2024-07-18</lastmod>
+         <lastmod>2024-07-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.percona.com/percona-distribution-for-mongodb/7.0/release-notes-v7.0.7.html</loc>
-         <lastmod>2024-07-18</lastmod>
+         <lastmod>2024-07-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.percona.com/percona-distribution-for-mongodb/7.0/release-notes-v7.0.8.html</loc>
-         <lastmod>2024-07-18</lastmod>
+         <lastmod>2024-07-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.percona.com/percona-distribution-for-mongodb/7.0/release-notes.html</loc>
-         <lastmod>2024-07-18</lastmod>
+         <lastmod>2024-07-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.percona.com/percona-distribution-for-mongodb/7.0/repo-overview.html</loc>
-         <lastmod>2024-07-18</lastmod>
+         <lastmod>2024-07-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.percona.com/percona-distribution-for-mongodb/7.0/trademark-policy.html</loc>
-         <lastmod>2024-07-18</lastmod>
+         <lastmod>2024-07-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
