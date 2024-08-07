@@ -25,7 +25,7 @@ The enhanced telemetry feature provides comprehensive information about how it w
 
 #### Reduce mean time to resolve (MTTR) compromised encryption key incidents in KMIP
 
-Starting with this release, Percona Server for MongoDB automatically activates the master encryption keys at startup and periodically checks (polls) their status in a KMIP server. If a master encryption key for a node is not in the Active state, the node reports an error and shuts down. This method allows security engineers to quickly identify which nodes require out-of-schedule master key rotation, such as in the case of compromised keys, without needing to rotate keys for the entire cluster. 
+Starting with this release, Percona Server for MongoDB automatically activates all new master encryption keys at startup and periodically checks (polls) their status in a KMIP server. If a master encryption key for a node transitions to the state other than Active, the node reports an error and shuts down. This method allows security engineers to quickly identify which nodes require out-of-schedule master key rotation, such as in the case of compromised keys, without needing to rotate keys for the entire cluster. 
 
 Learn more about key state polling from [documentation](https://docs.percona.com/percona-server-for-mongodb/5.0/kmip.html#key-state-polling) 
 
@@ -46,3 +46,7 @@ The bug fixes and improvements provided by MongoDB and included in Percona Distr
 
 * The ability to restore the desired subset of [custom databases with users and roles](https://docs.percona.com/percona-backup-mongodb/features/selective-backup.html#restore-a-database-with-users-and-roles) created in them. This is useful for deployments where each user has an individual database and authenticates against it.
 * Previous versions of PBM required that `readConcern` and `writeConcern` are set to `majority` in MongoDB. In Percona Backup for MongoDB 2.5.0 you can now explicitly override this behavior, and thus, ensure backups in clusters configured to operate without the majority or lost it for some reason.
+
+## Packaging Changes
+
+* Percona Distribution for MongoDB 5.0.28 is available on Ubuntu 24.04 (Noble Numbat)
