@@ -157,6 +157,7 @@ nav:
       - index.md
   - Release Notes: 
       - "Release notes index": "release-notes.md"
+      - release-notes-v5.0.28.md
       - release-notes-v5.0.27.md
       - release-notes-v5.0.26.md
       - release-notes-v5.0.24.md
