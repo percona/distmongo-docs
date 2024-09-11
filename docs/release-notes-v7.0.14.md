@@ -19,10 +19,6 @@ This release of Percona Distribution for MongoDB is based on the production rele
 
 ### Percona Server for MongoDB improvements
 
-#### Enhanced Telemetry for better product usage reporting
-
-The enhanced telemetry feature provides comprehensive information about how it works, its components and metrics as well as updated methods how to disable telemetry. Read more in [Telemetry on Percona Server for MongoDB](https://docs.percona.com/percona-server-for-mongodb/7.0/telemetry.html)
-
 #### Reduce mean time to resolve (MTTR) compromised encryption key incidents in KMIP
 
 Starting with this release, Percona Server for MongoDB automatically activates all new master encryption keys at startup and periodically checks (polls) their status in a KMIP server. If a master encryption key for a node transitions to the state other than Active, the node reports an error and shuts down. This method allows security engineers to quickly identify which nodes require out-of-schedule master key rotation, such as in the case of compromised keys, without needing to rotate keys for the entire cluster. 
