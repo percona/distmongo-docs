@@ -159,6 +159,7 @@ nav:
       -  Install Percona Distribution for MongoDB:
          - installation.md
       - repo-overview.md
+      - major-upgrade.md
       - minor-upgrade.md
   - Release Notes: 
       - "Release notes index": "release-notes.md"
