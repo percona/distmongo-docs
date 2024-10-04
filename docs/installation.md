@@ -46,7 +46,7 @@ Choose how you wish to install Percona Distribution for MongoDB:
         Percona provides [two repositories](repo-overview.md#repo-overview) for Percona Distribution for MongoDB. To enable a repo, we recommend using the `setup` command:    
 
         ```{.bash data-prompt="$"}
-        $ sudo percona-release setup pdmdb-7.0
+        $ sudo percona-release setup pdmdb-{{dversion}}
         ```    
 
     3. Install Percona Distribution for MongoDB packages    
@@ -75,7 +75,7 @@ Choose how you wish to install Percona Distribution for MongoDB:
         Percona provides [two repositories](repo-overview.md#repo-overview) for Percona Distribution for MongoDB. To enable a repo, we recommend using the `setup` command:    
 
         ```{.bash data-prompt="$"}
-        $ sudo percona-release setup pdmdb-7.0
+        $ sudo percona-release setup pdmdb-{{dversion}}
         ```    
 
     3. Install Percona Distribution for MongoDB packages    
@@ -87,15 +87,15 @@ Choose how you wish to install Percona Distribution for MongoDB:
 
 === "From tarballs"
 
-    You can find binary tarballs on the [Percona software downloads page](https://www.percona.com/downloads/percona-distribution-mongodb-7.0/LATEST/)
+    You can find binary tarballs on the [Percona software downloads page](https://www.percona.com/downloads/percona-distribution-mongodb-8.0/LATEST/)
 
     1. Select *Generic Linux* from the dropdown.
 
-    2. Download binary tarballs. Replace the &#60;version&#62; variable with the desired version:
+    2. Download binary tarballs. Replace the `<version>` variable with the desired version in the next commands:
 
         ```{.bash data-prompt="$"}
-        $ wget https://downloads.percona.com/downloads/percona-distribution-mongodb-7.0/percona-distribution-mongodb-<version>/binary/tarball/percona-backup-mongodb-<version>-x86_64.tar.gz
-        $ wget https://downloads.percona.com/downloads/percona-distribution-mongodb-7.0/percona-distribution-mongodb-<version>/binary/tarball/percona-server-mongodb-<version>-x86_64.glibc2.17.tar.gz
+        $ wget https://downloads.percona.com/downloads/percona-distribution-mongodb-{{dversion}}/percona-distribution-mongodb-<version>/binary/tarball/percona-backup-mongodb-<version>-x86_64.tar.gz
+        $ wget https://downloads.percona.com/downloads/percona-distribution-mongodb-{{dversion}}/percona-distribution-mongodb-<version>/binary/tarball/percona-server-mongodb-<version>-x86_64.glibc2.17.tar.gz
         ```
 
     3. Extract the tarballs
@@ -134,7 +134,7 @@ operation system. Optionally, disable *Percona* repository.
 
 !!! admonition "See also"
 
-    * [Uninstall Percona Server for MongoDB](https://docs.percona.com/percona-server-for-mongodb/7.0/install/uninstall.html)
+    * [Uninstall Percona Server for MongoDB](https://docs.percona.com/percona-server-for-mongodb/{{dversion}}/install/uninstall.html)
 
     * [Uninstall Percona Backup for MongoDB](https://docs.percona.com/percona-backup-mongodb/manage/uninstalling.html)
 
