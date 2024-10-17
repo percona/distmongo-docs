@@ -1,6 +1,6 @@
 # MkDocs configuration for builds with material theme
 
-site_name: Percona Distribution for MongoDB 7.0
+site_name: Percona Distribution for MongoDB 8.0
 site_description: Documentation
 site_author: Percona LLC
 copyright: >
@@ -8,7 +8,7 @@ copyright: >
 
 repo_name: percona/distmongo-docs
 repo_url: https://github.com/percona/distmongo-docs
-edit_uri: edit/7.0/docs/
+edit_uri: edit/8.0/docs/
 
 use_directory_urls: false
 
@@ -133,9 +133,9 @@ plugins:
 #      glob:
 #         - file.md
   with-pdf: # https://github.com/orzih/mkdocs-with-pdf
-          output_path: '_pdf/PerconaDistributionforMongoDB-7.0.pdf'
-          cover_title: 'Distribution for MongoDB Documentation 7.0'
-          cover_subtitle: 7.0.14 (September 23, 2024)
+          output_path: '_pdf/PerconaDistributionforMongoDB-8.0.pdf'
+          cover_title: 'Distribution for MongoDB Documentation 8.0'
+          cover_subtitle: 8.0.1 (October 30, 2024)
           author: 'Percona Technical Documentation Team'
           cover_logo: docs/_images/Percona_Logo_Color.png
           debug_html: false
@@ -162,13 +162,7 @@ nav:
       - minor-upgrade.md
   - Release Notes: 
       - "Release notes index": "release-notes.md"
-      - release-notes-v7.0.14.md
-      - release-notes-v7.0.12.md
-      - release-notes-v7.0.11.md
-      - release-notes-v7.0.8.md
-      - release-notes-v7.0.7.md
-      - release-notes-v7.0.5.md
-      - release-notes-v7.0.4.md
+      - release-notes-v8.0.1.md
   - Copyright and Licensing:
       - copyright.md
   - Trademark policy:
