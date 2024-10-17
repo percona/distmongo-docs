@@ -1,5 +1,5 @@
 # Percona Distribution for MongoDB release notes
 
 
-* [Percona Distribution for MongoDB 7.0.4 (2023-12-11)](release-notes-v7.0.4.md)
+* [Percona Distribution for MongoDB 8.0.1 ({{date.8_0_1}})](release-notes-v8.0.1.md)
 

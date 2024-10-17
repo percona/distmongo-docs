@@ -1,9 +1,9 @@
 # PDMDB Variables set for HTML output
 # See also mkdocs.yml plugins.with-pdf.cover_subtitle and output_path
 
-release: 'release-notes-v8.0.0'
+release: 'release-notes-v8.0.1'
 dversion: '8.0'
-tag: '8.0.0'
+tag: '8.0.1'
 
 date:
-  8.0.0: 2024-10-
+  8_0_1: 2024-10-30
