@@ -12,14 +12,11 @@ To contribute to the documentation, you should be familiar with the following te
 - [git](https://git-scm.com/) and [GitHub](https://guides.github.com/activities/hello-world/)
 - [Docker](https://docs.docker.com/get-docker/). It allows you to run MkDocs in a virtual environment instead of installing it and its dependencies on your machine.
 
-There are several active versions of the documentation. Each version derives from the major version of PostgreSQL, included in the distribution. 
+There are several active versions of the documentation. Each version has a branch in the repository named accordingly:
 
-Each version has a branch in the repository named accordingly:
-
-- 4.2
-- 4.4
-- 5.0
 - 6.0
+- 7.0
+- 8.0
 
 The source .md files are in the ``docs`` directory. 
 
@@ -63,7 +60,8 @@ git remote add upstream git@github.com:percona/distmongo-docs.git
 git fetch upstream
 git merge upstream/<branch>
 ```
-Make sure that your local branch and the branch you merge changes from are the same. So if you are on ``4.2`` branch, merge changes from ``upstream/4.2``.
+
+Make sure that your local branch and the branch you merge changes from are the same. So if you are on ``8.0`` branch, merge changes from ``upstream/8.0``.
 
 5. Create a separate branch for your changes
 
@@ -112,19 +110,26 @@ The PDF document is in the ``site/pdf`` folder.
 
 1. Install [pip](https://pip.pypa.io/en/stable/installing/)
 2. Install [MkDocs](https://www.mkdocs.org/getting-started/#installation).
-3. While in the root directory of the doc project, run the following command to build the documentation:
+3. Install the set of packages required to build the documentation:
+
+```sh
+pip install -r requirements.txt
+```
+
+4. While in the root directory of the doc project, run the following command to build the documentation:
 
 ```sh
 mkdocs build 
 ```
-4. Go to the ``site`` directory and open the ``index.html`` file in your web browser to see the documentation.
-5. To automatically rebuild the documentation and reload the browser as you make changes, run the following command:
+
+5. Go to the ``site`` directory and open the ``index.html`` file in your web browser to see the documentation.
+6. To automatically rebuild the documentation and reload the browser as you make changes, run the following command:
 
 ```sh
 mkdocs serve 
 ```
 
-6. To build the PDF documentation, do the following:
+7. To build the PDF documentation, do the following:
    - Install [mkdocs-with-pdf plugin](https://pypi.org/project/mkdocs-with-pdf/)
    - Run the following command
 
@@ -133,3 +138,27 @@ mkdocs serve
    ```
 
 The PDF document is in the ``site/pdf`` folder.
+
+## Repository structure
+
+The repository includes the following directories and files:
+
+- `mkdocs-base.yml` - the base configuration file. It includes general settings and documentation structure.
+- `mkdocs.yml` - configuration file. Contains the settings for building the docs with Material theme.
+- `mkdocs-pdf.yml` - configuration file. Contains the settings for building the PDF docs.
+- requirements.txt - the list of packages required to install to build the documentation.
+- variables.yml - the list of variables used in the documentation.
+- `docs`:
+  - `*.md` - Source markdown files.
+  - `_images` - Images, logos and favicons
+  - `css` - Styles
+  - `js` - JavaScript files
+- `_resource`:
+   - `templates`:
+     - ``styles.scss`` - Styling for PDF documents
+   - `overrides` - The folder with the Material theme template customization for builds
+- `snippets` - The folder with the snippets used in multiple places in the documentation.
+- `.github`:
+   - `workflows`:
+      - `main.yml` - The workflow configuration for building documentation with a GitHub action. (The documentation is built with `mike` tool to a dedicated `publish` branch)
+- `site` - This is where the output HTML files are put after the build
