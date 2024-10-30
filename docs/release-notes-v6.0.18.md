@@ -22,17 +22,17 @@ This release of Percona Distribution for MongoDB is based on the production rele
 
 ### Percona Server for MongoDB improvements
 
-### Prevent master encryption key loss on the Vault server
+#### Prevent master encryption key loss on the Vault server
 
 Before Percona Server for MongoDB puts a new master encryption key to the Vault server as the versioned secret, it now checks if the secret's version reached the defined maximum (10 by default). This prevents the loss of the old secret and the master encryption key it stores on the Vault server. 
 
 Make sure Percona Server for MongoDB has read permissions for the secret's metadata and the secrets engine configuration. To learn more, refer to the [documentation](https://docs.percona.com/percona-server-for-mongodb/6.0/vault.html#master-key-loss-prevention).
 
-### Join Percona Squad
+#### Join Percona Squad
 
 Participate in monthly SWAG raffles, get an early access to new product features and invite-only “ask me anything” sessions with database performance experts. Interested? Fill in the form at [squad.percona.com/mongodb](squad.percona.com/mongodb). 
 
-#### Upstream Improvements
+### Upstream Improvements
 
 Improvements and bug fixes, provided by MongoDB and included in Percona Distribution for MongoDB are the following:
 
