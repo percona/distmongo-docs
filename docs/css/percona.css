@@ -80,6 +80,7 @@ section {
   page-break-inside: auto !important;
 }
 
-/*.git-revision-date-localized-plugin:before {
-  content: url('https://api.iconify.design/mdi/clock-edit-outline.svg');
-}*/
+.md-banner--warning {
+  --md-warning-bg-color: #F0B336;
+  --md-warning-fg-color: black;
+  }
