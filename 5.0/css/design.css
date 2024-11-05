@@ -456,6 +456,13 @@
     margin: 0.5em 0.25em 0 0;
 }
 
+/* Outdated banner */
+
+.md-banner--warning {
+  --md-warning-bg-color: #F0B336;
+  --md-warning-fg-color: black;
+  }
+  
 /* Custom lists */
 
 [dir] .power-bullet + ul,
