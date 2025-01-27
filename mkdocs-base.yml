@@ -100,8 +100,8 @@ markdown_extensions:
   pymdownx.inlinehilite: {}
   pymdownx.snippets: 
       base_path: ["snippets"]
-      auto_append:
-        - services-banner.md
+#      auto_append:
+#        - services-banner.md
   pymdownx.tasklist:
      custom_checkbox: true
   pymdownx.emoji:
@@ -154,6 +154,7 @@ extra:
 nav:
   - Home:
       - index.md
+  - get-help.md
   - Installation and Upgrade: 
       -  Install Percona Distribution for MongoDB:
          - installation.md
