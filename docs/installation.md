@@ -6,7 +6,7 @@ Alternatively, you can download Percona Distribution for MongoDB from Percona we
 
 Choose how you wish to install Percona Distribution for MongoDB:
 
-=== "On Debian/Ubuntu"
+=== ":material-debian: On Debian/Ubuntu"
 
     Run the following commands as root or by using the **sudo** command.
 
@@ -39,7 +39,7 @@ Choose how you wish to install Percona Distribution for MongoDB:
 
         !!! note
 
-            If you have already installed `percona-release`, [upgrade it to the latest version](https://docs.percona.com/percona-software-repositories/updating.html).
+        If you have already installed `percona-release`, [upgrade it to the latest version](https://docs.percona.com/percona-software-repositories/updating.html).
 
     2. Enable the repository    
 
@@ -56,7 +56,7 @@ Choose how you wish to install Percona Distribution for MongoDB:
         ```
 
 
-=== "On RHEL/derivatives"
+=== ":material-redhat: On RHEL/derivatives"
 
     Run the following commands as root or by using the **sudo** command.
 
@@ -66,9 +66,9 @@ Choose how you wish to install Percona Distribution for MongoDB:
         $ sudo yum install -y https://repo.percona.com/yum/percona-release-latest.noarch.rpm
         ```
          
-        !!! note
+    !!! note
 
-            If you have already installed `percona-release`, [upgrade it to the latest version](https://docs.percona.com/percona-software-repositories/updating.html).   
+        If you have already installed `percona-release`, [upgrade it to the latest version](https://docs.percona.com/percona-software-repositories/updating.html).   
 
     2. Enable the repository    
 
@@ -85,7 +85,7 @@ Choose how you wish to install Percona Distribution for MongoDB:
         ```
     
 
-=== "From tarballs"
+=== ":material-download: From tarballs"
 
     You can find binary tarballs on the [Percona software downloads page](https://www.percona.com/downloads/percona-distribution-mongodb-7.0/LATEST/)
 
@@ -121,11 +121,12 @@ Choose how you wish to install Percona Distribution for MongoDB:
 
     6. Check that you have read and write permissions for the data directory and run `mongod`.
 
-=== "On Kubernetes"
+
+=== ":material-kubernetes: On Kubernetes"
 
     Deploy and run Percona Distribution for MongoDB on Kubernetes with [Percona Operator for MongoDB](https://www.percona.com/software/percona-kubernetes-operators). See [Quickstart guides](https://docs.percona.com/percona-operator-for-mongodb/helm.html) for the installation instructions on your favorite Kubernetes flavor.
 
-To set up monitoring of your Percona Distribution for MongoDB in PMM, see [Set up PMM to monitor MongoDB](https://docs.percona.com/percona-monitoring-and-management/setting-up/client/mongodb.html)
+    To set up monitoring of your Percona Distribution for MongoDB in PMM, see [Set up PMM to monitor MongoDB](https://docs.percona.com/percona-monitoring-and-management/setting-up/client/mongodb.html)
 
 ## Uninstall Percona Distribution for MongoDB
 
@@ -134,9 +135,9 @@ operation system. Optionally, disable *Percona* repository.
 
 !!! admonition "See also"
 
-    * [Uninstall Percona Server for MongoDB](https://docs.percona.com/percona-server-for-mongodb/7.0/install/uninstall.html)
+* [Uninstall Percona Server for MongoDB](https://docs.percona.com/percona-server-for-mongodb/7.0/install/uninstall.html)
 
-    * [Uninstall Percona Backup for MongoDB](https://docs.percona.com/percona-backup-mongodb/manage/uninstalling.html)
+* [Uninstall Percona Backup for MongoDB](https://docs.percona.com/percona-backup-mongodb/manage/uninstalling.html)
 
 
 
