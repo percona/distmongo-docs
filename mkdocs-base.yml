@@ -48,7 +48,7 @@ theme:
   features:
     - search.share
     - search.highlight
-    - content.account.copy
+    - content.code.copy
     - content.action.view
     - content.action.edit
     - content.tabs.link
