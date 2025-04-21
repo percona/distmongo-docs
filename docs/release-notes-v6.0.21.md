@@ -36,7 +36,7 @@ Enjoy a better user experience with these improvements to audit logging:
 
 We build and test Percona Distribution for MongoDB only on the latest versions of Amazon Linux 2023. Because of the way Amazon Linux updates their libraries, Percona Distribution for MongoDB 6.0.21 is compatible only with Amazon Linux 2023.7.x and won't work on Amazon Linux 2023.6.x and older. 
 
-To upgrade to 6.0.21-18, make sure that you run Amazon Linux 2023.7.x. Use the [update instructions :octicons-link-external-16:](https://docs.aws.amazon.com/linux/al2023/ug/updating.html)  
+To upgrade to 6.0.21, make sure that you run Amazon Linux 2023.7.x. Use the [update instructions :octicons-link-external-16:](https://docs.aws.amazon.com/linux/al2023/ug/updating.html)  
 
 ### Upstream Improvements
 
