@@ -21,9 +21,7 @@ This release of Percona Distribution for MongoDB is based on the production rele
 
 ### Packaging changes
 
-Regular builds of Percona Distribution for MongoDB 6.0.24 are no longer supported on Ubuntu 20.04 (Focal Fossa) as this operating system has reached end of life. 
-
-Percona Server for MongoDB Pro remains supported on Ubuntu 20.04 for Percona Customers. 
+Regular builds of Percona Distribution for MongoDB 6.0.24-19 are no longer supported on Ubuntu 20.04 (Focal Fossa) as this operating system has reached end of life. However, if for some reason you're not yet able to upgrade to a newer Ubuntu OS and you'd like to still upgrade your Percona Distribution for MongoDB, [contact us](https://hubs.ly/Q03rRtDg0) - we're here to make your databases run better! 
 
 ### Upstream Improvements
 
