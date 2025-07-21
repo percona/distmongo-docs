@@ -1,4 +1,4 @@
-# Percona Distribution for MongoDB 7.0.21 ({{date.7_0_21}})
+# Percona Distribution for MongoDB 7.0.22 ({{date.7_0_22}})
 
 [Upgrade now](installation.md){.md-button}
 
@@ -13,27 +13,33 @@ for MongoDB.
 * *Percona Backup for MongoDB* is a distributed, low-impact solution for achieving
 consistent backups of MongoDB sharded clusters and replica sets.
 
-This release of Percona Distribution for MongoDB is based on the production release of [Percona Server for MongoDB 7.0.21-12](https://docs.percona.com/percona-server-for-mongodb/7.0/release_notes/7.0.21-12.html) and [Percona Backup for MongoDB 2.10.0](https://docs.percona.com/percona-backup-mongodb/release-notes/2.10.0.html).
+This release of Percona Distribution for MongoDB is based on the production release of [Percona Server for MongoDB 7.0.22-12](https://docs.percona.com/percona-server-for-mongodb/7.0/release_notes/7.0.22-12.html) and [Percona Backup for MongoDB 2.10.0](https://docs.percona.com/percona-backup-mongodb/release-notes/2.10.0.html).
 
 ## Release Highlights
 
-### Boost performance during cluster restore and scaling with file copy based initial sync
+### Boost performance during cluster restore and scaling with file copy-based initial sync
 
-You can now select how a newly added or a restored replica set member receives the data from other members - via logical or file copy based sync. File copy based sync is the copying of physical files rather than actual data clone. This makes this sync method is faster than the logical one and it reduces your maintenance time on scaling.
+You can now select how a newly added or a restored replica set member synchronizes the data from other members - via logical or file copy-based initial sync. File copy-based initial sync copies physical files from the source node. This sync method is faster than the logical one and it reduces your maintenance time on scaling your cluster.
 
 This functionality is available in [Percona Server for MongoDB Pro](https://docs.percona.com/percona-server-for-mongodb/7.0/psmdb-pro.html) out of the box. Become a Percona Customer to enjoy all Pro features with little to no effort from your side.
 
 ### Packaging changes
 
-Percona Distribution for MongoDB 7.0.21-12 is no longer supported on Ubuntu 20.04 (Focal Fossa) as this operating system has reached end of life. If you’re not ready to upgrade to a newer Ubuntu OS but still want to update Percona Distribution for MongoDB, contact us! We're here to make your databases run better.
+Percona Distribution for MongoDB 7.0.22 is no longer supported on Ubuntu 20.04 (Focal Fossa) as this operating system has reached end of life. If you're not ready to upgrade to a newer Ubuntu OS but still want to update Percona Distribution for MongoDB, contact us! We're here to make your databases run better.
    
 #### Upstream Improvements
 
-* Fixed the issue with blocking Full Time Diagnostic Data Capture (FTDC) collection when checking the state of the bacupCursor by using atomic mode instead of a lock
-* Tracked nested paths through MatchExpression trees while encoding indexability for plan cache entries
-* Fixed the issue with missing documents when indexes on array fields contain subarrays by ensuring proper bounds when having nested arrays as predicates
-* Fixed an issue where change streams might incorrectly output a "drop" event during resharding or unsharding of a collection that is or was using zone sharding
+* Fixed the issue with blocking Full Time Diagnostic Data Capture (FTDC) collection when checking the state of the `$backupCursor` by using atomic mode instead of a lock.
+* Tracked nested paths through MatchExpression trees while encoding indexability for plan cache entries.
+* Fixed the issue with missing documents when indexes on array fields contain subarrays by ensuring proper bounds when having nested arrays as predicates.
+* Fixed an issue where change streams might incorrectly output a "drop" event during resharding or unsharding of a collection that is or was using zone sharding.
 * Fixed the issue when a generation drain process in WiredTiger, which manages eviction of older data, encounters an issue and then resolves itself when the verbosity levels for eviction and checkpoint operations increase. The issue is fixed by restoring original verbosity levels for these operations.
+* Prevented unauthorized access to data by improving the handling of the `$mergeCursors stage`. The issue affects MongoDB versions prior to 7.0.20 and is fixed upstream and included in Percona Server for MongoDB. We recommend users to upgrade to the latest version as soon as possible.
+* Fixed the issue with incorrect handling of incomplete data that may prevent `mongos` from accepting new connections. The issue affects deployments configured to use a load balancer like HAProxy and affects Percona Server for MongoDB Server v6.0 prior to 6.0.23, Percona Server for MongoDB Server v7.0 prior to 7.0.20 and Percona Server for MongoDB Server v8.0 prior to 8.0.9. We recommend users to upgrade to the latest version as soon as possible.
+* Fixed a race condition where a concurrent `upsert` operation could incorrectly fail with a `DuplicateKey` error instead of retrying as an update. With this fix, the upsert operation now correctly retries and applies the update when another operation inserts the document in parallel.
+* Avoided retrying on duplicate key error for upserts in multidocument transactions.
+* Fixed the issue with retrieving the wrong resolved namespace for a collection when there are multiple collections with the same name involved in a query.
+* Fixed the issue with the shard processing the request bypassing the shard version protocol when a router is not aware of the collection being converted to timeseries.
 
 ### Percona Backup for MongoDB 2.10.0 improvements:
 

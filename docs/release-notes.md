@@ -1,6 +1,6 @@
 # Percona Distribution for MongoDB release notes
 
-* [Percona Distribution for MongoDB 7.0.21 ({{date.7_0_21}})](release-notes-v7.0.21.md)
+* [Percona Distribution for MongoDB 7.0.22 ({{date.7_0_22}})](release-notes-v7.0.22.md)
 
 * [Percona Distribution for MongoDB 7.0.18 ({{date.7_0_18}})](release-notes-v7.0.18.md)
 
