@@ -31,6 +31,10 @@ by adding marketing-requested elements
 
               {% endblock %}
 
+              {% block outdated %}
+    <div>This documentation is no longer maintained as Percona Distribution for MongoDB 7.0 has reached end of life. Refer to the <a href="https://docs.percona.com/percona-server-for-mongodb/">Percona Server for MongoDB</a> and <a href="https://docs.percona.com/percona-backup-mongodb/">Percona Backup for MongoDB</a> documentation instead.</div>
+  {% endblock %}
+
             {% block site_nav %}
             {% if nav %}
               {% if page.meta and page.meta.hide %}
