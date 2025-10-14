@@ -10,6 +10,11 @@
     font-size: 0.65rem;   /* Font size */
     line-height: 1.6;
 }
+.md-banner {
+background-color: var(--md-warning-bg-color);
+color: var(--md-footer-fg-color);
+overflow: auto;
+}
 
 .edit-page-link {
   white-space: nowrap;
