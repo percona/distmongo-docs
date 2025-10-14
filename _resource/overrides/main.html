@@ -32,7 +32,9 @@ by adding marketing-requested elements
               {% endblock %}
 
               {% block announce %}
+    <aside class="md-banner md-banner--warning">
     <div>This documentation is no longer maintained as Percona Distribution for MongoDB 7.0 has reached end of life. Refer to the <a href="https://docs.percona.com/percona-server-for-mongodb/">Percona Server for MongoDB</a> and <a href="https://docs.percona.com/percona-backup-mongodb/">Percona Backup for MongoDB</a> documentation instead.</div>
+  </aside>
   {% endblock %}
 
             {% block site_nav %}
@@ -61,11 +63,14 @@ by adding marketing-requested elements
               <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" {{ hidden }}>
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
-                    {% include "partials/toc.html" %}
+                    {% include "partials/edit.html" %}
                   </div>
                   <div class="md-sidebar__inner">
                      {% include "partials/banner.html" %}
                    </div>
+                   <div class="md-sidebar__inner">
+                    {% include "partials/toc.html" %}
+                  </div>
                 </div>
               </div>
             {% endif %}

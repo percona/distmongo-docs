@@ -50,7 +50,7 @@ theme:
     - search.highlight
     - content.code.copy
     - content.action.view
-    - content.action.edit
+#    - content.action.edit
     - content.tabs.link
     - navigation.top
     - navigation.tracking 
@@ -77,7 +77,7 @@ markdown_extensions:
   toc:
     permalink: True
     title: On this page
-    toc_depth: 3
+    toc_depth: 2
   admonition: {}
   footnotes: {}
   def_list: {} # https://michelf.ca/projects/php-markdown/extra/#def-list
